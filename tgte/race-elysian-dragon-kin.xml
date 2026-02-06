@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-dragon-kin.xml" url="" />
 		</update>
 	</info>
@@ -45,9 +45,9 @@
 				<br />
 				<span class="feature">Draconic Insight.</span> You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.
 				<br />
-				<span class="feature">Draconic Expression.</span> Your draconic heritage manifests in one dominant form. Choose one of the following options: Great Wings, Draconic Magic, or Great Horns. Your Expression shapes your body as much as your power: wings may unfurl, horns may grow more ornate and vividly colored, or your tail and irises may become more overtly draconic as your magic intensifies.
+				<span class="feature">Draconic Expression.</span> Your draconic heritage manifests in one dominant form. Choose one of the following options: Great Wings, Draconic Magic, or Great Horns. Your Expression shapes your body as much as your power: wings may unfurl, horns may grow more ornate and vividly colored, or your tail may thicken and your irises sharpen into a distinctly draconic clarity as your magic intensifies.
 				<br />
-				<span class="feature">Draconic Color.</span> Choose one draconic color. Your color determines your draconic damage type and grants resistance to that damage type.
+				<span class="feature">Draconic Color.</span> Choose one draconic color. Your color determines your draconic damage type.
 				<br />
 			</p>
 		</description>
@@ -56,15 +56,13 @@
 
 		<setters>
 			<!-- Dragon-Kin names are shaped by the cultures they were raised in. -->
-			<set name="names" type="male">Ambrose, Caelin, Thalos, Aurel, Kaien, Corvin, Zephir, Alaric, Orien, Valen, Irix, Solmar, Renval, Veydran</set>
-			<set name="names" type="female">Elfaria, Lianhua, Meilin, Lurie, Selene, Isolde, Auriel, Xianru, Nymera, Valoria, Caelith, Eirene, Astra, Velyss</set>
-			<!-- If your Aurora build doesn't support "unisex", merge these into male/female. -->
-			<set name="names" type="unisex">Spika, Yuvi, Flonel, Kael, Riven, Ashen, Lumi, Seris, Virel, Noctis, Elion, Zhen, Arix, Soryn</set>
-
-			<set name="names" type="surname">Lang, Viremont, Ashford, Callen, Morwyn, Hale, Aurelian, Thorne, Ilyas, Renwick, Sable, Marrow, Cauldrin, Veloren</set>
+			<set name="names" type="male">Ambrose, Caelin, Kaien, Thalos, Orien, Valen, Eryndor, Drazan, Orryx, Rhavon, Soryn, Veydran, Zephir, Aurel</set>
+			<set name="names" type="female">Elfaria, Lianhua, Astra, Calyra, Draeva, Eiryn, Nyvara, Rhaela, Saphira, Velyss, Lurie, Valoria, Meilin, Xianru</set>
+			<!-- Aurora-safe: keep it simple (male/female only). -->
+			<set name="names" type="surname">Lang, Ashscale, Brightwing, Cindertalon, Dawncrest, Emberborn, Frostvein, Ironsong, Stormbrand, Voidcoil, Wyrmspire, Viremont, Morwyn, Veloren</set>
 			<set name="names" type="epithet">the Gilded, the Everbound, the Ascendant, the Long-Watched, the Last Scale, the Undying Flame, the Azure Heir, the Star-Woken, the Crystal-Blooded, of the Crimson Wing</set>
 
-			<!-- Default generator: culturally-integrated name -->
+			<!-- Default generator: high-fantasy style -->
 			<set name="names-format">{{name}} {{surname}}</set>
 
 			<!-- Optional alternative:
@@ -90,7 +88,7 @@
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION" />
 
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" />
-			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE" />
+			<!-- Resistance is intentionally NOT a base racial trait. It is granted by Great Horns. -->
 		</rules>
 	</element>
 
@@ -171,7 +169,7 @@
 	<element name="Draconic Expression" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION">
 		<description>
 			<p>Your draconic heritage manifests in one dominant form. Choose one of the following options: Great Wings, Draconic Magic, or Great Horns.</p>
-			<p class="indent">Your Expression shapes your appearance as much as your power. Wings may unfurl, horns may grow more ornate and vividly colored, or your tail and irises may become more overtly draconic as your magic intensifies.</p>
+			<p class="indent">Your Expression shapes your appearance as much as your power. Wings may unfurl, horns may grow more ornate and vividly colored, or your tail may thicken and your irises sharpen into a distinctly draconic clarity as your magic intensifies.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -219,11 +217,21 @@
 		<description>
 			<p>Your horns and scales serve as conduits for draconic resilience.</p>
 			<p>When you take damage of your draconic damage type, you can use your reaction to gain the benefits of <i>absorb elements</i>. You can use this trait twice per long rest.</p>
+			<p class="indent">In addition, you have resistance to your draconic damage type.</p>
 			<p class="indent">Dragon-Kin with this Expression often develop larger, more ornate horns and more vivid coloration along the brow and crest, as though their lineage is trying to declare itself.</p>
 		</description>
 		<sheet action="Reaction" usage="2/Long Rest">
-			<description>When you take {{draconic-color:damage type}} damage, you can use your reaction to gain the benefits of <i>absorb elements</i>.</description>
+			<description>When you take {{draconic-color:damage type}} damage, you can use your reaction to gain the benefits of <i>absorb elements</i>. You have resistance to {{draconic-color:damage type}}.</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST" />
+		</rules>
 	</element>
 
 	<!-- ========================= -->
@@ -231,7 +239,7 @@
 	<!-- ========================= -->
 	<element name="Draconic Color" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR">
 		<description>
-			<p>Choose your draconic color. Your color determines your draconic damage type and grants resistance to that damage type.</p>
+			<p>Choose your draconic color. Your color determines your draconic damage type.</p>
 			<h5>DRACONIC COLOR</h5>
 			<table>
 				<thead>
@@ -249,25 +257,6 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Racial Trait" name="Draconic Color" supports="Draconic Color" />
-		</rules>
-	</element>
-
-	<!-- ========================= -->
-	<!-- Damage Resistance          -->
-	<!-- ========================= -->
-	<element name="Damage Resistance (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE">
-		<description><p>You have resistance to the damage type associated with your draconic color.</p></description>
-		<sheet>
-			<description>You have resistance to {{draconic-color:damage type}}.</description>
-		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST" />
 		</rules>
 	</element>
 
