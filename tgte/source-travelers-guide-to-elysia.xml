@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <element name="Traveler's Guide to Elysia" type="Source" source="Homebrew" id="ID_ELYSIA_SOURCE_TGTE">
+  <info>
+    <update version="0.0.1">
+      <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml" />
+    </update>
+  </info>
+
+  <element name="Traveler's Guide to Elysia" type="Source" source="Traveler's Guide to Elysia" id="ID_ELYSIA_SOURCE_TGTE">
     <description>
       <p>Homebrew content for the Elysia setting (races, items, feats, etc.).</p>
+      <p><b>Note:</b> This is homebrew content. Confirm with your DM before use.</p>
     </description>
+
     <setters>
       <set name="abbreviation">TGtE</set>
-      <set name="author">Michael Clements</set>
       <set name="url">https://github.com/michaelclements2526/TGtE</set>
+      <set name="author" url="https://github.com/michaelclements2526">Michael Clements</set>
+      <set name="homebrew">true</set>
     </setters>
   </element>
 </elements>
