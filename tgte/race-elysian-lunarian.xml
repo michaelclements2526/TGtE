@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <!-- ========================= -->
+  <!-- Race: Elysian Lunarian     -->
+  <!-- ========================= -->
+  <element name="Elysian Lunarian" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LUNARIAN">
+    <description>
+      <p>Lunarians are an extraordinarily rare people believed to be descendants of the Moon itself—or shaped so completely by lunar influence that the distinction no longer matters. Deeply attuned to magic and the night sky, Lunarians perceive arcane forces instinctively, reacting to spells and supernatural phenomena in ways that often defy mortal logic.</p>
+      <p>They age slowly, experience time differently, and are known for emotional intensity and fixation. To Lunarians, obsession is not a flaw but a natural consequence of lunar influence—a narrowing of focus that can last decades or centuries.</p>
+      <p>Two forms of Lunarians exist: Pure Lunarians, whose bodies fully reflect their lunar heritage, and Lunar-Touched, members of other ancestries altered by the Moon’s influence.</p>
+
+      <h4>TRAITS</h4>
+      <span class="feature">Ability Score Increase. </span>Your ability score increases are determined by your Lunarian Origin.<br />
+      <span class="feature">Size. </span>You are Medium.<br />
+      <span class="feature">Speed. </span>Your walking speed is 35 feet.<br />
+      <span class="feature">Age. </span>You mature at a rate similar to humans, but age far more slowly. Pure Lunarians commonly live between 800 and 1,000 years. Lunar-Touched live significantly longer than their origin ancestry, often reaching twice the expected lifespan.<br />
+      <span class="feature">Languages. </span>You can speak, read, and write Common and two other languages of your choice.<br />
+      <span class="feature">Arcane Training. </span>You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).<br />
+      <span class="feature">Lunar Perception. </span>You have blindsight out to 20 feet.<br />
+      <span class="feature">Lunar Glow. </span>Once per short rest, as a bonus action, you emit moonlight in a 5-foot radius of bright light, with dim light for an additional 10 feet. The light lasts 10 minutes or until you dismiss it (no action required).<br />
+      <span class="feature">Arcane Sensitivity. </span>Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw. You must choose before rolling.<br />
+      <span class="feature">Lunarian Origin. </span>Choose one: Pure Lunarian or Lunar-Touched.<br />
+    </description>
+
+    <sheet display="false" />
+
+    <rules>
+      <stat name="speed" value="35" bonus="base" />
+
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_LANGUAGES" />
+
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_ARCANE_TRAINING" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_PERCEPTION" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_GLOW" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_ARCANE_SENSITIVITY" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Languages (Common + 2)     -->
+  <!-- ========================= -->
+  <element name="Languages (Lunarian)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_LANGUAGES">
+    <description>
+      <p>You can speak, read, and write Common and two other languages of your choice.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Language" name="Lunarian Language (Choice 1)" supports="Standard||Exotic" number="1" />
+      <select type="Language" name="Lunarian Language (Choice 2)" supports="Standard||Exotic" number="1" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Arcane Training            -->
+  <!-- ========================= -->
+  <element name="Arcane Training" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ARCANE_TRAINING">
+    <description>
+      <p>You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).</p>
+    </description>
+    <sheet>
+      <description>Proficiency: Arcana. Choose one: Perception or Performance.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+      <select type="Proficiency" name="Arcane Training (Choice)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Lunar Perception (Blindsight) -->
+  <!-- ========================= -->
+  <element name="Lunar Perception" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_PERCEPTION">
+    <description>
+      <p>You possess heightened awareness shaped by lunar and arcane influence. You have blindsight out to a range of 20 feet. Within this range, you perceive creatures and objects through subtle shifts in magic, light, and presence rather than sight alone.</p>
+    </description>
+    <sheet>
+      <description>Blindsight 20 ft (lunar/arcane awareness).</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Lunar Glow                 -->
+  <!-- ========================= -->
+  <element name="Lunar Glow" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_GLOW">
+    <description>
+      <p>Once per short rest, as a bonus action, you emit moonlight in a 5-foot radius of bright light, with dim light for an additional 10 feet. The light lasts for 10 minutes or until you dismiss it (no action required).</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>Bonus Action: emit moonlight (bright 5 ft, dim +10 ft) for 10 minutes; dismiss anytime (no action).</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Arcane Sensitivity         -->
+  <!-- ========================= -->
+  <element name="Arcane Sensitivity" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ARCANE_SENSITIVITY">
+    <description>
+      <p>Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw. You can use this trait even if you cannot see the source of the spell. You must choose to use this trait before rolling.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>When you make a saving throw against a spell, you can gain advantage. Use before rolling.</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Origin Choice              -->
+  <!-- ========================= -->
+  <element name="Lunarian Origin" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN">
+    <description>
+      <p>Choose one of the following origins at character creation: Pure Lunarian or Lunar-Touched.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Racial Trait" name="Lunarian Origin" supports="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_PURE|ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_TOUCHED" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Origin: Pure Lunarian      -->
+  <!-- ========================= -->
+  <element name="Pure Lunarian" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_PURE">
+    <description>
+      <p><b>Ability Score Increase.</b> Increase one of your Wisdom, Intelligence, or Charisma scores by 2, and increase your Dexterity score by 1.</p>
+      <p><b>Lunar Melody.</b> When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent. In addition, you require only 6 hours to complete a long rest.</p>
+    </description>
+    <sheet>
+      <description>
+        ASI: +2 to Wis/Int/Cha (choose one), +1 Dex.
+        Lunar Melody: maximize healing from Hit Dice during short rests. Long rests require 6 hours.
+      </description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="1" />
+      <select type="Ability Score" name="Pure Lunarian ASI (+2)" supports="Wisdom|Intelligence|Charisma" />
+      <!-- Note: Aurora sometimes needs a stricter ASI pattern to auto-apply the +2.
+           This still displays correctly; we can tighten the rule behavior after you confirm it loads. -->
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Origin: Lunar-Touched      -->
+  <!-- ========================= -->
+  <element name="Lunar-Touched" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_TOUCHED">
+    <description>
+      <p><b>Ability Score Increase.</b> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.</p>
+      <p><b>Ecliptic Surge.</b> Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll (in addition to any proficiency bonus already applied). You can use this trait after seeing the roll, but before the outcome is resolved.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>
+        ASI: +2 to one ability, +1 to a different ability.
+        Ecliptic Surge: after a d20 roll (attack/check/save), add your proficiency bonus (after seeing the roll, before outcome).
+      </description>
+    </sheet>
+    <rules>
+      <select type="Ability Score" name="Lunar-Touched ASI (+2)" supports="Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma" />
+      <select type="Ability Score" name="Lunar-Touched ASI (+1) (different ability)" supports="Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma" />
+      <!-- Same note: this will show cleanly; strict enforcement & auto-application can be refined if needed. -->
+    </rules>
+  </element>
+</elements>
