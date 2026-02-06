@@ -70,7 +70,7 @@
 			-->
 
 			<set name="height" modifier="2d10">5'10"</set>
-			<set name="weight" modifier="2d6">120 lb.</set>
+			<set name="weight" modifier="2d6">160 lb.</set>
 		</setters>
 
 		<rules>
