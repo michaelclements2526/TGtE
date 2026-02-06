@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <!-- ========================= -->
+  <!-- Race: Living Wood          -->
+  <!-- ========================= -->
+  <element name="Living Wood" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LIVING_WOOD">
+    <description>
+      <p>Living Wood are sentient plantfolk deliberately created by druidic circles to serve as companions, assistants, and guardians of the natural world. Through ancient rites blending druidic magic with living timber, these beings are grown rather than born—shaped with emotions, cognition, and moral reasoning comparable to humanoids. Living Wood are alive, aware, and capable of choice—crafted to endure where others pass on.</p>
+
+      <h4>TRAITS</h4>
+      <span class="feature">Ability Score Increase. </span>Increase one ability score of your choice by 2.<br />
+      <span class="feature">Creature Type. </span>You are a Plant.<br />
+      <span class="feature">Size. </span>You are Medium or Large (your choice). Medium Living Wood are called New Wood; Large Living Wood are called Old Wood.<br />
+      <span class="feature">Speed. </span>Your walking speed is 30 feet if you are Medium. Your walking speed is 20 feet if you are Large.<br />
+      <span class="feature">Age. </span>Living Wood typically live between 100 and 150 years.<br />
+      <span class="feature">Languages. </span>You can speak, read, and write Common and Druidic.<br />
+      <span class="feature">Skill Proficiency. </span>You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.<br />
+      <span class="feature">Wooden Frame. </span>While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.<br />
+      <span class="feature">Rooted Awareness. </span>While you are in contact with the ground, you have tremorsense out to 30 feet.<br />
+      <span class="feature">Barkbound Resilience. </span>You have resistance to nonmagical bludgeoning damage.<br />
+      <span class="feature">Grasping Limbs. </span>When you successfully grapple a creature smaller than you, you can choose to restrain it instead. The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.<br />
+    </description>
+
+    <sheet display="false" />
+
+    <rules>
+      <!-- baseline speed is set by size choice -->
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ASI" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SKILL" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE" />
+
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_WOODEN_FRAME" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ROOTED_AWARENESS" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BARKBOUND_RESILIENCE" />
+      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_GRASPING_LIMBS" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- ASI (+2 any)               -->
+  <!-- ========================= -->
+  <element name="Ability Score Increase (Living Wood)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ASI">
+    <description><p>Increase one ability score of your choice by 2.</p></description>
+    <sheet display="false" />
+    <rules>
+      <select type="Ability Score" name="Living Wood ASI (+2)" supports="Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma" />
+      <!-- If Aurora doesn't auto-apply the +2 from this selection, we can swap to a stricter ASI pattern later. -->
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Skill choice               -->
+  <!-- ========================= -->
+  <element name="Skill Proficiency (Living Wood)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SKILL">
+    <description><p>You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.</p></description>
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Living Wood Skill Proficiency" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Size choice: New vs Old    -->
+  <!-- ========================= -->
+  <element name="New Wood / Old Wood" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE">
+    <description><p>Choose whether you are New Wood (Medium) or Old Wood (Large). This determines your size and walking speed.</p></description>
+    <sheet display="false" />
+    <rules>
+      <select type="Racial Trait" name="Living Wood Size" supports="ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE_NEW|ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE_OLD" />
+    </rules>
+  </element>
+
+  <element name="New Wood (Medium)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE_NEW">
+    <description><p>You are Medium. Your walking speed is 30 feet.</p></description>
+    <sheet>
+      <description>Size: Medium (New Wood). Speed: 30 ft.</description>
+    </sheet>
+    <rules>
+      <stat name="speed" value="30" bonus="base" />
+      <!-- Size is often inferred by Aurora from race; this trait is the cleanest mobile-friendly way to represent your choice. -->
+    </rules>
+  </element>
+
+  <element name="Old Wood (Large)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SIZE_OLD">
+    <description><p>You are Large. Your walking speed is 20 feet.</p></description>
+    <sheet>
+      <description>Size: Large (Old Wood). Speed: 20 ft.</description>
+    </sheet>
+    <rules>
+      <stat name="speed" value="20" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Wooden Frame               -->
+  <!-- ========================= -->
+  <element name="Wooden Frame" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_WOODEN_FRAME">
+    <description>
+      <p>While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.</p>
+    </description>
+    <sheet>
+      <description>Unarmored AC = 10 + CON mod (shield allowed).</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Rooted Awareness           -->
+  <!-- ========================= -->
+  <element name="Rooted Awareness" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ROOTED_AWARENESS">
+    <description>
+      <p>While you are in contact with the ground, you have tremorsense out to a range of 30 feet.</p>
+    </description>
+    <sheet>
+      <description>Tremorsense 30 ft while in contact with the ground.</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Barkbound Resilience       -->
+  <!-- ========================= -->
+  <element name="Barkbound Resilience" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BARKBOUND_RESILIENCE">
+    <description><p>You have resistance to nonmagical bludgeoning damage.</p></description>
+    <sheet>
+      <description>Resistance to nonmagical bludgeoning damage.</description>
+    </sheet>
+  </element>
+
+  <!-- ========================= -->
+  <!-- Grasping Limbs             -->
+  <!-- ========================= -->
+  <element name="Grasping Limbs" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_GRASPING_LIMBS">
+    <description>
+      <p>When you successfully grapple a creature smaller than you, you can choose to restrain it instead. The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.</p>
+    </description>
+    <sheet>
+      <description>When you grapple a creature smaller than you, you can restrain it instead (escape uses normal grapple rules).</description>
+    </sheet>
+  </element>
+</elements>
