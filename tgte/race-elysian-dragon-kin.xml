@@ -1,318 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <!-- ========================= -->
-  <!-- Race: Elysian Dragon-Kin   -->
-  <!-- ========================= -->
-  <element name="Elysian Dragon-Kin" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_DRAGON_KIN">
-    <description>
-      <h4>Dragon-Kin</h4>
-      <p>Dragon-Kin are humanoids who carry draconic blood not as a distant echo, but as a living inheritance. Unlike dragonborn, whose lineage manifests uniformly, Dragon-Kin display their heritage in varied and personal ways—through antler-like horns, patches of shimmering scales, and tails that move with deliberate balance.</p>
-      <p>Their draconic ancestry is ancient rather than immediate. At some point deep within their lineage, a dragon became bound to a mortal bloodline through means long lost to history. Once established, this inheritance does not fade or dilute over generations. A Dragon-Kin family remains draconic indefinitely, which is both the source of their power and the reason for their rarity.</p>
-      <p>Though uncommon, Dragon-Kin often integrate seamlessly into the cultures they inhabit, identifying more with the societies that raised them than with any unified Dragon-Kin culture.</p>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Homebrew content for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.1.0">
+			<file name="race-dragon-kin.xml" url="" />
+		</update>
+	</info>
 
-      <h4>Dragon-Kin Traits</h4>
-      <p>Your Dragon-Kin character has the following racial traits.</p>
+	<!-- ========================= -->
+	<!-- Race: Elysian Dragon-Kin   -->
+	<!-- ========================= -->
+	<element name="Elysian Dragon-Kin" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_DRAGON_KIN">
+		<description>
+			<h4>DRAGON-KIN</h4>
+			<p>Dragon-Kin are humanoids who carry draconic blood not as a distant echo, but as a living inheritance. Unlike dragonborn, whose lineage manifests uniformly, Dragon-Kin display their heritage in varied and personal ways—through antler-like horns, patches of shimmering scales, and tails that move with deliberate balance.</p>
+			<p>Their draconic ancestry is ancient rather than immediate. In elder ages, a dragon bound its essence to a mortal bloodline, forging a lineage that would never fully return to mortality. Once established, this inheritance does not fade or dilute over generations. A Dragon-Kin family remains draconic indefinitely, which is both the source of their power and the reason for their rarity.</p>
+			<p>Though uncommon, Dragon-Kin often integrate seamlessly into the cultures they inhabit, identifying more with the societies that raised them than with any unified Dragon-Kin culture. Most Dragon-Kin live between 200 and 300 years, granting them a long memory and a patient outlook shaped by centuries rather than decades.</p>
 
-      <p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase two different ability scores of your choice by 1.</p>
-      <p class="indent"><strong><em>Size.</em></strong> Your size is Medium.</p>
-      <p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
-      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Draconic.</p>
-      <p class="indent"><strong><em>Darkvision.</em></strong> You have darkvision out to 30 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sight.</p>
-      <p class="indent"><strong><em>Draconic Will.</em></strong> You have advantage on saving throws against being charmed or frightened.</p>
-      <p class="indent"><strong><em>Cultural Adaptation.</em></strong> You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p>
-      <p class="indent"><strong><em>Draconic Insight.</em></strong> You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.</p>
-      <p class="indent"><strong><em>Draconic Expression.</em></strong> Choose one: Great Wings, Draconic Magic, or Great Horns.</p>
-      <p class="indent"><strong><em>Draconic Color.</em></strong> Choose one draconic color. Your color determines your draconic damage type and grants resistance to that damage type.</p>
-    </description>
+			<h4>DRAGON-KIN IN ELYSIA</h4>
+			<p>In Elysia, Dragon-Kin are rare enough to be remembered. Their draconic traits are unmistakable, yet their features remain close enough to mortal folk that their presence feels both familiar and unsettling. Some bloodlines grow fiercely proud—sometimes to the point of arrogance—taking their singular Expression as proof that draconic power does not require draconic form. To many dragonborn, Dragon-Kin are distant cousins: recognizably of draconic stock, yet frustratingly unlike the uniform traditions of dragonborn kind. This tension deepens when a Dragon-Kin’s Expression manifests more dramatically than any dragonborn’s, turning quiet comparison into open rivalry.</p>
 
-    <sheet display="false" />
+			<h4>DRAGON-KIN NAMES</h4>
+			<p>Dragon-Kin do not share a unified naming tradition. Most bear names drawn from the cultures that raised them, and many adopt new names over long lives. Some take mortal surnames to mark belonging; others abandon them in favor of titles and epithets earned through reputation, age, or pride.</p>
 
-    <setters>
-      <!-- Optional polish: names/height/weight like official races -->
-      <set name="names" type="male">Auren, Caelis, Drazan, Eryndor, Kaelith, Mavren, Orryx, Rhavon, Soryn, Veydran</set>
-      <set name="names" type="female">Astra, Calyra, Draeva, Eiryn, Kaelara, Myrris, Nyvara, Rhaela, Saphira, Velyss</set>
-      <set name="names" type="clan">Ashscale, Brightwing, Cindertalon, Dawncrest, Emberborn, Frostvein, Ironsong, Stormbrand, Voidcoil, Wyrmspire</set>
-      <set name="names-format">{{name}} of {{clan}}</set>
+			<h4>DRAGON-KIN TRAITS</h4>
+			<p>Your Dragon-Kin character has the following racial traits.</p>
 
-      <!-- Lightweight defaults; tweak later if you want more exact physiology -->
-      <set name="height" modifier="2d10">4'10"</set>
-      <set name="weight" modifier="2d6">120 lb.</set>
-    </setters>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Increase two different ability scores of your choice by 1.
+				<br />
+				<span class="feature">Size.</span> Your size is Medium.
+				<br />
+				<span class="feature">Speed.</span> Your walking speed is 30 feet.
+				<br />
+				<span class="feature">Languages.</span> You can speak, read, and write Common and Draconic.
+				<br />
+				<span class="feature">Darkvision.</span> You have darkvision out to 30 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sight.
+				<br />
+				<span class="feature">Draconic Will.</span> You have advantage on saving throws against being charmed or frightened.
+				<br />
+				<span class="feature">Cultural Adaptation.</span> You gain proficiency with one tool of your choice, or you learn one additional language of your choice.
+				<br />
+				<span class="feature">Draconic Insight.</span> You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.
+				<br />
+				<span class="feature">Draconic Expression.</span> Your draconic heritage manifests in one dominant form. Choose one of the following options: Great Wings, Draconic Magic, or Great Horns. Your Expression shapes your body as much as your power: wings may unfurl, horns may grow more ornate and vividly colored, or your tail and irises may become more overtly draconic as your magic intensifies.
+				<br />
+				<span class="feature">Draconic Color.</span> Choose one draconic color. Your color determines your draconic damage type and grants resistance to that damage type.
+				<br />
+			</p>
+		</description>
 
-    <rules>
-      <stat name="innate speed" value="30" bonus="base" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
-      <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+		<sheet display="false" />
 
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DARKVISION_30" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_WILL" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_ADAPTATION" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_INSIGHT" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION" />
+		<setters>
+			<!-- Dragon-Kin names are shaped by the cultures they were raised in. -->
+			<set name="names" type="male">Ambrose, Caelin, Thalos, Aurel, Kaien, Corvin, Zephir, Alaric, Orien, Valen, Irix, Solmar, Renval, Veydran</set>
+			<set name="names" type="female">Elfaria, Lianhua, Meilin, Lurie, Selene, Isolde, Auriel, Xianru, Nymera, Valoria, Caelith, Eirene, Astra, Velyss</set>
+			<!-- If your Aurora build doesn't support "unisex", merge these into male/female. -->
+			<set name="names" type="unisex">Spika, Yuvi, Flonel, Kael, Riven, Ashen, Lumi, Seris, Virel, Noctis, Elion, Zhen, Arix, Soryn</set>
 
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" />
-      <grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE" />
-    </rules>
-  </element>
+			<set name="names" type="surname">Lang, Viremont, Ashford, Callen, Morwyn, Hale, Aurelian, Thorne, Ilyas, Renwick, Sable, Marrow, Cauldrin, Veloren</set>
+			<set name="names" type="epithet">the Gilded, the Everbound, the Ascendant, the Long-Watched, the Last Scale, the Undying Flame, the Azure Heir, the Star-Woken, the Crystal-Blooded, of the Crimson Wing</set>
 
-  <!-- ========================= -->
-  <!-- ASI: choose 2x +1          -->
-  <!-- ========================= -->
-  <element name="Ability Score Increase (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI">
-    <description><p>Increase two different ability scores of your choice by 1.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 1)" supports="Custom Ability Score Increase 1" />
-      <select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 2)" supports="Custom Ability Score Increase 1" />
-    </rules>
-  </element>
+			<!-- Default generator: culturally-integrated name -->
+			<set name="names-format">{{name}} {{surname}}</set>
 
-  <!-- ========================= -->
-  <!-- Darkvision                 -->
-  <!-- ========================= -->
-  <element name="Darkvision (30 ft) (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DARKVISION_30">
-    <description><p>You have darkvision out to 30 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sight.</p></description>
-    <sheet>
-      <description>Darkvision 30 ft. Advantage on sight-based Wisdom (Perception) checks.</description>
-    </sheet>
-  </element>
+			<!-- Optional alternative:
+			<set name="names-format">{{name}}, {{epithet}}</set>
+			-->
 
-  <!-- ========================= -->
-  <!-- Draconic Will              -->
-  <!-- ========================= -->
-  <element name="Draconic Will" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_WILL">
-    <description><p>You have advantage on saving throws against being charmed or frightened.</p></description>
-    <sheet>
-      <description>Advantage on saving throws against being charmed or frightened.</description>
-    </sheet>
-  </element>
+			<set name="height" modifier="2d10">4'10"</set>
+			<set name="weight" modifier="2d6">120 lb.</set>
+		</setters>
 
-  <!-- ========================= -->
-  <!-- Cultural Adaptation        -->
-  <!-- ========================= -->
-  <element name="Cultural Adaptation" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_ADAPTATION">
-    <description><p>You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Racial Trait" name="Cultural Adaptation" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL|ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE" />
-    </rules>
-  </element>
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
 
-  <element name="Cultural Adaptation — Tool Proficiency" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL">
-    <description><p>You gain proficiency with one tool of your choice.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Proficiency" name="Tool Proficiency (Dragon-Kin)" supports="Tool" />
-    </rules>
-  </element>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
 
-  <element name="Cultural Adaptation — Extra Language" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE">
-    <description><p>You learn one additional language of your choice.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Language" name="Extra Language (Dragon-Kin)" supports="Standard||Exotic" number="1" />
-    </rules>
-  </element>
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DARKVISION_30" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_WILL" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_ADAPTATION" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_INSIGHT" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION" />
 
-  <!-- ========================= -->
-  <!-- Draconic Insight: choose 2 -->
-  <!-- ========================= -->
-  <element name="Draconic Insight" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_INSIGHT">
-    <description><p>You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Proficiency" name="Draconic Insight (Skill 1)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
-      <select type="Proficiency" name="Draconic Insight (Skill 2)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
-    </rules>
-  </element>
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE" />
+		</rules>
+	</element>
 
-  <!-- ========================= -->
-  <!-- Draconic Expression        -->
-  <!-- ========================= -->
-  <element name="Draconic Expression" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION">
-    <description><p>Choose one: Great Wings, Draconic Magic, or Great Horns.</p></description>
-    <sheet display="false" />
-    <rules>
-      <select type="Racial Trait" name="Draconic Expression" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_WINGS|ID_ELYSIA_TRAIT_DRAGON_KIN_MAGIC|ID_ELYSIA_TRAIT_DRAGON_KIN_HORNS" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- ASI: choose 2x +1          -->
+	<!-- ========================= -->
+	<element name="Ability Score Increase (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI">
+		<description><p>Increase two different ability scores of your choice by 1.</p></description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 1)" supports="Custom Ability Score Increase 1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 2)" supports="Custom Ability Score Increase 1" />
+		</rules>
+	</element>
 
-  <element name="Great Wings" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_WINGS">
-    <description><p>You can manifest your wings to gain a flying speed of 30 feet for a total of 10 minutes per day. These minutes can be used all at once or in shorter increments (no action required). You regain expended minutes when you finish a long rest.</p></description>
-    <sheet usage="10 minutes/Long Rest">
-      <description>Fly speed 30 ft for up to 10 minutes per long rest (track minutes spent).</description>
-    </sheet>
-  </element>
+	<!-- ========================= -->
+	<!-- Darkvision                 -->
+	<!-- ========================= -->
+	<element name="Darkvision (30 ft) (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DARKVISION_30">
+		<description><p>You have darkvision out to 30 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sight.</p></description>
+		<sheet>
+			<description>Darkvision 30 ft. Advantage on sight-based Wisdom (Perception) checks.</description>
+		</sheet>
+	</element>
 
-  <!-- ========================= -->
-  <!-- Draconic Magic (Breath-like) -->
-  <!-- ========================= -->
-  <element name="Draconic Magic" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_MAGIC">
-    <description>
-      <p>As an action, you release a pulse of draconic energy in a 15-foot radius centered on yourself. Each creature of your choice in the area must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus.</p>
-      <p>A creature takes {{dragon-kin:pulse:dice count}}d{{dragon-kin:pulse:dice size}} damage of your draconic damage type on a failed save, and half as much damage on a successful one.</p>
-      <p>The damage increases by 1d4 at 5th level, 10th level, and 15th level. After you use this trait, you can’t use it again until you complete a short rest. You can use it twice per short rest.</p>
-    </description>
-    <sheet action="Action" usage="2/Short Rest">
-      <description>Pulse (DC {{dragon-kin:pulse:dc}} Con): 15-ft radius centered on you. Failed save: {{dragon-kin:pulse:dice count}}d{{dragon-kin:pulse:dice size}} {{draconic-color:damage type}} damage; success: half. (+1d4 at 5th/10th/15th)</description>
-    </sheet>
-    <rules>
-      <stat name="dragon-kin:pulse:dc" value="8" />
-      <stat name="dragon-kin:pulse:dc" value="constitution:modifier" />
-      <stat name="dragon-kin:pulse:dc" value="proficiency" />
-      <stat name="dragon-kin:pulse:dice size" value="4" bonus="dice" />
-      <stat name="dragon-kin:pulse:dice count" value="2" level="1" />
-      <stat name="dragon-kin:pulse:dice count" value="1" level="5" />
-      <stat name="dragon-kin:pulse:dice count" value="1" level="10" />
-      <stat name="dragon-kin:pulse:dice count" value="1" level="15" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Draconic Will              -->
+	<!-- ========================= -->
+	<element name="Draconic Will" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_WILL">
+		<description><p>You have advantage on saving throws against being charmed or frightened.</p></description>
+		<sheet>
+			<description>Advantage on saving throws against being charmed or frightened.</description>
+		</sheet>
+	</element>
 
-  <element name="Great Horns" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_HORNS">
-    <description><p>When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain the benefits of <i>absorb elements</i>. You can use this trait twice per long rest.</p></description>
-    <sheet action="Reaction" usage="2/Long Rest">
-      <description>When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain the benefits of <i>absorb elements</i>.</description>
-    </sheet>
-  </element>
+	<!-- ========================= -->
+	<!-- Cultural Adaptation        -->
+	<!-- ========================= -->
+	<element name="Cultural Adaptation" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_ADAPTATION">
+		<description><p>You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p></description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Cultural Adaptation" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL|ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE" />
+		</rules>
+	</element>
 
-  <!-- ========================= -->
-  <!-- Draconic Color (dropdown, like Dragonborn ancestry) -->
-  <!-- ========================= -->
-  <element name="Draconic Color" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR">
-    <description>
-      <p>Choose your draconic color. Your color determines your draconic damage type and grants resistance to that damage type.</p>
-      <h5>DRACONIC COLOR</h5>
-      <table>
-        <thead>
-          <tr><td>Color</td><td>Damage Type</td><td>Temperament</td></tr>
-        </thead>
-        <tr><td>Ruby</td><td>Fire</td><td>Passionate, bold</td></tr>
-        <tr><td>Sapphire</td><td>Lightning</td><td>Restless, quick-thinking</td></tr>
-        <tr><td>Emerald</td><td>Thunder</td><td>Grounded, stubborn</td></tr>
-        <tr><td>Topaz</td><td>Cold</td><td>Calm, calculating</td></tr>
-        <tr><td>Crystal</td><td>Radiant</td><td>Idealistic, protective</td></tr>
-        <tr><td>Obsidian</td><td>Necrotic</td><td>Private, intense</td></tr>
-        <tr><td>Amethyst</td><td>Force</td><td>Analytical, imaginative</td></tr>
-      </table>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <select type="Racial Trait" name="Draconic Color" supports="Draconic Color" />
-    </rules>
-  </element>
+	<element name="Cultural Adaptation — Tool Proficiency" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL">
+		<description><p>You gain proficiency with one tool of your choice.</p></description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Dragon-Kin)" supports="Tool" />
+		</rules>
+	</element>
 
-  <!-- ========================= -->
-  <!-- Damage Resistance (keyed off chosen color) -->
-  <!-- ========================= -->
-  <element name="Damage Resistance (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE">
-    <description><p>You have resistance to the damage type associated with your draconic color.</p></description>
-    <sheet>
-      <description>You have resistance to {{draconic-color:damage type}}.</description>
-    </sheet>
-    <rules>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST" />
-    </rules>
-  </element>
+	<element name="Cultural Adaptation — Extra Language" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE">
+		<description><p>You learn one additional language of your choice.</p></description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Extra Language (Dragon-Kin)" supports="Standard||Exotic" number="1" />
+		</rules>
+	</element>
 
-  <!-- ========================= -->
-  <!-- Color Options -->
-  <!-- ========================= -->
-  <element name="Draconic Color (Ruby)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Ruby">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Ruby" />
-      <stat inline="true" name="draconic-color:damage type" value="Fire" />
-      <stat inline="true" name="draconic-color:temperament" value="Passionate, bold" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Draconic Insight: choose 2 -->
+	<!-- ========================= -->
+	<element name="Draconic Insight" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DRACONIC_INSIGHT">
+		<description><p>You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.</p></description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Draconic Insight (Skill 1)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Draconic Insight (Skill 2)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
 
-  <element name="Draconic Color (Sapphire)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Sapphire">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Sapphire" />
-      <stat inline="true" name="draconic-color:damage type" value="Lightning" />
-      <stat inline="true" name="draconic-color:temperament" value="Restless, quick-thinking" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Draconic Expression        -->
+	<!-- ========================= -->
+	<element name="Draconic Expression" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_EXPRESSION">
+		<description>
+			<p>Your draconic heritage manifests in one dominant form. Choose one of the following options: Great Wings, Draconic Magic, or Great Horns.</p>
+			<p class="indent">Your Expression shapes your appearance as much as your power. Wings may unfurl, horns may grow more ornate and vividly colored, or your tail and irises may become more overtly draconic as your magic intensifies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Draconic Expression" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_WINGS|ID_ELYSIA_TRAIT_DRAGON_KIN_MAGIC|ID_ELYSIA_TRAIT_DRAGON_KIN_HORNS" />
+		</rules>
+	</element>
 
-  <element name="Draconic Color (Emerald)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Emerald">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Emerald" />
-      <stat inline="true" name="draconic-color:damage type" value="Thunder" />
-      <stat inline="true" name="draconic-color:temperament" value="Grounded, stubborn" />
-    </rules>
-  </element>
+	<element name="Great Wings" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_WINGS">
+		<description>
+			<p>You possess powerful, draconic wings. You can manifest your wings to gain a flying speed of 30 feet for a total of 10 minutes per day. These minutes can be used all at once or in shorter increments (no action required). You regain expended minutes when you finish a long rest.</p>
+			<p class="indent">As your power grows, your wings become more pronounced—broader, stronger, and unmistakably draconic in silhouette.</p>
+		</description>
+		<sheet usage="10 minutes/Long Rest">
+			<description>Fly speed 30 ft for up to 10 minutes per long rest (track minutes spent).</description>
+		</sheet>
+	</element>
 
-  <element name="Draconic Color (Topaz)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Topaz">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Topaz" />
-      <stat inline="true" name="draconic-color:damage type" value="Cold" />
-      <stat inline="true" name="draconic-color:temperament" value="Calm, calculating" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Draconic Magic (Pulse)     -->
+	<!-- ========================= -->
+	<element name="Draconic Magic" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_MAGIC">
+		<description>
+			<p>Your draconic power erupts outward in a controlled burst rather than a practiced breath weapon.</p>
+			<p>As an action, you release a pulse of draconic energy in a 15-foot radius centered on yourself. Each creature of your choice in the area must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus.</p>
+			<p>A creature takes {{dragon-kin:pulse:dice count}}d{{dragon-kin:pulse:dice size}} damage of your draconic damage type on a failed save, and half as much damage on a successful one.</p>
+			<p>The damage increases by 1d4 at 5th level, 10th level, and 15th level. You can use this trait twice, and you regain all expended uses when you finish a short or long rest.</p>
+			<p class="indent">Dragon-Kin who manifest this Expression often show it in subtle, unsettling ways: a thicker, more deliberate tail, a brighter sheen to their scales, and irises that take on a distinctly draconic clarity.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Pulse (DC {{dragon-kin:pulse:dc}} Con): 15-ft radius centered on you. Failed save: {{dragon-kin:pulse:dice count}}d{{dragon-kin:pulse:dice size}} {{draconic-color:damage type}} damage; success: half. (+1d4 at 5th/10th/15th)</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:pulse:dc" value="8" />
+			<stat name="dragon-kin:pulse:dc" value="constitution:modifier" />
+			<stat name="dragon-kin:pulse:dc" value="proficiency" />
+			<stat name="dragon-kin:pulse:dice size" value="4" bonus="dice" />
+			<stat name="dragon-kin:pulse:dice count" value="2" level="1" />
+			<stat name="dragon-kin:pulse:dice count" value="1" level="5" />
+			<stat name="dragon-kin:pulse:dice count" value="1" level="10" />
+			<stat name="dragon-kin:pulse:dice count" value="1" level="15" />
+		</rules>
+	</element>
 
-  <element name="Draconic Color (Crystal)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Crystal">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Crystal" />
-      <stat inline="true" name="draconic-color:damage type" value="Radiant" />
-      <stat inline="true" name="draconic-color:temperament" value="Idealistic, protective" />
-    </rules>
-  </element>
+	<element name="Great Horns" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_HORNS">
+		<description>
+			<p>Your horns and scales serve as conduits for draconic resilience.</p>
+			<p>When you take damage of your draconic damage type, you can use your reaction to gain the benefits of <i>absorb elements</i>. You can use this trait twice per long rest.</p>
+			<p class="indent">Dragon-Kin with this Expression often develop larger, more ornate horns and more vivid coloration along the brow and crest, as though their lineage is trying to declare itself.</p>
+		</description>
+		<sheet action="Reaction" usage="2/Long Rest">
+			<description>When you take {{draconic-color:damage type}} damage, you can use your reaction to gain the benefits of <i>absorb elements</i>.</description>
+		</sheet>
+	</element>
 
-  <element name="Draconic Color (Obsidian)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Obsidian">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Obsidian" />
-      <stat inline="true" name="draconic-color:damage type" value="Necrotic" />
-      <stat inline="true" name="draconic-color:temperament" value="Private, intense" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Draconic Color (dropdown)  -->
+	<!-- ========================= -->
+	<element name="Draconic Color" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR">
+		<description>
+			<p>Choose your draconic color. Your color determines your draconic damage type and grants resistance to that damage type.</p>
+			<h5>DRACONIC COLOR</h5>
+			<table>
+				<thead>
+					<tr><td>Color</td><td>Damage Type</td><td>Temperament</td></tr>
+				</thead>
+				<tr><td>Ruby</td><td>Fire</td><td>Passionate, bold</td></tr>
+				<tr><td>Sapphire</td><td>Lightning</td><td>Restless, quick-thinking</td></tr>
+				<tr><td>Emerald</td><td>Thunder</td><td>Grounded, stubborn</td></tr>
+				<tr><td>Topaz</td><td>Cold</td><td>Calm, calculating</td></tr>
+				<tr><td>Crystal</td><td>Radiant</td><td>Idealistic, protective</td></tr>
+				<tr><td>Obsidian</td><td>Necrotic</td><td>Private, intense</td></tr>
+				<tr><td>Amethyst</td><td>Force</td><td>Analytical, imaginative</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Draconic Color" supports="Draconic Color" />
+		</rules>
+	</element>
 
-  <element name="Draconic Color (Amethyst)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST">
-    <supports>Draconic Color</supports>
-    <description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
-    <sheet alt="Amethyst">
-      <description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
-    </sheet>
-    <rules>
-      <stat inline="true" name="draconic-color" value="Amethyst" />
-      <stat inline="true" name="draconic-color:damage type" value="Force" />
-      <stat inline="true" name="draconic-color:temperament" value="Analytical, imaginative" />
-    </rules>
-  </element>
+	<!-- ========================= -->
+	<!-- Damage Resistance          -->
+	<!-- ========================= -->
+	<element name="Damage Resistance (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_DAMAGE_RESISTANCE">
+		<description><p>You have resistance to the damage type associated with your draconic color.</p></description>
+		<sheet>
+			<description>You have resistance to {{draconic-color:damage type}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST" />
+		</rules>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Color Options              -->
+	<!-- ========================= -->
+	<element name="Draconic Color (Ruby)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_RUBY">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Ruby">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Ruby" />
+			<stat inline="true" name="draconic-color:damage type" value="Fire" />
+			<stat inline="true" name="draconic-color:temperament" value="Passionate, bold" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Sapphire)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_SAPPHIRE">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Sapphire">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Sapphire" />
+			<stat inline="true" name="draconic-color:damage type" value="Lightning" />
+			<stat inline="true" name="draconic-color:temperament" value="Restless, quick-thinking" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Emerald)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_EMERALD">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Emerald">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Emerald" />
+			<stat inline="true" name="draconic-color:damage type" value="Thunder" />
+			<stat inline="true" name="draconic-color:temperament" value="Grounded, stubborn" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Topaz)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Topaz">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Topaz" />
+			<stat inline="true" name="draconic-color:damage type" value="Cold" />
+			<stat inline="true" name="draconic-color:temperament" value="Calm, calculating" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Crystal)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Crystal">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Crystal" />
+			<stat inline="true" name="draconic-color:damage type" value="Radiant" />
+			<stat inline="true" name="draconic-color:temperament" value="Idealistic, protective" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Obsidian)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Obsidian">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Obsidian" />
+			<stat inline="true" name="draconic-color:damage type" value="Necrotic" />
+			<stat inline="true" name="draconic-color:temperament" value="Private, intense" />
+		</rules>
+	</element>
+
+	<element name="Draconic Color (Amethyst)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST">
+		<supports>Draconic Color</supports>
+		<description><div element="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR" /></description>
+		<sheet alt="Amethyst">
+			<description>Draconic Color: {{draconic-color}}. Damage type: {{draconic-color:damage type}}. Temperament: {{draconic-color:temperament}}.</description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="draconic-color" value="Amethyst" />
+			<stat inline="true" name="draconic-color:damage type" value="Force" />
+			<stat inline="true" name="draconic-color:temperament" value="Analytical, imaginative" />
+		</rules>
+	</element>
 
 </elements>
