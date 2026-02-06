@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Traveler's Guide to Elysia" type="Source" id="ID_ELYSIA_SOURCE_TGTE">
+    <description>
+      <p>Homebrew content for the Elysia setting (races, items, feats, etc.).</p>
+    </description>
+    <setters>
+      <set name="abbreviation">TGtE</set>
+      <set name="url">https://github.com/michaelclements2526/TGtE</set>
+      <set name="author">Michael Clements</set>
+    </setters>
+  </element>
+</elements>
