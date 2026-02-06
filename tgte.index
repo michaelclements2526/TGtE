@@ -5,7 +5,7 @@
     <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.11">
+    <update version="0.0.12">
       <!-- Always include the index itself -->
       <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte.index"/>
 
