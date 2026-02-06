@@ -5,54 +5,41 @@
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
 		<update version="0.1.1">
-			<file name="race-lunarian.xml" url="" />
+			<file name="race-elysian-lunarian.xml" url="" />
 		</update>
 	</info>
 
 	<!-- ========================= -->
-	<!-- Race: Lunarian             -->
+	<!-- Race: Lunarian     -->
 	<!-- ========================= -->
 	<element name="Lunarian" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LUNARIAN">
 		<description>
 			<h4>LUNARIANS</h4>
 			<p>Lunarians are an extraordinarily rare people believed to be descendants of the Moon itself—or shaped so completely by lunar influence that the distinction no longer matters. Deeply attuned to magic and the night sky, Lunarians perceive arcane forces instinctively, reacting to spells and supernatural phenomena in ways that often defy mortal logic.</p>
-			<p>They age slowly, experience time differently, and are known for emotional intensity and fixation. To Lunarians, obsession is not a flaw but a natural consequence of lunar influence—a narrowing of focus that can last decades or centuries.</p>
-			<p>Two forms of Lunarians exist: Pure Lunarians, whose bodies fully reflect their lunar heritage, and Lunar-Touched, members of other ancestries altered by the Moon’s influence.</p>
+			<p>To most folk, the Moon is distant and mute. To Lunarians, it is intimate: a presence that watches, measures, and answers. Their emotions tend to run bright beneath moonlight, and their sense of time is subtly misaligned with the mortal world—days are easy to count, but decades feel like seasons.</p>
+			<p class="indent"><em>“Every lunarian is born with an obsession. Some chart stars. Some count footsteps. Some refuse to let a single thought end where it began.”</em></p>
 
-			<h4>LUNARIAN TRAITS</h4>
-			<p>Your Lunarian character has the following racial traits.</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span> Your ability score increases are determined by your Lunarian Origin.
-				<br />
-				<span class="feature">Size.</span> Your size is Medium.
-				<br />
-				<span class="feature">Speed.</span> Your walking speed is 35 feet.
-				<br />
-				<span class="feature">Age.</span> Lunarians mature at a rate similar to humans, but age far more slowly.
-				<br />
-				<span class="feature">Languages.</span> You can speak, read, and write Common and two other languages of your choice.
-				<br />
-				<span class="feature">Arcane Training.</span> You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).
-				<br />
-				<span class="feature">Lunar Perception.</span> You have blindsight out to a range of 20 feet.
-				<br />
-				<span class="feature">Lunar Glow.</span> Once per short rest, as a bonus action, you emit moonlight (5 ft bright light, +10 ft dim light) for 10 minutes or until dismissed.
-				<br />
-				<span class="feature">Arcane Sensitivity.</span> Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw (choose before rolling).
-				<br />
-				<span class="feature">Lunar Reactions.</span> When using Lunar Glow, casting spells, or standing beneath moonlight, subtle signs may appear: hair emitting a faint glow, arcane markings becoming visible, eyes reflecting pale lunar light.
-				<br />
-				<span class="feature">Lunarian Origin.</span> Choose Pure Lunarian or Lunar-Touched. Your origin determines your ability score increases and grants additional traits.
-				<br />
-			</p>
+			<h4>CHILDREN OF MOONLIGHT</h4>
+			<p>Lunarians are not a people you “find” so much as you <em>notice</em>. A village may go a lifetime with none, then remember one forever: the child whose eyes reflected a pale ring even in darkness; the traveler who always knew when a spell was forming; the friend who spoke of the night sky like it was a map of personal history.</p>
+			<p>Some tales insist Lunarians are born when moonlight strikes a newborn’s skin for the first time. Others claim they are shaped by prolonged exposure to lunar power—sleeping too many nights beneath a silvered sky, surviving a ritual gone wrong, or carrying a family curse that is not quite a curse. However it happens, the result is the same: the Moon leaves a signature on the soul.</p>
 
-			<h4>APPEARANCE &amp; LUNAR REACTIONS</h4>
-			<p>Pure Lunarians typically possess prominent rabbit-like ears and a small, rounded scut. Their features often appear soft or pale, and their irises may seem dusted with glitter or starlight when interacting with magic.</p>
-			<p>All Lunarians—Pure and Lunar-Touched alike—exhibit lunar reactions. When using Lunar Glow, casting spells, or standing beneath moonlight, subtle signs may appear: hair emitting a faint glow; arcane markings along the skin becoming visible; eyes reflecting pale lunar light.</p>
-			<p>Lunar-Touched Lunarians otherwise resemble their origin ancestry, with only these reactions and their extended lifespan marking them as lunar.</p>
+			<h4>PURE &amp; LUNAR-TOUCHED</h4>
+			<p>Two forms of Lunarians exist: <strong>Pure Lunarians</strong>, whose bodies fully reflect their lunar heritage, and <strong>Lunar-Touched</strong>, members of other ancestries altered by the Moon’s influence.</p>
+			<p class="indent"><strong>Pure Lunarians</strong> often exhibit rabbit-like ears and a small, rounded scut. Their features may appear soft or pale, and their irises can seem dusted with glitter or starlight when interacting with magic. They mature at a human rate but commonly live between 800 and 1,000 years.</p>
+			<p class="indent"><strong>Lunar-Touched</strong> resemble their origin ancestry—human, elf, dwarf, tiefling, and so on—with only subtle lunar reactions and an extended lifespan marking them as lunar. Many Lunar-Touched live roughly twice as long as members of their origin ancestry, and some report that their emotions feel “louder” beneath open night sky.</p>
+
+			<h4>LUNAR REACTIONS</h4>
+			<p>All Lunarians—Pure and Lunar-Touched alike—exhibit lunar reactions. These are not always constant, but they are unmistakable when they appear. The Moon does not merely shine on them; it <em>answers</em>.</p>
+			<p>When using <strong>Lunar Glow</strong>, casting spells, or standing beneath true moonlight, subtle signs may surface:</p>
+			<ul>
+				<li>Hair emitting a faint glow</li>
+				<li>Arcane markings along the skin becoming visible</li>
+				<li>Eyes reflecting pale lunar light</li>
+			</ul>
+			<p class="indent">Among Lunarians, these signs are treated as normal as breathing. Among others, they are often mistaken for omens.</p>
 
 			<h4>TEMPERAMENT &amp; OBSESSION</h4>
-			<p>Pure Lunarians invariably develop an obsession—an idea, object, practice, belief, or fixation that shapes their behavior for years or centuries. This is widely understood as a natural consequence of lunar influence rather than madness.</p>
+			<p>Pure Lunarians invariably develop an obsession—an idea, object, practice, belief, or fixation that shapes their behavior for years or centuries. This is widely understood as a natural consequence of lunar influence rather than madness. The Moon narrows the mind the way a lens narrows light: not to reduce it, but to concentrate it until it burns.</p>
 			<p>If you want to choose randomly, roll a d12 on the table below.</p>
 			<h5>OBSESSION (D12)</h5>
 			<table>
@@ -72,7 +59,37 @@
 				<tr><td>11</td><td>Secrets</td></tr>
 				<tr><td>12</td><td>Freedom</td></tr>
 			</table>
-			<p>Lunar-Touched Lunarians tend to retain the psychology of their origin race, though many report heightened emotion, intuition, or restlessness beneath the night sky.</p>
+			<p>Lunar-Touched Lunarians often retain the psychology of their origin ancestry, but many report heightened intuition, restlessness, or emotional intensity under the night sky.</p>
+
+			<h4>LUNARIAN NAMES</h4>
+			<p>Most Lunarians take names from the cultures that raise them. However, Pure Lunarians in particular often adopt “moon-names”—titles drawn from the names of moons and celestial bodies—as a quiet nod to their origin. These names are not claims of divinity; they are reminders. To a Lunarian, a moon-name is a promise to remain in motion, to keep returning, and to never be entirely understood at first glance.</p>
+
+			<h4>LUNARIAN TRAITS</h4>
+			<p>Your Lunarian character has the following racial traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your ability score increases are determined by your Lunarian Origin.
+				<br />
+				<span class="feature">Size.</span> Your size is Medium.
+				<br />
+				<span class="feature">Speed.</span> Your walking speed is 35 feet.
+				<br />
+				<span class="feature">Age.</span> Lunarians mature at a rate similar to humans, but age far more slowly.
+				<br />
+				<span class="feature">Languages.</span> You can speak, read, and write Common and two other languages of your choice.
+				<br />
+				<span class="feature">Arcane Training.</span> You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).
+				<br />
+				<span class="feature">Lunar Perception.</span> You have blindsight out to a range of 20 feet.
+				<br />
+				<span class="feature">Lunar Glow.</span> Once per short rest, as a bonus action, you emit moonlight in a 5-foot radius of bright light, with dim light for an additional 10 feet. This light lasts for 10 minutes or until you dismiss it (no action required).
+				<br />
+				<span class="feature">Arcane Sensitivity.</span> Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw. You can use this trait even if you cannot see the source of the spell. You must choose to use this trait before rolling.
+				<br />
+				<span class="feature">Lunar Reactions.</span> When using Lunar Glow, casting spells, or standing beneath moonlight, subtle signs may appear: hair emitting a faint glow; arcane markings along the skin becoming visible; eyes reflecting pale lunar light.
+				<br />
+				<span class="feature">Lunarian Origin.</span> Choose Pure Lunarian or Lunar-Touched. Your origin determines your ability score increases and grants additional traits.
+				<br />
+			</p>
 		</description>
 
 		<sheet display="false" />
@@ -116,6 +133,7 @@
 			<description>Blindsight 20 ft.</description>
 		</sheet>
 		<rules>
+			<!-- Some Aurora builds will display this in the senses/vision block when present. -->
 			<stat name="vision:blindsight" value="20" />
 		</rules>
 	</element>
@@ -213,11 +231,13 @@
 			<p>
 				<span class="feature">Ability Score Increase.</span> Increase one of your Wisdom, Intelligence, or Charisma scores by 2, and increase your Dexterity score by 1.
 				<br />
-				<span class="feature">Lunar Melody.</span> When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent. In addition, you require only 6 hours to complete a long rest.
+				<span class="feature">Lunar Melody.</span> When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent.
+				<br />
+				<span class="feature">Trance of the Moon.</span> In addition, you require only 6 hours to complete a long rest.
 			</p>
 		</description>
 		<sheet alt="Pure Lunarian">
-			<description>ASI: +2 (Wis/Int/Cha, choose), +1 Dex. Lunar Melody.</description>
+			<description>ASI: +2 (Wis/Int/Cha, choose), +1 Dex. Maximize Hit Dice healing during short rests. Long rests require only 6 hours.</description>
 		</sheet>
 		<rules>
 			<stat name="dexterity" value="1" />
@@ -271,7 +291,7 @@
 			<p>
 				<span class="feature">Ability Score Increase.</span> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.
 				<br />
-				<span class="feature">Ecliptic Surge.</span> Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll (in addition to any proficiency bonus already applied). You can use this trait after seeing the roll, but before the outcome is resolved.
+				<span class="feature">Ecliptic Surge.</span> Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll. This bonus is added in addition to any proficiency bonus already applied. You can use this trait after seeing the roll, but before the outcome is resolved.
 				<br />
 				<span class="feature">Origin Ancestry.</span> Choose the ancestry you resemble (cosmetic).
 			</p>
