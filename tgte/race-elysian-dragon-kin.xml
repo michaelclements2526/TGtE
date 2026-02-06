@@ -43,7 +43,8 @@
   </element>
 
   <!-- ========================= -->
-  <!-- ASI: choose 2 abilities    -->
+  <!-- ASI: choose 2x +1          -->
+  <!-- (safe Aurora pattern)      -->
   <!-- ========================= -->
   <element name="Ability Score Increase (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI">
     <description>
@@ -51,8 +52,8 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Ability Score" name="ASI (Choice 1)" supports="Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma" />
-      <select type="Ability Score" name="ASI (Choice 2)" supports="Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma" />
+      <select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 1)" supports="Custom Ability Score Increase 1" />
+      <select type="Ability Score Improvement" name="Ability Score Increase +1 (Dragon-Kin) (Choice 2)" supports="Custom Ability Score Increase 1" />
     </rules>
   </element>
 
