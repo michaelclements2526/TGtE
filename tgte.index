@@ -5,20 +5,24 @@
     <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.10">
+    <update version="0.0.11">
       <!-- Always include the index itself -->
       <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte.index"/>
 
       <!-- Source file (required for everything) -->
       <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
 
-      <!-- ONLY Dragon-Kin for testing -->
+      <!-- Races -->
       <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
+      <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
     </update>
   </info>
 
   <files>
     <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
+
+    <!-- Races -->
     <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
+    <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
   </files>
 </index>
