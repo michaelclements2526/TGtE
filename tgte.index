@@ -4,7 +4,7 @@
     <name>Traveler's Guide to Elysia</name>
     <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
     <author>Michael Clements</author>
-    <update version="0.0.4" />
+    <update version="0.0.5" />
   </info>
   <files>
     <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
