@@ -5,7 +5,7 @@
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
 		<update version="0.1.0">
-			<file name="race-emperor-hamster.xml" url="" />
+			<file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml" />
 		</update>
 	</info>
 
