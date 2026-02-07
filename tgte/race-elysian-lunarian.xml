@@ -4,13 +4,13 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="race-elysian-lunarian.xml" url="" />
 		</update>
 	</info>
 
 	<!-- ========================= -->
-	<!-- Race: Lunarian     -->
+	<!-- Race: Lunarian             -->
 	<!-- ========================= -->
 	<element name="Lunarian" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LUNARIAN">
 		<description>
@@ -67,38 +67,25 @@
 			<h4>LUNARIAN TRAITS</h4>
 			<p>Your Lunarian character has the following racial traits.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span> Your ability score increases are determined by your Lunarian Origin.
-				<br />
-				<span class="feature">Size.</span> Your size is Medium.
-				<br />
-				<span class="feature">Speed.</span> Your walking speed is 35 feet.
-				<br />
-				<span class="feature">Age.</span> Lunarians mature at a rate similar to humans, but age far more slowly.
-				<br />
-				<span class="feature">Languages.</span> You can speak, read, and write Common and two other languages of your choice.
-				<br />
-				<span class="feature">Arcane Training.</span> You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).
-				<br />
-				<span class="feature">Lunar Perception.</span> You have blindsight out to a range of 20 feet.
-				<br />
-				<span class="feature">Lunar Glow.</span> Once per short rest, as a bonus action, you emit moonlight in a 5-foot radius of bright light, with dim light for an additional 10 feet. This light lasts for 10 minutes or until you dismiss it (no action required).
-				<br />
-				<span class="feature">Arcane Sensitivity.</span> Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw. You can use this trait even if you cannot see the source of the spell. You must choose to use this trait before rolling.
-				<br />
-				<span class="feature">Lunar Reactions.</span> When using Lunar Glow, casting spells, or standing beneath moonlight, subtle signs may appear: hair emitting a faint glow; arcane markings along the skin becoming visible; eyes reflecting pale lunar light.
-				<br />
-				<span class="feature">Lunarian Origin.</span> Choose Pure Lunarian or Lunar-Touched. Your origin determines your ability score increases and grants additional traits.
-				<br />
+				<span class="feature">Ability Score Increase.</span> Your ability score increases are determined by your Lunarian Origin.<br/>
+				<span class="feature">Size.</span> Your size is Medium.<br/>
+				<span class="feature">Speed.</span> Your walking speed is 35 feet.<br/>
+				<span class="feature">Age.</span> Lunarians mature at a rate similar to humans, but age far more slowly.<br/>
+				<span class="feature">Languages.</span> You can speak, read, and write Common and two other languages of your choice.<br/>
+				<span class="feature">Arcane Training.</span> You gain proficiency in the Arcana skill. In addition, you gain proficiency in either Perception or Performance (your choice).<br/>
+				<span class="feature">Lunar Perception.</span> You have blindsight out to a range of 20 feet.<br/>
+				<span class="feature">Lunar Glow.</span> Once per short rest, as a bonus action, you emit moonlight in a 5-foot radius of bright light, with dim light for an additional 10 feet. This light lasts for 10 minutes or until you dismiss it (no action required).<br/>
+				<span class="feature">Arcane Sensitivity.</span> Once per long rest, when you are required to make a saving throw against a spell, you can choose to gain advantage on that saving throw. You can use this trait even if you cannot see the source of the spell. You must choose to use this trait before rolling.<br/>
+				<span class="feature">Lunar Reactions.</span> When using Lunar Glow, casting spells, or standing beneath moonlight, subtle signs may appear: hair emitting a faint glow; arcane markings along the skin becoming visible; eyes reflecting pale lunar light.<br/>
+				<span class="feature">Lunarian Origin.</span> Choose Pure Lunarian or Lunar-Touched. Your origin determines your ability score increases and grants additional traits.<br/>
 			</p>
 		</description>
 
 		<sheet display="false" />
 
 		<setters>
-			<!-- Moon-name pools (best-effort gendering via mythic naming conventions) -->
 			<set name="names" type="male">Ganymede, Titan, Iapetus, Hyperion, Janus, Oberon, Triton, Proteus, Enceladus, Mimas, Prometheus, Epimetheus, Deimos, Phobos</set>
 			<set name="names" type="female">Io, Europa, Callisto, Amalthea, Thebe, Metis, Adrastea, Himalia, Elara, Pasiphae, Sinope, Lysithea, Carme, Ananke, Leda, Rhea, Dione, Tethys, Phoebe, Miranda, Ariel, Umbriel, Titania</set>
-
 			<set name="names" type="surname">Moonwake, Silvervein, Nightglass, Starweft, Palecrest, Luneshard, Dawnglint, Eclipseborne, Gloamharbor, Astralwyn, Skysigil, Voidpetal</set>
 			<set name="names-format">{{name}} {{surname}}</set>
 
@@ -126,14 +113,9 @@
 	<!-- Vision: Blindsight (20 ft) -->
 	<!-- ========================= -->
 	<element name="Blindsight (20 ft)" type="Vision" source="Traveler's Guide to Elysia" id="ID_ELYSIA_VISION_BLINDSIGHT_20">
-		<description>
-			<p>You have blindsight out to a range of 20 feet.</p>
-		</description>
-		<sheet>
-			<description>Blindsight 20 ft.</description>
-		</sheet>
+		<description><p>You have blindsight out to a range of 20 feet.</p></description>
+		<sheet><description>Blindsight 20 ft.</description></sheet>
 		<rules>
-			<!-- Some Aurora builds will display this in the senses/vision block when present. -->
 			<stat name="vision:blindsight" value="20" />
 		</rules>
 	</element>
@@ -162,9 +144,7 @@
 			<p>You possess heightened awareness shaped by lunar and arcane influence.</p>
 			<p>You have blindsight out to a range of 20 feet. Within this range, you perceive creatures and objects through subtle shifts in magic, light, and presence rather than sight alone.</p>
 		</description>
-		<sheet>
-			<description>Blindsight 20 ft.</description>
-		</sheet>
+		<sheet><description>Blindsight 20 ft.</description></sheet>
 		<rules>
 			<grant type="Vision" id="ID_ELYSIA_VISION_BLINDSIGHT_20" />
 		</rules>
@@ -180,7 +160,7 @@
 			<p class="indent">This glow may cause your hair, eyes, or lunar markings to visibly shimmer.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
-			<description>Emit moonlight for 10 minutes: 5 ft bright light, +10 ft dim light. You can dismiss it (no action).</description>
+			<description>Emit moonlight for 10 minutes: 5 ft bright light, +10 ft dim light. Dismiss it (no action).</description>
 		</sheet>
 	</element>
 
@@ -216,7 +196,9 @@
 		<description>
 			<p>Choose one of the following origins at character creation: Pure Lunarian or Lunar-Touched.</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>Choose your origin: Pure Lunarian or Lunar-Touched.</description>
+		</sheet>
 		<rules>
 			<select type="Racial Trait" name="Lunarian Origin" supports="ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_PURE|ID_ELYSIA_TRAIT_LUNARIAN_ORIGIN_TOUCHED" />
 		</rules>
@@ -229,56 +211,56 @@
 		<description>
 			<p>Pure Lunarians are fully shaped by lunar influence, both physically and spiritually.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span> Increase one of your Wisdom, Intelligence, or Charisma scores by 2, and increase your Dexterity score by 1.
-				<br />
-				<span class="feature">Lunar Melody.</span> When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent.
-				<br />
-				<span class="feature">Trance of the Moon.</span> In addition, you require only 6 hours to complete a long rest.
+				<span class="feature">Ability Score Increase.</span> Increase one of your Wisdom, Intelligence, or Charisma scores by 2, and increase your Dexterity score by 1.<br/>
+				<span class="feature">Lunar Melody.</span> When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent.<br/>
+				<span class="feature">Trance of the Moon.</span> In addition, you require only 6 hours to complete a long rest.<br/>
 			</p>
 		</description>
 		<sheet alt="Pure Lunarian">
-			<description>ASI: +2 (Wis/Int/Cha, choose), +1 Dex. Maximize Hit Dice healing during short rests. Long rests require only 6 hours.</description>
+			<description>ASI: +2 (Wis/Int/Cha), +1 Dex. Maximize Hit Dice healing on short rests. Long rests require only 6 hours.</description>
 		</sheet>
 		<rules>
 			<stat name="dexterity" value="1" />
-			<select type="Racial Trait" name="Pure Lunarian Ability Score Increase (+2)" supports="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_WIS|ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_INT|ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_CHA" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_CHOICE" />
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_MELODY" />
 		</rules>
 	</element>
 
-	<!-- Pure Lunarian ASI Options -->
+	<element name="Pure Lunarian Ability Score Increase" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_CHOICE">
+		<description><p>Increase one of your Wisdom, Intelligence, or Charisma scores by 2.</p></description>
+		<sheet>
+			<description>Increase one of Wisdom, Intelligence, or Charisma by 2.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Pure Lunarian Ability Score Increase (+2)" supports="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_WIS|ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_INT|ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_CHA" />
+		</rules>
+	</element>
+
 	<element name="Pure Lunarian ASI (+2 Wisdom)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_WIS">
 		<description><p>Your Wisdom score increases by 2.</p></description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="2" />
-		</rules>
+		<sheet alt="ASI (+2 Wisdom)"><description>Wisdom +2.</description></sheet>
+		<rules><stat name="wisdom" value="2" /></rules>
 	</element>
 
 	<element name="Pure Lunarian ASI (+2 Intelligence)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_INT">
 		<description><p>Your Intelligence score increases by 2.</p></description>
-		<sheet display="false" />
-		<rules>
-			<stat name="intelligence" value="2" />
-		</rules>
+		<sheet alt="ASI (+2 Intelligence)"><description>Intelligence +2.</description></sheet>
+		<rules><stat name="intelligence" value="2" /></rules>
 	</element>
 
 	<element name="Pure Lunarian ASI (+2 Charisma)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_PURE_ASI_CHA">
 		<description><p>Your Charisma score increases by 2.</p></description>
-		<sheet display="false" />
-		<rules>
-			<stat name="charisma" value="2" />
-		</rules>
+		<sheet alt="ASI (+2 Charisma)"><description>Charisma +2.</description></sheet>
+		<rules><stat name="charisma" value="2" /></rules>
 	</element>
 
-	<!-- Lunar Melody -->
 	<element name="Lunar Melody" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_LUNAR_MELODY">
 		<description>
 			<p>When you spend Hit Dice to regain hit points during a short rest, you regain the maximum number of hit points possible for each Hit Die spent.</p>
 			<p>In addition, you require only 6 hours to complete a long rest.</p>
 		</description>
 		<sheet>
-			<description>When you spend Hit Dice during a short rest, you regain the maximum possible for each die. You need only 6 hours for a long rest.</description>
+			<description>Maximize Hit Dice healing during short rests. You need only 6 hours for a long rest.</description>
 		</sheet>
 	</element>
 
@@ -289,11 +271,9 @@
 		<description>
 			<p>Lunar-Touched Lunarians are members of other ancestries marked by prolonged exposure to lunar power.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.
-				<br />
-				<span class="feature">Ecliptic Surge.</span> Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll. This bonus is added in addition to any proficiency bonus already applied. You can use this trait after seeing the roll, but before the outcome is resolved.
-				<br />
-				<span class="feature">Origin Ancestry.</span> Choose the ancestry you resemble (cosmetic).
+				<span class="feature">Ability Score Increase.</span> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.<br/>
+				<span class="feature">Ecliptic Surge.</span> Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll. This bonus is added in addition to any proficiency bonus already applied. You can use this trait after seeing the roll, but before the outcome is resolved.<br/>
+				<span class="feature">Origin Ancestry.</span> Choose the ancestry you resemble (cosmetic).<br/>
 			</p>
 		</description>
 		<sheet alt="Lunar-Touched">
@@ -307,7 +287,6 @@
 		</rules>
 	</element>
 
-	<!-- Ecliptic Surge -->
 	<element name="Ecliptic Surge" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_ECLIPTIC_SURGE">
 		<description>
 			<p>Once per short rest, after you roll a d20 for an attack roll, ability check, or saving throw and determine the result, you can choose to add your proficiency bonus to the roll.</p>
@@ -320,13 +299,11 @@
 	</element>
 
 	<!-- ========================= -->
-	<!-- Lunar-Touched Origin Ancestry (PHB list, cosmetic) -->
+	<!-- Lunar-Touched Origin Ancestry (cosmetic) -->
 	<!-- ========================= -->
 	<element name="Origin Ancestry (Lunar-Touched)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_ANCESTRY">
-		<description>
-			<p>If you are Lunar-Touched, choose the ancestry you resemble. This choice is cosmetic.</p>
-		</description>
-		<sheet display="false" />
+		<description><p>If you are Lunar-Touched, choose the ancestry you resemble. This choice is cosmetic.</p></description>
+		<sheet><description>Choose an origin ancestry (cosmetic).</description></sheet>
 		<rules>
 			<select type="Racial Trait" name="Origin Ancestry (Cosmetic)" supports="Lunar-Touched Origin Ancestry" />
 		</rules>
@@ -336,42 +313,34 @@
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Human"><description>Origin Ancestry (cosmetic): Human.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Dwarf" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_DWARF">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Dwarf"><description>Origin Ancestry (cosmetic): Dwarf.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Elf" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_ELF">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Elf"><description>Origin Ancestry (cosmetic): Elf.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Halfling" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_HALFLING">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Halfling"><description>Origin Ancestry (cosmetic): Halfling.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Gnome" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_GNOME">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Gnome"><description>Origin Ancestry (cosmetic): Gnome.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Half-Elf" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_HALF_ELF">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Half-Elf"><description>Origin Ancestry (cosmetic): Half-Elf.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Half-Orc" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_HALF_ORC">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Half-Orc"><description>Origin Ancestry (cosmetic): Half-Orc.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Dragonborn" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_DRAGONBORN">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Dragonborn"><description>Origin Ancestry (cosmetic): Dragonborn.</description></sheet>
 	</element>
-
 	<element name="Origin Ancestry: Tiefling" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LUNARIAN_TOUCHED_ORIGIN_TIEFLING">
 		<supports>Lunar-Touched Origin Ancestry</supports>
 		<sheet alt="Tiefling"><description>Origin Ancestry (cosmetic): Tiefling.</description></sheet>
