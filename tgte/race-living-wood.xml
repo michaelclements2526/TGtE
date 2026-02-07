@@ -4,13 +4,13 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="race-living-wood.xml" url="" />
 		</update>
 	</info>
 
 	<!-- ========================= -->
-	<!-- Race: Living Wood          -->
+	<!-- Race: Living Wood         -->
 	<!-- ========================= -->
 	<element name="Living Wood" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LIVING_WOOD">
 		<description>
@@ -30,41 +30,26 @@
 			<h4>LIVING WOOD TRAITS</h4>
 			<p>Your Living Wood character has the following racial traits.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.
-				<br />
-				<span class="feature">Creature Type.</span> You are a Plant.
-				<br />
-				<span class="feature">Size.</span> You are Medium or Large (your choice). Medium Living Wood are called New Wood; Large Living Wood are called Old Wood.
-				<br />
-				<span class="feature">Speed.</span> Your walking speed is 30 feet if you are Medium. Your walking speed is 20 feet if you are Large.
-				<br />
-				<span class="feature">Age.</span> Living Wood typically live between 100 and 150 years.
-				<br />
-				<span class="feature">Languages.</span> You can speak, read, and write Common and Druidic.
-				<br />
-				<span class="feature">Skill Proficiency.</span> You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.
-				<br />
-				<span class="feature">Wooden Frame.</span> While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.
-				<br />
-				<span class="feature">Rooted Awareness.</span> While you are in contact with the ground, you have tremorsense out to a range of 30 feet.
-				<br />
-				<span class="feature">Barkbound Resilience.</span> You have resistance to nonmagical bludgeoning damage.
-				<br />
-				<span class="feature">Bark Harden.</span> When you take bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage by 1d8. You can use this trait a number of times equal to your proficiency bonus per long rest.
-				<br />
-				<span class="feature">Rooted Constitution.</span> You gain a 1d4 bonus to Constitution saving throws.
-				<br />
-				<span class="feature">Grasping Limbs.</span> When you successfully grapple a creature smaller than you, you can choose to restrain it instead. The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.
-				<br />
-				<span class="feature">Old Wood Reach.</span> If you are Large, your melee weapon attacks have their reach increased by 5 feet.
-				<br />
+				<span class="feature">Ability Score Increase.</span> Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.<br/>
+				<span class="feature">Creature Type.</span> You are a Plant.<br/>
+				<span class="feature">Size.</span> You are Medium or Large (your choice). Medium Living Wood are called New Wood; Large Living Wood are called Old Wood.<br/>
+				<span class="feature">Speed.</span> Your walking speed is 30 feet if you are Medium. Your walking speed is 20 feet if you are Large.<br/>
+				<span class="feature">Age.</span> Living Wood typically live between 100 and 150 years.<br/>
+				<span class="feature">Languages.</span> You can speak, read, and write Common and Druidic.<br/>
+				<span class="feature">Skill Proficiency.</span> You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.<br/>
+				<span class="feature">Wooden Frame.</span> While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.<br/>
+				<span class="feature">Rooted Awareness.</span> While you are in contact with the ground, you have tremorsense out to a range of 30 feet.<br/>
+				<span class="feature">Barkbound Resilience.</span> You have resistance to nonmagical bludgeoning damage.<br/>
+				<span class="feature">Bark Harden.</span> When you take bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage by 1d8. You can use this trait a number of times equal to your proficiency bonus per long rest.<br/>
+				<span class="feature">Rooted Constitution.</span> You gain a 1d4 bonus to Constitution saving throws.<br/>
+				<span class="feature">Grasping Limbs.</span> When you successfully grapple a creature smaller than you, you can choose to restrain it instead. The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.<br/>
+				<span class="feature">Old Wood Reach.</span> If you are Large, your melee weapon attacks have their reach increased by 5 feet.<br/>
 			</p>
 		</description>
 
 		<sheet display="false" />
 
 		<setters>
-			<!-- Growth-names (construct-adjacent “designation” vibe; gender-neutral list) -->
 			<set name="names" type="male">Ashroot, Stonebark, Greenwake, Ironwood, Mossbound, Deepgrain, Thornreach, Oakfall, Reedmarch, Cinderbough, Birchward, Hollowstem, Sapveil, Brambleknit</set>
 			<set name="names" type="female">Ashroot, Stonebark, Greenwake, Ironwood, Mossbound, Deepgrain, Thornreach, Oakfall, Reedmarch, Cinderbough, Birchward, Hollowstem, Sapveil, Brambleknit</set>
 			<set name="names" type="surname">of the Grove, of the Boundary, of the Old Ring, of the Green Oath, of Root and Stone, of the Quiet Vale</set>
@@ -75,20 +60,14 @@
 		</setters>
 
 		<rules>
-			<!-- Base: choose body (sets Size + Speed) -->
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BODY" />
 
-			<!-- Languages -->
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
 
-			<!-- ASI -->
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ASI" />
-
-			<!-- Skill -->
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SKILL" />
 
-			<!-- Core traits -->
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_WOODEN_FRAME" />
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ROOTED_AWARENESS" />
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BARKBOUND_RESILIENCE" />
@@ -102,8 +81,12 @@
 	<!-- ASI: +2 and +1             -->
 	<!-- ========================= -->
 	<element name="Ability Score Increase (Living Wood)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ASI">
-		<description><p>Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.</p></description>
-		<sheet display="false" />
+		<description>
+			<p>Increase one ability score of your choice by 2, and increase a different ability score of your choice by 1.</p>
+		</description>
+		<sheet>
+			<description>Increase one ability score by 2 and a different ability score by 1.</description>
+		</sheet>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Living Wood)" supports="Custom Ability Score Increase 2" />
 			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Living Wood)" supports="Custom Ability Score Increase 1" />
@@ -114,8 +97,12 @@
 	<!-- Body choice: New/Old Wood  -->
 	<!-- ========================= -->
 	<element name="New Wood / Old Wood" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BODY">
-		<description><p>Choose whether you are New Wood (Medium) or Old Wood (Large). This determines your size, speed, and reach.</p></description>
-		<sheet display="false" />
+		<description>
+			<p>Choose whether you are New Wood (Medium) or Old Wood (Large). This determines your size, speed, and reach.</p>
+		</description>
+		<sheet>
+			<description>Choose New Wood (Medium, 30 ft) or Old Wood (Large, 20 ft, reach +5 ft).</description>
+		</sheet>
 		<rules>
 			<select type="Racial Trait" name="Living Wood Body" supports="ID_ELYSIA_TRAIT_LIVING_WOOD_NEW|ID_ELYSIA_TRAIT_LIVING_WOOD_OLD" />
 		</rules>
@@ -162,7 +149,9 @@
 	<!-- ========================= -->
 	<element name="Skill Proficiency (Living Wood)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SKILL">
 		<description><p>You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.</p></description>
-		<sheet display="false" />
+		<sheet>
+			<description>Choose one skill proficiency: Survival, Animal Handling, Nature, or History.</description>
+		</sheet>
 		<rules>
 			<select type="Proficiency" name="Living Wood Skill Proficiency" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY" />
 		</rules>
@@ -237,7 +226,7 @@
 	<element name="Rooted Constitution" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ROOTED_CONSTITUTION">
 		<description><p>You gain a 1d4 bonus to Constitution saving throws.</p></description>
 		<sheet>
-			<description>You gain a 1d4 bonus to Constitution saving throws.</description>
+			<description>Add 1d4 to Constitution saving throws.</description>
 		</sheet>
 	</element>
 
