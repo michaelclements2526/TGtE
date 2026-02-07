@@ -62,12 +62,7 @@
 			<set name="names" type="surname">Lang, Ashscale, Brightwing, Cindertalon, Dawncrest, Emberborn, Frostvein, Ironsong, Stormbrand, Voidcoil, Wyrmspire, Viremont, Morwyn, Veloren</set>
 			<set name="names" type="epithet">the Gilded, the Everbound, the Ascendant, the Long-Watched, the Last Scale, the Undying Flame, the Azure Heir, the Star-Woken, the Crystal-Blooded, of the Crimson Wing</set>
 
-			<!-- Default generator: high-fantasy style -->
 			<set name="names-format">{{name}} {{surname}}</set>
-
-			<!-- Optional alternative:
-			<set name="names-format">{{name}}, {{epithet}}</set>
-			-->
 
 			<set name="height" modifier="2d10">5'10"</set>
 			<set name="weight" modifier="2d6">160 lb.</set>
@@ -93,6 +88,19 @@
 	</element>
 
 	<!-- ========================= -->
+	<!-- Vision: Darkvision (30 ft) -->
+	<!-- ========================= -->
+	<element name="Darkvision (30 ft)" type="Vision" source="Traveler's Guide to Elysia" id="ID_ELYSIA_VISION_DARKVISION_30">
+		<description><p>You have darkvision out to a range of 30 feet.</p></description>
+		<sheet>
+			<description>Darkvision 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="vision:darkvision" value="30" />
+		</rules>
+	</element>
+
+	<!-- ========================= -->
 	<!-- ASI: choose 2x +1          -->
 	<!-- ========================= -->
 	<element name="Ability Score Increase (Dragon-Kin)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_DRAGON_KIN_ASI">
@@ -112,6 +120,9 @@
 		<sheet>
 			<description>Darkvision 30 ft. Advantage on sight-based Wisdom (Perception) checks.</description>
 		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_ELYSIA_VISION_DARKVISION_30" />
+		</rules>
 	</element>
 
 	<!-- ========================= -->
@@ -230,7 +241,8 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_TOPAZ" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_CRYSTAL" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_OBSIDIAN" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" requirements="ID_ELYSIA_TRAIT_DRAGON_KIN_COLOR_AMETHYST" />
+			<!-- NOTE: Force resistance condition IDs can be inconsistent across Aurora builds.
+			     Leaving Amethyst resistance as sheet text only to avoid load-breaking missing IDs. -->
 		</rules>
 	</element>
 
