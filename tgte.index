@@ -5,7 +5,7 @@
     <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.13">
+    <update version="0.0.14">
       <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte.index"/>
 
       <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
@@ -14,6 +14,7 @@
       <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
       <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
       <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-living-wood.xml"/>
+      <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
     </update>
   </info>
 
@@ -22,5 +23,6 @@
     <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
     <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
     <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-living-wood.xml"/>
+    <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
   </files>
 </index>
