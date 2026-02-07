@@ -1,1 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Homebrew content for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.1.0">
+			<file name="race-emperor-hamster.xml" url="" />
+		</update>
+	</info>
 
+	<!-- ========================= -->
+	<!-- Race: Emperor Hamster     -->
+	<!-- ========================= -->
+	<element name="Emperor Hamster" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_EMPEROR_HAMSTER">
+		<description>
+			<p class="flavor">"The small creature squeaked in anger at me, as I had clearly chosen my words poorly, describing the creature as cute. As it squeaked and pointed at me, the ground seemed to begin to come alive, as hundreds of what appeared to be smaller versions of the hamster swarmed me, and crawled onto me. I'm lucky to be alive." — <i>Journal entry of Ven Gliy</i></p>
+
+			<h4>PHYSICAL DESCRIPTION</h4>
+			<p>Emperor hamsters look like giant hamsters that walk upright on their hind legs.</p>
+
+			<h4>HISTORY</h4>
+			<p>The first emperor hamster created was actually a complete mistake in an attempt to splice the genes of a human and a dwarf. Next thing that scientist knew, they were a giant hamster, who had an army of hamsters following them and fighting for them. From then on, the mutated genes of the emperor hamster spread, making them more and more common among populations.</p>
+
+			<h4>SOCIETY</h4>
+			<p>Emperor hamsters in society are typically either laughed at or worshipped as nobles, ruling kingdoms and running diplomacy between kingdoms and empires. Among hamster populations, they are more closely considered to that of gods or goddesses, as they are supreme in comparison.</p>
+
+			<h4>EMPEROR HAMSTER NAMES</h4>
+			<p>Emperor hamsters tend to take names of great power and influence, or that of great rulers from the past... even if they don't hold these positions of power.</p>
+			<p class="indent"><b><i>Male Names.</i></b> Agamemnon, Alexandros, Apollonios, Ariston, Demetrios, Diokles, Epiktetos, Herakleides, Nikias, Philon, Theophilos</p>
+			<p class="indent"><b><i>Female Names.</i></b> Aphrodisia, Athenais, Demetria, Eirene, Euphrosyne, Phile, Philia, Philoumente, Rhene, Sostrate</p>
+
+			<h4>RANDOM HEIGHT AND WEIGHT</h4>
+			<p>You can roll randomly to determine your emperor hamster's height and weight using the following table.</p>
+			<table>
+				<thead>
+					<tr><td>Base Height</td><td>Height Modifier</td><td>Base Weight</td><td>Weight Modifier</td></tr>
+				</thead>
+				<tr>
+					<td>3'0"</td>
+					<td>+2d6</td>
+					<td>30 lb.</td>
+					<td>× (1d4) lb.</td>
+				</tr>
+			</table>
+			<p class="indent"><b><i>Height.</i></b> Your height is your base height plus your height modifier.</p>
+			<p class="indent"><b><i>Weight.</i></b> Your weight is your base weight plus your height modifier multiplied by your weight modifier.</p>
+
+			<h4>EMPEROR HAMSTER TRAITS</h4>
+			<p>Your emperor hamster character has the following racial traits.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your Charisma score increases by 2, and your Wisdom score increases by 1.<br/>
+				<span class="feature">Age.</span> Emperor hamsters mature as fast as humans do and live for about 200 years.<br/>
+				<span class="feature">Alignment.</span> Emperor hamsters are normally chaotic in their alignment, grasping for power where they can.<br/>
+				<span class="feature">Size.</span> Emperor hamsters are 3 to 4 feet tall. Your size is Small.<br/>
+				<span class="feature">Speed.</span> Your base walking speed is 25 feet. You also have a burrowing speed of 15 feet.<br/>
+				<span class="feature">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+				<span class="feature">Furball.</span> You can use your bonus action to roll your body into a ball. While rolling, you can't take any actions, but your speed doubles and you can move through the space of Medium and smaller creatures without treating them as difficult terrain. When you move through a creature's space, the creature must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or take 2d4 + your Strength modifier bludgeoning damage and be knocked prone.<br/>
+				<span class="feature">Keen Nose, Little Eyes.</span> You have advantage on Perception checks that rely on smell, but disadvantage on Perception checks that rely on sight.<br/>
+				<span class="feature">Bite.</span> Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
+				<span class="feature">Hamsters Ruling.</span> As an action, once per day, you can call upon an army of hamsters. This army will stay around for 1 hour and will follow your commands. Use the Swarm of Rats in the Monster Manual for reference. This swarm doubles in size at levels 5, 10, 15, and 20, and is able to be controlled by one more hour each time the swarm grows.<br/>
+				<span class="feature">Languages.</span> You can speak, read, and write Common and Hamster-Squeak.<br/>
+			</p>
+
+			<h4>SUGGESTED CHARACTERISTICS</h4>
+			<p>When creating an emperor hamster character, it is recommended to use the Noble background.</p>
+		</description>
+
+		<sheet display="false"/>
+
+		<setters>
+			<set name="names" type="male">Agamemnon, Alexandros, Apollonios, Ariston, Demetrios, Diokles, Epiktetos, Herakleides, Nikias, Philon, Theophilos</set>
+			<set name="names" type="female">Aphrodisia, Athenais, Demetria, Eirene, Euphrosyne, Phile, Philia, Philoumente, Rhene, Sostrate</set>
+			<set name="names-format">{{name}}</set>
+
+			<!-- Simple defaults (full randomization rules are in lore) -->
+			<set name="height">3’0"</set>
+			<set name="weight">30 lb.</set>
+		</setters>
+
+		<rules>
+			<stat name="charisma" value="2"/>
+			<stat name="wisdom" value="1"/>
+
+			<stat name="innate speed" value="25" bonus="base"/>
+			<stat name="innate speed:burrow" value="15" bonus="base"/>
+
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_ELYSIA_LANGUAGE_HAMSTER_SQUEAK" />
+
+			<grant type="Racial Trait" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_FURBALL" />
+			<grant type="Racial Trait" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_KEEN_NOSE_LITTLE_EYES" />
+			<grant type="Racial Trait" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_BITE" />
+			<grant type="Racial Trait" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_HAMSTERS_RULING" />
+		</rules>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Language: Hamster-Squeak  -->
+	<!-- ========================= -->
+	<element name="Hamster-Squeak" type="Language" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LANGUAGE_HAMSTER_SQUEAK">
+		<description>
+			<p>Hamster-Squeak is the language spoken between all hamsters. This language is comprised of squeaks and nose twitches. It can be understood by others, however, it may take many years to learn the language.</p>
+		</description>
+		<sheet>
+			<description>Squeaks and nose twitches shared by hamsterkind.</description>
+		</sheet>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Racial Traits             -->
+	<!-- ========================= -->
+
+	<element name="Furball" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_FURBALL">
+		<description>
+			<p>You can use your bonus action to roll your body into a ball. While rolling, you can't take any actions, but your speed doubles and you can move through the space of Medium and smaller creatures without treating them as difficult terrain.</p>
+			<p class="indent">When you move through a creature's space, the creature must make a Dexterity saving throw (DC = 8 + your proficiency bonus + {{strength:modifier}}) or take 2d4 + {{strength:modifier}} bludgeoning damage and be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>Bonus Action: roll into a ball; speed doubles; move through Medium or smaller creatures. Creatures you pass through must save (DC 8 + PB + {{strength:modifier}}) or take 2d4+{{strength:modifier}} bludgeoning and fall prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Nose, Little Eyes" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_KEEN_NOSE_LITTLE_EYES">
+		<description>
+			<p>You have advantage on Perception checks that rely on smell, but disadvantage on Perception checks that rely on sight.</p>
+		</description>
+		<sheet display="false">
+			<description>Advantage on Perception checks that rely on smell; disadvantage on Perception checks that rely on sight.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_BITE">
+		<description>
+			<p>Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your bite is a natural weapon. On a hit, it deals 1d4+{{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Hamsters Ruling" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_HAMSTERS_RULING">
+		<description>
+			<p>As an action, once per day, you can call upon an army of hamsters. This army will stay around for 1 hour and will follow your commands. Use the Swarm of Rats in the Monster Manual for reference.</p>
+			<p class="indent">This swarm doubles in size at levels 5, 10, 15, and 20, and is able to be controlled by one more hour each time the swarm grows.</p>
+		</description>
+		<sheet>
+			<description>1/day (Action): summon an army of hamsters (use Swarm of Rats). It grows at levels 5/10/15/20; duration increases by 1 hour each time it grows.</description>
+		</sheet>
+	</element>
+
+</elements>
