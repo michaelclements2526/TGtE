@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="race-living-wood.xml" url="" />
 		</update>
 	</info>
@@ -55,12 +55,14 @@
 			<set name="names" type="surname">of the Grove, of the Boundary, of the Old Ring, of the Green Oath, of Root and Stone, of the Quiet Vale</set>
 			<set name="names-format">{{name}} {{surname}}</set>
 
-			<set name="height" modifier="2d10">5'6"</set>
-			<set name="weight" modifier="2d6">220 lb.</set>
+			<!-- Printer-mode: no dice modifiers in setters -->
+			<set name="height">5'6"</set>
+			<set name="weight">220 lb.</set>
 		</setters>
 
 		<rules>
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_BODY" />
+			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_CREATURE_TYPE" />
 
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
@@ -75,6 +77,16 @@
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_ROOTED_CONSTITUTION" />
 			<grant type="Racial Trait" id="ID_ELYSIA_TRAIT_LIVING_WOOD_GRASPING_LIMBS" />
 		</rules>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Creature Type: Plant       -->
+	<!-- ========================= -->
+	<element name="Creature Type (Plant)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_CREATURE_TYPE">
+		<description><p>You are a Plant.</p></description>
+		<sheet>
+			<description>Creature Type: Plant.</description>
+		</sheet>
 	</element>
 
 	<!-- ========================= -->
@@ -149,9 +161,7 @@
 	<!-- ========================= -->
 	<element name="Skill Proficiency (Living Wood)" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_TRAIT_LIVING_WOOD_SKILL">
 		<description><p>You gain proficiency in one of the following skills of your choice: Survival, Animal Handling, Nature, or History.</p></description>
-		<sheet>
-			<description>Choose one skill proficiency: Survival, Animal Handling, Nature, or History.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="Living Wood Skill Proficiency" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY" />
 		</rules>
@@ -215,8 +225,8 @@
 			<p>When you take bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage by 1d8.</p>
 			<p>You can use this trait a number of times equal to your proficiency bonus per long rest.</p>
 		</description>
-		<sheet action="Reaction">
-			<description>Reduce B/P/S damage by 1d8. Uses equal to your proficiency bonus per long rest.</description>
+		<sheet action="Reaction" usage="PB/Long Rest">
+			<description>When you take B/P/S damage, reduce the damage by 1d8.</description>
 		</sheet>
 	</element>
 
