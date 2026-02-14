@@ -89,8 +89,9 @@
 			<set name="names" type="surname">Moonwake, Silvervein, Nightglass, Starweft, Palecrest, Luneshard, Dawnglint, Eclipseborne, Gloamharbor, Astralwyn, Skysigil, Voidpetal</set>
 			<set name="names-format">{{name}} {{surname}}</set>
 
-			<set name="height" modifier="2d10">4'10"</set>
-			<set name="weight" modifier="2d6">110 lb.</set>
+			<!-- Printer-mode: no dice modifiers in setters -->
+			<set name="height">4'10"</set>
+			<set name="weight">110 lb.</set>
 		</setters>
 
 		<rules>
@@ -132,7 +133,7 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
-			<select type="Proficiency" name="Arcane Training (Choice)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Arcane Training Skill" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" />
 		</rules>
 	</element>
 
