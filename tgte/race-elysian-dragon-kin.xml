@@ -64,8 +64,9 @@
 
 			<set name="names-format">{{name}} {{surname}}</set>
 
-			<set name="height" modifier="2d10">5'10"</set>
-			<set name="weight" modifier="2d6">160 lb.</set>
+			<!-- Printer-mode: no dice modifiers in setters -->
+			<set name="height">5'10"</set>
+			<set name="weight">160 lb.</set>
 		</setters>
 
 		<rules>
@@ -142,7 +143,7 @@
 		<description><p>You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p></description>
 		<sheet display="false" />
 		<rules>
-			<select type="Racial Trait" name="Cultural Adaptation" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL|ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE" />
+			<select type="Racial Trait" name="Cultural Adaptation Option" supports="ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_TOOL|ID_ELYSIA_TRAIT_DRAGON_KIN_CULTURAL_LANGUAGE" />
 		</rules>
 	</element>
 
@@ -217,6 +218,7 @@
 			<stat name="dragon-kin:pulse:dc" value="constitution:modifier" />
 			<stat name="dragon-kin:pulse:dc" value="proficiency" />
 			<stat name="dragon-kin:pulse:dice size" value="4" bonus="dice" />
+			<!-- Dice count stacks: 2 at 1st, +1 at 5/10/15 (total 5d4 at 15th) -->
 			<stat name="dragon-kin:pulse:dice count" value="2" level="1" />
 			<stat name="dragon-kin:pulse:dice count" value="1" level="5" />
 			<stat name="dragon-kin:pulse:dice count" value="1" level="10" />
