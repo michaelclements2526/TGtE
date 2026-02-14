@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml" />
 		</update>
 	</info>
@@ -17,53 +17,37 @@
 			<p class="flavor">"The small creature squeaked in anger at me, as I had clearly chosen my words poorly, describing the creature as cute. As it squeaked and pointed at me, the ground seemed to begin to come alive, as hundreds of what appeared to be smaller versions of the hamster swarmed me, and crawled onto me. I'm lucky to be alive." — <i>Journal entry of Ven Gliy</i></p>
 
 			<h4>PHYSICAL DESCRIPTION</h4>
-			<p>Emperor hamsters look like giant hamsters that walk upright on their hind legs.</p>
+			<p>Emperor hamsters resemble giant hamsters that stand upright on their hind legs, their posture and expressions carrying a strangely regal authority.</p>
 
 			<h4>HISTORY</h4>
-			<p>The first emperor hamster created was actually a complete mistake in an attempt to splice the genes of a human and a dwarf. Next thing that scientist knew, they were a giant hamster, who had an army of hamsters following them and fighting for them. From then on, the mutated genes of the emperor hamster spread, making them more and more common among populations.</p>
+			<p>The first emperor hamster was a complete mistake—an attempted experiment to splice human and dwarven traits. Instead, something else emerged: a towering hamster with the presence of a monarch and the inexplicable loyalty of lesser hamsters. The mutation spread. Now emperor hamsters appear in scattered populations, sometimes as anomalies, sometimes as omens.</p>
 
 			<h4>SOCIETY</h4>
-			<p>Emperor hamsters in society are typically either laughed at or worshipped as nobles, ruling kingdoms and running diplomacy between kingdoms and empires. Among hamster populations, they are more closely considered to that of gods or goddesses, as they are supreme in comparison.</p>
+			<p>Among humanoids, emperor hamsters are either mocked as absurdities or elevated as living symbols—treated like nobles, mascots, or “chosen” rulers. Among hamsterkind, they are something closer to divinity: a supreme creature whose will the swarm obeys.</p>
 
 			<h4>EMPEROR HAMSTER NAMES</h4>
-			<p>Emperor hamsters tend to take names of great power and influence, or that of great rulers from the past... even if they don't hold these positions of power.</p>
+			<p>Emperor hamsters tend to adopt names of great rulers and legendary figures—whether or not they hold any power beyond attitude.</p>
 			<p class="indent"><b><i>Male Names.</i></b> Agamemnon, Alexandros, Apollonios, Ariston, Demetrios, Diokles, Epiktetos, Herakleides, Nikias, Philon, Theophilos</p>
 			<p class="indent"><b><i>Female Names.</i></b> Aphrodisia, Athenais, Demetria, Eirene, Euphrosyne, Phile, Philia, Philoumente, Rhene, Sostrate</p>
-
-			<h4>RANDOM HEIGHT AND WEIGHT</h4>
-			<p>You can roll randomly to determine your emperor hamster's height and weight using the following table.</p>
-			<table>
-				<thead>
-					<tr><td>Base Height</td><td>Height Modifier</td><td>Base Weight</td><td>Weight Modifier</td></tr>
-				</thead>
-				<tr>
-					<td>3'0"</td>
-					<td>+2d6</td>
-					<td>30 lb.</td>
-					<td>× (1d4) lb.</td>
-				</tr>
-			</table>
-			<p class="indent"><b><i>Height.</i></b> Your height is your base height plus your height modifier.</p>
-			<p class="indent"><b><i>Weight.</i></b> Your weight is your base weight plus your height modifier multiplied by your weight modifier.</p>
 
 			<h4>EMPEROR HAMSTER TRAITS</h4>
 			<p>Your emperor hamster character has the following racial traits.</p>
 			<p>
 				<span class="feature">Ability Score Increase.</span> Your Charisma score increases by 2, and your Wisdom score increases by 1.<br/>
 				<span class="feature">Age.</span> Emperor hamsters mature as fast as humans do and live for about 200 years.<br/>
-				<span class="feature">Alignment.</span> Emperor hamsters are normally chaotic in their alignment, grasping for power where they can.<br/>
+				<span class="feature">Alignment.</span> Emperor hamsters are often chaotic, grasping for status and influence wherever they can.<br/>
 				<span class="feature">Size.</span> Emperor hamsters are 3 to 4 feet tall. Your size is Small.<br/>
-				<span class="feature">Speed.</span> Your base walking speed is 25 feet. You also have a burrowing speed of 15 feet.<br/>
+				<span class="feature">Speed.</span> Your walking speed is 25 feet. You also have a burrowing speed of 15 feet.<br/>
 				<span class="feature">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
-				<span class="feature">Furball.</span> You can use your bonus action to roll your body into a ball. While rolling, you can't take any actions, but your speed doubles and you can move through the space of Medium and smaller creatures without treating them as difficult terrain. When you move through a creature's space, the creature must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or take 2d4 + your Strength modifier bludgeoning damage and be knocked prone.<br/>
-				<span class="feature">Keen Nose, Little Eyes.</span> You have advantage on Perception checks that rely on smell, but disadvantage on Perception checks that rely on sight.<br/>
-				<span class="feature">Bite.</span> Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.<br/>
-				<span class="feature">Hamsters Ruling.</span> As an action, once per day, you can call upon an army of hamsters. This army will stay around for 1 hour and will follow your commands. Use the Swarm of Rats in the Monster Manual for reference. This swarm doubles in size at levels 5, 10, 15, and 20, and is able to be controlled by one more hour each time the swarm grows.<br/>
+				<span class="feature">Furball.</span> As a bonus action, you roll your body into a ball, entering a rolling state. While rolling, your speed doubles, and you can move through the space of Medium and smaller creatures without treating it as difficult terrain. When you move through a creature’s space, it must succeed on a Dexterity saving throw or take bludgeoning damage and fall prone (details in trait).<br/>
+				<span class="feature">Keen Nose, Little Eyes.</span> You have advantage on Wisdom (Perception) checks that rely on smell, but disadvantage on Wisdom (Perception) checks that rely on sight.<br/>
+				<span class="feature">Bite.</span> Your bite is a natural weapon, which you can use to make unarmed strikes. On a hit, it deals piercing damage (details in trait).<br/>
+				<span class="feature">Hamsters Ruling.</span> Once per day, you can call an army of hamsters to your side (details in trait).<br/>
 				<span class="feature">Languages.</span> You can speak, read, and write Common and Hamster-Squeak.<br/>
 			</p>
 
 			<h4>SUGGESTED CHARACTERISTICS</h4>
-			<p>When creating an emperor hamster character, it is recommended to use the Noble background.</p>
+			<p>When creating an emperor hamster character, the Noble background is a fitting starting point—whether or not you’re actually welcome in court.</p>
 		</description>
 
 		<sheet display="false"/>
@@ -73,8 +57,8 @@
 			<set name="names" type="female">Aphrodisia, Athenais, Demetria, Eirene, Euphrosyne, Phile, Philia, Philoumente, Rhene, Sostrate</set>
 			<set name="names-format">{{name}}</set>
 
-			<!-- Simple defaults (full randomization rules are in lore) -->
-			<set name="height">3’0"</set>
+			<!-- Printer-safe defaults (random tables stay in the lore, not in setters) -->
+			<set name="height">3'0"</set>
 			<set name="weight">30 lb.</set>
 		</setters>
 
@@ -103,10 +87,10 @@
 	<!-- ========================= -->
 	<element name="Hamster-Squeak" type="Language" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LANGUAGE_HAMSTER_SQUEAK">
 		<description>
-			<p>Hamster-Squeak is the language spoken between all hamsters. This language is comprised of squeaks and nose twitches. It can be understood by others, however, it may take many years to learn the language.</p>
+			<p>Hamster-Squeak is the language shared by hamsterkind, built from squeaks, chirps, and subtle nose twitches. Other creatures can learn it, but it often takes years of exposure to pick up its nuance.</p>
 		</description>
 		<sheet>
-			<description>Squeaks and nose twitches shared by hamsterkind.</description>
+			<description>Squeaks, chirps, and nose-twitch nuance shared by hamsterkind.</description>
 		</sheet>
 	</element>
 
@@ -116,20 +100,27 @@
 
 	<element name="Furball" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_FURBALL">
 		<description>
-			<p>You can use your bonus action to roll your body into a ball. While rolling, you can't take any actions, but your speed doubles and you can move through the space of Medium and smaller creatures without treating them as difficult terrain.</p>
-			<p class="indent">When you move through a creature's space, the creature must make a Dexterity saving throw (DC = 8 + your proficiency bonus + {{strength:modifier}}) or take 2d4 + {{strength:modifier}} bludgeoning damage and be knocked prone.</p>
+			<p>As a bonus action, you roll your body into a ball, entering a rolling state.</p>
+			<p>While rolling, your speed doubles, and you can move through the space of Medium and smaller creatures without treating it as difficult terrain.</p>
+			<p class="indent">When you move through a creature’s space, it must make a Dexterity saving throw (DC = {{emperor-hamster:furball:dc}}). On a failed save, it takes 2d4 + your Strength modifier bludgeoning damage and is knocked prone. On a successful save, it takes no damage and isn’t knocked prone.</p>
+			<p class="indent">The rolling state ends if you choose to end it (no action required) or if you are incapacitated.</p>
 		</description>
-		<sheet>
-			<description>Bonus Action: roll into a ball; speed doubles; move through Medium or smaller creatures. Creatures you pass through must save (DC 8 + PB + {{strength:modifier}}) or take 2d4+{{strength:modifier}} bludgeoning and fall prone.</description>
+		<sheet action="Bonus Action">
+			<description>Enter rolling state: speed doubles; move through Medium or smaller creatures. When you pass through a creature’s space, it saves (DC {{emperor-hamster:furball:dc}} Dex) or takes 2d4+STR bludgeoning and falls prone.</description>
 		</sheet>
+		<rules>
+			<stat name="emperor-hamster:furball:dc" value="8" />
+			<stat name="emperor-hamster:furball:dc" value="proficiency" />
+			<stat name="emperor-hamster:furball:dc" value="strength:modifier" />
+		</rules>
 	</element>
 
 	<element name="Keen Nose, Little Eyes" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_KEEN_NOSE_LITTLE_EYES">
 		<description>
-			<p>You have advantage on Perception checks that rely on smell, but disadvantage on Perception checks that rely on sight.</p>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell, but disadvantage on Wisdom (Perception) checks that rely on sight.</p>
 		</description>
-		<sheet display="false">
-			<description>Advantage on Perception checks that rely on smell; disadvantage on Perception checks that rely on sight.</description>
+		<sheet>
+			<description>Advantage on Perception (smell). Disadvantage on Perception (sight).</description>
 		</sheet>
 	</element>
 
@@ -138,17 +129,18 @@
 			<p>Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>Your bite is a natural weapon. On a hit, it deals 1d4+{{strength:modifier}} piercing damage.</description>
+			<description>Natural weapon: Bite. On a hit, deal 1d4+STR piercing damage.</description>
 		</sheet>
 	</element>
 
 	<element name="Hamsters Ruling" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACIAL_TRAIT_EMPEROR_HAMSTER_HAMSTERS_RULING">
 		<description>
-			<p>As an action, once per day, you can call upon an army of hamsters. This army will stay around for 1 hour and will follow your commands. Use the Swarm of Rats in the Monster Manual for reference.</p>
-			<p class="indent">This swarm doubles in size at levels 5, 10, 15, and 20, and is able to be controlled by one more hour each time the swarm grows.</p>
+			<p>As an action, once per day, you can call upon an army of hamsters. This army appears in spaces you choose within 30 feet of you, and it follows your commands for the duration.</p>
+			<p class="indent">Use the <i>Swarm of Rats</i> stat block in the Monster Manual as a reference for the army’s mechanics and baseline.</p>
+			<p class="indent">At levels 5, 10, 15, and 20, the swarm “doubles in size” (DM-facing narrative scaling), and the maximum duration increases by 1 hour each time it grows (2 hours at 5th, 3 hours at 10th, 4 hours at 15th, 5 hours at 20th).</p>
 		</description>
-		<sheet>
-			<description>1/day (Action): summon an army of hamsters (use Swarm of Rats). It grows at levels 5/10/15/20; duration increases by 1 hour each time it grows.</description>
+		<sheet action="Action" usage="1/Day">
+			<description>Summon an army of hamsters (use Swarm of Rats as reference). Duration 1 hour; +1 hour at levels 5/10/15/20. “Doubles in size” at 5/10/15/20 (DM scaling).</description>
 		</sheet>
 	</element>
 
