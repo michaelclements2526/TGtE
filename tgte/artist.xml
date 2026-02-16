@@ -4,8 +4,8 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Homebrew content for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.16">
-			<file name="class-artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/class-artist.xml" />
+		<update version="0.0.18">
+			<file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist.xml" />
 		</update>
 	</info>
 
@@ -14,12 +14,14 @@
 			<p>Artists reshape the world through color, motion, and intent—casting spells and composing Artworks that erupt from a summoned Canvas.</p>
 			<h3>CLASS FEATURES</h3>
 			<p>As an Artist, you gain the following class features.</p>
+
 			<h5>HIT POINTS</h5>
 			<ul class="unstyled">
 				<li><strong>Hit Dice:</strong> 1d6 per artist level</li>
 				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
 				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per artist level after 1st</li>
 			</ul>
+
 			<h5>PROFICIENCIES</h5>
 			<ul class="unstyled mb">
 				<li><strong>Armor:</strong> Light armor</li>
@@ -30,6 +32,7 @@
 				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
 				<li><strong>Skills:</strong> Choose two skills from Arcana, History, Insight, Medicine, Nature, Perception, and Religion</li>
 			</ul>
+
 			<h5>EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
 			<ul>
@@ -37,6 +40,7 @@
 				<li>An infused brush, which functions as your spellcasting focus</li>
 				<li><i>(a)</i> an explorer’s pack or <i>(b)</i> a scholar’s pack</li>
 			</ul>
+
 			<h5 class="caption">THE ARTIST</h5>
 			<table class="class-features">
 				<thead><tr><td class="col-5">Level</td><td class="left">Features</td></tr></thead>
@@ -44,7 +48,7 @@
 				<tr><td>2nd</td><td class="left">Palette, Palette Switches</td></tr>
 				<tr><td>3rd</td><td class="left">Movement</td></tr>
 				<tr><td>4th</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>5th</td><td class="left">Artwork Repertoire I</td></tr>
+				<tr><td>5th</td><td class="left">Artwork, Artwork Repertoire I</td></tr>
 				<tr><td>6th</td><td class="left">Movement Feature</td></tr>
 				<tr><td>7th</td><td class="left">Palette</td></tr>
 				<tr><td>8th</td><td class="left">Ability Score Improvement</td></tr>
@@ -70,6 +74,7 @@
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE_SWITCHES" />
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT" />
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_ASI" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTWORK" />
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_I" />
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_IMPROVED_STUDIES" />
 			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION" />
@@ -113,6 +118,7 @@
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE_SWITCHES" level="2"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT" level="3"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ASI" level="4"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTWORK" level="5"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_I" level="5"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_IMPROVED_STUDIES" level="9"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION" level="10"/>
@@ -123,44 +129,50 @@
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_EPIC_BOON" level="19"/>
 			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MAGNUM_OPUS" level="20"/>
 
-			<!-- Spell slots (matches your Artist table through 7th-level slots) -->
+			<!-- Spell slots (your custom progression) -->
 			<stat name="artist:spellcasting:slots:1" value="2" level="1" />
 			<stat name="artist:spellcasting:slots:1" value="1" level="3" />
+
 			<stat name="artist:spellcasting:slots:2" value="1" level="3" />
 			<stat name="artist:spellcasting:slots:2" value="1" level="4" />
 			<stat name="artist:spellcasting:slots:2" value="1" level="7" />
+
 			<stat name="artist:spellcasting:slots:3" value="1" level="5" />
 			<stat name="artist:spellcasting:slots:3" value="1" level="6" />
 			<stat name="artist:spellcasting:slots:3" value="1" level="9" />
+
 			<stat name="artist:spellcasting:slots:4" value="1" level="7" />
 			<stat name="artist:spellcasting:slots:4" value="1" level="10" />
+
 			<stat name="artist:spellcasting:slots:5" value="1" level="9" />
 			<stat name="artist:spellcasting:slots:5" value="1" level="12" />
+
 			<stat name="artist:spellcasting:slots:6" value="1" level="12" />
 			<stat name="artist:spellcasting:slots:6" value="1" level="14" />
+
 			<stat name="artist:spellcasting:slots:7" value="1" level="13" />
 
-			<!-- Spell selections (Sorcerer list, “known” style) -->
-			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="1" number="2" spellcasting="Artist" />
-			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="3" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="6" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="20" number="1" spellcasting="Artist" />
+			<!-- Spell selections (FIXED: use spellcasting macros Aurora actually supports) -->
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="20" number="1" spellcasting="Artist" />
 
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, 1" level="1" number="2" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="2" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="3" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="4" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="5" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="6" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="7" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="8" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="9" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="10" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="11" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="13" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="15" number="1" spellcasting="Artist" />
-			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="17" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), 1" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Artist" />
 		</rules>
 
 		<multiclass id="ID_ELYSIA_MULTICLASS_ARTIST">
@@ -183,14 +195,19 @@
 
 	<element name="Spellcasting" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_SPELLCASTING">
 		<description>
-			<p>SPELLCASTING As an Artist, you are able to materialize your sketches and works into the world through your magical tools and dedication to your craft. SPELLCASTING ABILITY Wisdom is your spellcasting ability for your Artist spells, since your magic flows through intent and perception. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an Artist spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Wisdom modifier Spell attack modifier = your proficiency bonus + your Wisdom modifier</p>
+			<p><strong>SPELLCASTING</strong> As an Artist, you are able to materialize your sketches and works into the world through your magical tools and dedication to your craft.</p>
+			<p class="indent"><strong>Spellcasting Ability.</strong> Wisdom is your spellcasting ability for your Artist spells, since your magic flows through intent and perception. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an Artist spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
 		</description>
 		<sheet display="false" />
 	</element>
 
 	<element name="Studies" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_STUDIES">
 		<description>
-			<p>STUDIES Beginning at 1st level, you learn Studies—repeatable techniques that change how you move, defend, and apply your Palette. You learn a limited number of Studies, as shown in the Artist table. You can use only one Study per turn, and a Study that requires a saving throw uses your Artist spell save DC.</p>
+			<p><strong>STUDIES</strong> Beginning at 1st level, you learn Studies—repeatable techniques that change how you move, defend, and apply your Palette. You learn a limited number of Studies, as shown in the Artist table. You can use only one Study per turn, and a Study that requires a saving throw uses your Artist spell save DC.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -221,7 +238,7 @@
 
 	<element name="Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE">
 		<description>
-			<p>PALETTE Beginning at 1st level, you wield a Palette—a chosen damage type tied to your current expression. Your Palette determines the damage type of certain Studies and Artworks. You begin with the Black Palette. You gain additional Palettes at 2nd, 7th, and 13th level. When you gain a Palette, choose one you don’t already know.</p>
+			<p><strong>PALETTE</strong> Beginning at 1st level, you wield a Palette—a chosen damage type tied to your current expression. Your Palette determines the damage type of certain Studies and Artworks. You begin with the Black Palette. You gain additional Palettes at 2nd, 7th, and 13th level. When you gain a Palette, choose one you don’t already know.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -248,7 +265,7 @@
 
 	<element name="Movement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT">
 		<description>
-			<p>MOVEMENT At 3rd level, you commit to a Movement—an artistic philosophy that shapes how your work affects the battlefield. Choose Romanticism, Fauvism, or Impressionism. Your Movement grants features at 3rd, 6th, and 14th level, and adds additional Artworks to your repertoire options.</p>
+			<p><strong>MOVEMENT</strong> At 3rd level, you commit to a Movement—an artistic philosophy that shapes how your work affects the battlefield. Choose Romanticism, Fauvism, or Impressionism. Your Movement grants features at 3rd, 6th, and 14th level, and adds additional Artworks to your repertoire options.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -271,7 +288,7 @@
 
 	<element name="Artwork" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTWORK">
 		<description>
-			<p>ARTWORK Beginning at 5th level, you can create Artworks—structured magical compositions built from color Sequences. Your Artworks progress while a Canvas is active, and complete when their Sequence is fulfilled. Some Artworks create lasting zones or effects. Additional rules and Artwork options are provided in the Artworks file.</p>
+			<p><strong>ARTWORK</strong> Beginning at 5th level, you can create Artworks—structured magical compositions built from color Sequences. Your Artworks progress while a Canvas is active, and complete when their Sequence is fulfilled. Some Artworks create lasting zones or effects. Additional rules and Artwork options are provided in the Artworks file.</p>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -318,7 +335,7 @@
 
 	<element name="Refined Expression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION">
 		<description>
-			<p>REFINED EXPRESSION Beginning at 10th level, your control over color and form sharpens. When you complete an Artwork, you may immediately switch your Palette without expending a palette switch. You can use this benefit only once per turn.</p>
+			<p><strong>REFINED EXPRESSION</strong> Beginning at 10th level, your control over color and form sharpens. When you complete an Artwork, you may immediately switch your Palette without expending a palette switch. You can use this benefit only once per turn.</p>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -349,7 +366,7 @@
 
 	<element name="Magnum Opus" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MAGNUM_OPUS">
 		<description>
-			<p>20th-level Artist feature Once per long rest, when you complete an Artwork, you may declare it your Magnum Opus. When you do so, the Canvas does not fade upon completion. Instead, the Artwork becomes stable and remains active for 1 minute, as if its duration were extended. If the Artwork normally lasts longer than 1 minute, it instead remains active for its normal duration plus 1 minute. If the Canvas would be dismissed by any effect, it persists until the Magnum Opus ends. Once the Magnum Opus ends, the Canvas fades as normal.</p>
+			<p><strong>20th-level Artist feature.</strong> Once per long rest, when you complete an Artwork, you may declare it your Magnum Opus. When you do so, the Canvas does not fade upon completion. Instead, the Artwork becomes stable and remains active for 1 minute, as if its duration were extended. If the Artwork normally lasts longer than 1 minute, it instead remains active for its normal duration plus 1 minute. If the Canvas would be dismissed by any effect, it persists until the Magnum Opus ends. Once the Magnum Opus ends, the Canvas fades as normal.</p>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -422,7 +439,7 @@
 	<!-- ========================= -->
 	<!-- Studies                   -->
 	<!-- ========================= -->
-	<!-- Basic Studies -->
+
 	<element name="Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_STROKE">
 		<supports>Study, Artist</supports>
 		<description>
@@ -580,95 +597,95 @@
 
 	<!-- Archetype Features -->
 	<element name="Scarlet Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_SCARLET_PALETTE">
-		<description><p>Scarlet Palette 3rd-level Romanticism feature You gain the Red Palette. If you already have the Red Palette, you instead gain one Palette of your choice.</p></description>
+		<description><p><strong>Scarlet Palette</strong> 3rd-level Romanticism feature You gain the Red Palette. If you already have the Red Palette, you instead gain one Palette of your choice.</p></description>
 		<sheet><description>Scarlet Palette.</description></sheet>
 		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_RED" /></rules>
 	</element>
 
 	<element name="Study: Rapture" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_RAPTURE">
-		<description><p>Study: Rapture 3rd-level Romanticism feature You stoke an enemy’s heart until it burns. As an action, choose one creature you can see within 60 feet. The target must make a Wisdom saving throw. ● On a failed save, the target takes 3d8 damage of your current Palette’s type and is frightened of you until the end of its next turn. ● On a successful save, the target takes half as much damage and isn’t frightened. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<description><p><strong>Study: Rapture</strong> 3rd-level Romanticism feature You stoke an enemy’s heart until it burns. As an action, choose one creature you can see within 60 feet. The target must make a Wisdom saving throw. On a failed save, the target takes 3d8 damage of your current Palette’s type and is frightened of you until the end of its next turn. On a successful save, the target takes half as much damage and isn’t frightened. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
 		<sheet><description>Study: Rapture.</description></sheet>
 	</element>
 
 	<element name="Emotional Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_EMOTIONAL_CANVAS">
-		<description><p>Emotional Canvas 3rd-level Romanticism feature While you have an active Canvas, a creature that enters the Canvas for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type. A creature can take this damage only once per turn.</p></description>
+		<description><p><strong>Emotional Canvas</strong> 3rd-level Romanticism feature While you have an active Canvas, a creature that enters the Canvas for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type. A creature can take this damage only once per turn.</p></description>
 		<sheet><description>Emotional Canvas.</description></sheet>
 	</element>
 
 	<element name="Study: Heartflame" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_HEARTFLAME">
-		<description><p>Study: Heartflame 6th-level Romanticism feature You ignite your own spirit and hurl it outward. As an action, choose a creature you can see within 60 feet. The creature must make a Constitution saving throw. ● On a failed save, the creature takes 5d8 damage of your current Palette’s type. ● On a successful save, the creature takes half as much damage. After using this Study, you take 2d8 fire damage, which cannot be reduced or prevented in any way. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<description><p><strong>Study: Heartflame</strong> 6th-level Romanticism feature You ignite your own spirit and hurl it outward. As an action, choose a creature you can see within 60 feet. The creature must make a Constitution saving throw. On a failed save, the creature takes 5d8 damage of your current Palette’s type. On a successful save, the creature takes half as much damage. After using this Study, you take 2d8 fire damage, which cannot be reduced or prevented in any way. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
 		<sheet><description>Study: Heartflame.</description></sheet>
 	</element>
 
 	<element name="Creative Process: Passion Unbound" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_PASSION_UNBOUND">
-		<description><p>Creative Process: Passion Unbound 6th-level Romanticism feature When emotion fuels your art, it burns brighter. While you have an active Canvas, when you use a Study that deals damage, you deal an additional 1d6 damage of your current Palette’s type to each creature that takes damage from the Study.</p></description>
+		<description><p><strong>Creative Process: Passion Unbound</strong> 6th-level Romanticism feature While you have an active Canvas, when you use a Study that deals damage, you deal an additional 1d6 damage of your current Palette’s type to each creature that takes damage from the Study.</p></description>
 		<sheet><description>Creative Process: Passion Unbound.</description></sheet>
 	</element>
 
 	<element name="Rapturous Momentum" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_RAPTUROUS_MOMENTUM">
-		<description><p>Rapturous Momentum 14th-level Romanticism feature Completion becomes release. When you complete an Artwork, you may immediately use one of your Studies as a bonus action. If that Study deals damage, the first creature that takes damage from it takes an additional 1d12 damage of your current Palette’s type. The Study used in this way does not progress an Artwork. You can use this feature only once per turn.</p></description>
+		<description><p><strong>Rapturous Momentum</strong> 14th-level Romanticism feature When you complete an Artwork, you may immediately use one of your Studies as a bonus action. If that Study deals damage, the first creature that takes damage from it takes an additional 1d12 damage of your current Palette’s type. The Study used in this way does not progress an Artwork. You can use this feature only once per turn.</p></description>
 		<sheet><description>Rapturous Momentum.</description></sheet>
 	</element>
 
 	<element name="Pink Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_PINK_PALETTE">
-		<description><p>Pink Palette 3rd-level Fauvism feature You gain the Pink Palette. If you already have the Pink Palette, you instead gain one Palette of your choice.</p></description>
+		<description><p><strong>Pink Palette</strong> 3rd-level Fauvism feature You gain the Pink Palette. If you already have the Pink Palette, you instead gain one Palette of your choice.</p></description>
 		<sheet><description>Pink Palette.</description></sheet>
 		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_PINK" /></rules>
 	</element>
 
 	<element name="Study: Distortion" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_DISTORTION">
-		<description><p>Study: Distortion 3rd-level Fauvism feature You warp the edges of space with a violent shift in color. As an action, choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw. ● On a failed save, the creature takes 3d8 damage of your current Palette’s type, and until the end of its next turn it has disadvantage on attack rolls. ● On a successful save, the creature takes half as much damage and suffers no disadvantage. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<description><p><strong>Study: Distortion</strong> 3rd-level Fauvism feature You warp the edges of space with a violent shift in color. As an action, choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw. On a failed save, the creature takes 3d8 damage of your current Palette’s type, and until the end of its next turn it has disadvantage on attack rolls. On a successful save, the creature takes half as much damage and suffers no disadvantage. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
 		<sheet><description>Study: Distortion.</description></sheet>
 	</element>
 
 	<element name="Distorted Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_DISTORTED_CANVAS">
-		<description><p>Distorted Canvas 3rd-level Fauvism feature While you have an active Canvas, the Canvas is difficult terrain for your enemies. In addition, the first time each turn an enemy enters the Canvas, it takes 1d6 damage of your current Palette’s type.</p></description>
+		<description><p><strong>Distorted Canvas</strong> 3rd-level Fauvism feature While you have an active Canvas, the Canvas is difficult terrain for your enemies. In addition, the first time each turn an enemy enters the Canvas, it takes 1d6 damage of your current Palette’s type.</p></description>
 		<sheet><description>Distorted Canvas.</description></sheet>
 	</element>
 
 	<element name="Study: Overwhelm" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_OVERWHELM">
-		<description><p>Study: Overwhelm 6th-level Fauvism feature You strike the senses with raw color. As an action, choose a point you can see within 60 feet. Each creature of your choice within 15 feet must make a Constitution saving throw. ● On a failed save, a creature takes 5d8 damage of your current Palette’s type and is blinded until the end of its next turn. ● On a successful save, the creature takes half as much damage and isn’t blinded. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<description><p><strong>Study: Overwhelm</strong> 6th-level Fauvism feature You strike the senses with raw color. As an action, choose a point you can see within 60 feet. Each creature of your choice within 15 feet must make a Constitution saving throw. On a failed save, a creature takes 5d8 damage of your current Palette’s type and is blinded until the end of its next turn. On a successful save, the creature takes half as much damage and isn’t blinded. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
 		<sheet><description>Study: Overwhelm.</description></sheet>
 	</element>
 
 	<element name="Creative Process: Color Shock" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_COLOR_SHOCK">
-		<description><p>Creative Process: Color Shock 6th-level Fauvism feature While you have an active Canvas, once on each of your turns when you deal damage of your Palette’s type, you deal an additional 1d6 damage of the same type.</p></description>
+		<description><p><strong>Creative Process: Color Shock</strong> 6th-level Fauvism feature While you have an active Canvas, once on each of your turns when you deal damage of your Palette’s type, you deal an additional 1d6 damage of the same type.</p></description>
 		<sheet><description>Creative Process: Color Shock.</description></sheet>
 	</element>
 
 	<element name="Overwhelming Contrast" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_OVERWHELMING_CONTRAST">
-		<description><p>Overwhelming Contrast 14th-level Fauvism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is Stunned until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
+		<description><p><strong>Overwhelming Contrast</strong> 14th-level Fauvism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is stunned until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
 		<sheet><description>Overwhelming Contrast.</description></sheet>
 	</element>
 
 	<element name="White Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_WHITE_PALETTE">
-		<description><p>White Palette 3rd-level Impressionism feature You gain the White Palette. If you already have the White Palette, you instead gain one Palette of your choice.</p></description>
+		<description><p><strong>White Palette</strong> 3rd-level Impressionism feature You gain the White Palette. If you already have the White Palette, you instead gain one Palette of your choice.</p></description>
 		<sheet><description>White Palette.</description></sheet>
 		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_WHITE" /></rules>
 	</element>
 
 	<element name="Study: Measured Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_MEASURED_LIGHT">
-		<description><p>Study: Measured Light 3rd-level Impressionism feature You catch light in a controlled sweep. As an action, choose one creature you can see within 60 feet. The creature must make a Constitution saving throw. ● On a failed save, it takes 3d8 damage of your current Palette’s type, and its speed is reduced by 10 feet until the end of its next turn. ● On a successful save, it takes half as much damage and its speed is not reduced. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<description><p><strong>Study: Measured Light</strong> 3rd-level Impressionism feature You catch light in a controlled sweep. As an action, choose one creature you can see within 60 feet. The creature must make a Constitution saving throw. On a failed save, it takes 3d8 damage of your current Palette’s type, and its speed is reduced by 10 feet until the end of its next turn. On a successful save, it takes half as much damage and its speed is not reduced. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
 		<sheet><description>Study: Measured Light.</description></sheet>
 	</element>
 
 	<element name="Gentle Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_GENTLE_CANVAS">
-		<description><p>Gentle Canvas 3rd-level Impressionism feature While you have an active Canvas, you and your allies have half cover while inside it.</p></description>
+		<description><p><strong>Gentle Canvas</strong> 3rd-level Impressionism feature While you have an active Canvas, you and your allies have half cover while inside it.</p></description>
 		<sheet><description>Gentle Canvas.</description></sheet>
 	</element>
 
 	<element name="Study: Shifting Glimmer" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_SHIFTING_GLIMMER">
-		<description><p>Study: Shifting Glimmer 6th-level Impressionism feature As an action, choose up to three creatures you can see within 60 feet. Each target must make a Wisdom saving throw. ● On a failed save, a target takes 5d8 damage of your current Palette’s type and has disadvantage on the next attack roll it makes before the end of its next turn. ● On a successful save, it takes half as much damage and suffers no disadvantage. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<description><p><strong>Study: Shifting Glimmer</strong> 6th-level Impressionism feature As an action, choose up to three creatures you can see within 60 feet. Each target must make a Wisdom saving throw. On a failed save, a target takes 5d8 damage of your current Palette’s type and has disadvantage on the next attack roll it makes before the end of its next turn. On a successful save, it takes half as much damage and suffers no disadvantage. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
 		<sheet><description>Study: Shifting Glimmer.</description></sheet>
 	</element>
 
 	<element name="Creative Process: Gathered Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_GATHERED_LIGHT">
-		<description><p>Creative Process: Gathered Light 6th-level Impressionism feature While you have an active Canvas, once per turn when you deal damage of your Palette’s type, you can restore hit points equal to 1d6 to one creature of your choice within the Canvas (including yourself).</p></description>
+		<description><p><strong>Creative Process: Gathered Light</strong> 6th-level Impressionism feature While you have an active Canvas, once per turn when you deal damage of your Palette’s type, you can restore hit points equal to 1d6 to one creature of your choice within the Canvas (including yourself).</p></description>
 		<sheet><description>Creative Process: Gathered Light.</description></sheet>
 	</element>
 
 	<element name="Refined Perception" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_REFINED_PERCEPTION">
-		<description><p>Refined Perception 14th-level Impressionism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is restrained until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
+		<description><p><strong>Refined Perception</strong> 14th-level Impressionism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is restrained until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
 		<sheet><description>Refined Perception.</description></sheet>
 	</element>
 
