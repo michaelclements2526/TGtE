@@ -5,30 +5,32 @@
     <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.17">
-      <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte.index"/>
+    <update version="0.0.18">
+      <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte.index"/>
 
-      <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
+      <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/source-travelers-guide-to-elysia.xml"/>
 
       <!-- Races -->
-      <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
-      <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
-      <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-living-wood.xml"/>
+      <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-dragon-kin.xml"/>
+      <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-lunarian.xml"/>
+      <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-living-wood.xml"/>
       <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
+
       <!-- Classes -->
-      <file name="class-artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/class-artist.xml"/>
-      <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/artist-artworks.xml"/>
+      <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist.xml"/>
+      <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist-artworks.xml"/>
     </update>
   </info>
 
-
   <files>
-    <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/source-travelers-guide-to-elysia.xml"/>
-    <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-dragon-kin.xml"/>
-    <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-elysian-lunarian.xml"/>
-    <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/race-living-wood.xml"/>
+    <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/source-travelers-guide-to-elysia.xml"/>
+
+    <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-dragon-kin.xml"/>
+    <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-lunarian.xml"/>
+    <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-living-wood.xml"/>
     <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
-    <file name="class-artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/class-artist.xml"/>
-    <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/artist-artworks.xml"/>
+
+    <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist.xml"/>
+    <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist-artworks.xml"/>
   </files>
 </index>
