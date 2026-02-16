@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Homebrew content for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.16">
+			<file name="class-artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/class-artist.xml" />
+		</update>
+	</info>
+
+	<element name="Artist" type="Class" source="Traveler's Guide to Elysia" id="ID_ELYSIA_CLASS_ARTIST">
+		<description>
+			<p>Artists reshape the world through color, motion, and intent—casting spells and composing Artworks that erupt from a summoned Canvas.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As an Artist, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per artist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per artist level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> Calligrapher’s supplies or painter’s supplies</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two skills from Arcana, History, Insight, Medicine, Nature, Perception, and Religion</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a dagger or <i>(b)</i> a quarterstaff</li>
+				<li>An infused brush, which functions as your spellcasting focus</li>
+				<li><i>(a)</i> an explorer’s pack or <i>(b)</i> a scholar’s pack</li>
+			</ul>
+			<h5 class="caption">THE ARTIST</h5>
+			<table class="class-features">
+				<thead><tr><td class="col-5">Level</td><td class="left">Features</td></tr></thead>
+				<tr><td>1st</td><td class="left">Spellcasting, Studies, Artistic Tools, Canvas, Palette (Black)</td></tr>
+				<tr><td>2nd</td><td class="left">Palette, Palette Switches</td></tr>
+				<tr><td>3rd</td><td class="left">Movement</td></tr>
+				<tr><td>4th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td class="left">Artwork Repertoire I</td></tr>
+				<tr><td>6th</td><td class="left">Movement Feature</td></tr>
+				<tr><td>7th</td><td class="left">Palette</td></tr>
+				<tr><td>8th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td class="left">Improved Studies</td></tr>
+				<tr><td>10th</td><td class="left">Refined Expression</td></tr>
+				<tr><td>11th</td><td class="left">Artwork Repertoire II</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td class="left">Palette</td></tr>
+				<tr><td>14th</td><td class="left">Movement Feature</td></tr>
+				<tr><td>15th</td><td class="left">Artwork Repertoire III</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td class="left">Mastery of Color</td></tr>
+				<tr><td>18th</td><td class="left">Signature Work</td></tr>
+				<tr><td>19th</td><td class="left">Epic Boon</td></tr>
+				<tr><td>20th</td><td class="left">Magnum Opus</td></tr>
+			</table>
+
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_SPELLCASTING" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_STUDIES" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTISTIC_TOOLS" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_CANVAS" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE_SWITCHES" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_ASI" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_I" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_IMPROVED_STUDIES" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_II" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_III" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_MASTERY_OF_COLOR" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_SIGNATURE_WORK" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_EPIC_BOON" />
+			<div element="ID_ELYSIA_ARTIST_CLASS_FEATURE_MAGNUM_OPUS" />
+		</description>
+
+		<sheet display="false">
+			<description>A spellcasting creator who shapes reality through palettes, Studies, and Artworks.</description>
+		</sheet>
+
+		<setters>
+			<set name="short">A spellcasting creator who shapes reality through palettes, Studies, and Artworks.</set>
+			<set name="hd">d6</set>
+		</setters>
+
+		<!-- Spell list choice: Sorcerer -->
+		<spellcasting name="Artist" ability="Wisdom" prepare="false" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+
+		<rules>
+			<!-- Proficiencies -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+			<select type="Proficiency" name="Tool Proficiency (Artist)" supports="Artisan tools" number="1" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Artist)" supports="Skill" number="2" requirements="!ID_ELYSIA_MULTICLASS_ARTIST"/>
+
+			<!-- Class features -->
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_STUDIES" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTISTIC_TOOLS" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_CANVAS" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE_SWITCHES" level="2"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT" level="3"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ASI" level="4"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_I" level="5"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_IMPROVED_STUDIES" level="9"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION" level="10"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_II" level="11"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_III" level="15"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MASTERY_OF_COLOR" level="17"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_SIGNATURE_WORK" level="18"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_EPIC_BOON" level="19"/>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MAGNUM_OPUS" level="20"/>
+
+			<!-- Spell slots (matches your Artist table through 7th-level slots) -->
+			<stat name="artist:spellcasting:slots:1" value="2" level="1" />
+			<stat name="artist:spellcasting:slots:1" value="1" level="3" />
+			<stat name="artist:spellcasting:slots:2" value="1" level="3" />
+			<stat name="artist:spellcasting:slots:2" value="1" level="4" />
+			<stat name="artist:spellcasting:slots:2" value="1" level="7" />
+			<stat name="artist:spellcasting:slots:3" value="1" level="5" />
+			<stat name="artist:spellcasting:slots:3" value="1" level="6" />
+			<stat name="artist:spellcasting:slots:3" value="1" level="9" />
+			<stat name="artist:spellcasting:slots:4" value="1" level="7" />
+			<stat name="artist:spellcasting:slots:4" value="1" level="10" />
+			<stat name="artist:spellcasting:slots:5" value="1" level="9" />
+			<stat name="artist:spellcasting:slots:5" value="1" level="12" />
+			<stat name="artist:spellcasting:slots:6" value="1" level="12" />
+			<stat name="artist:spellcasting:slots:6" value="1" level="14" />
+			<stat name="artist:spellcasting:slots:7" value="1" level="13" />
+
+			<!-- Spell selections (Sorcerer list, “known” style) -->
+			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="Sorcerer, 0" level="20" number="1" spellcasting="Artist" />
+
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, 1" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="2" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="4" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="5" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="7" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="8" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="9" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="11" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="13" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="15" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="Sorcerer, $(artist:spellcasting:slots)" level="17" number="1" spellcasting="Artist" />
+		</rules>
+
+		<multiclass id="ID_ELYSIA_MULTICLASS_ARTIST">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, simple weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Class Features            -->
+	<!-- ========================= -->
+
+	<element name="Spellcasting" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_SPELLCASTING">
+		<description>
+			<p>SPELLCASTING As an Artist, you are able to materialize your sketches and works into the world through your magical tools and dedication to your craft. SPELLCASTING ABILITY Wisdom is your spellcasting ability for your Artist spells, since your magic flows through intent and perception. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an Artist spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Wisdom modifier Spell attack modifier = your proficiency bonus + your Wisdom modifier</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Studies" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_STUDIES">
+		<description>
+			<p>STUDIES Beginning at 1st level, you learn Studies—repeatable techniques that change how you move, defend, and apply your Palette. You learn a limited number of Studies, as shown in the Artist table. You can use only one Study per turn, and a Study that requires a saving throw uses your Artist spell save DC.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Studies" supports="Study, Artist" number="2" level="1" />
+			<select type="Class Feature" name="Studies (Additional)" supports="Study, Artist" number="1" level="6" />
+		</rules>
+	</element>
+
+	<element name="Artistic Tools" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTISTIC_TOOLS">
+		<description>
+			<p>You are proficient with calligrapher’s supplies or painter’s supplies (your choice). You can use an infused brush as your spellcasting focus.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Canvas" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_CANVAS">
+		<description>
+			<p>You can create a magical Canvas, a zone that anchors your Artworks. The number of times you can create a Canvas is limited, and you regain expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{artist:canvas:usage}}/Long Rest">
+			<description>Create a Canvas to anchor your Artworks.</description>
+		</sheet>
+		<rules>
+			<stat name="artist:canvas:usage" value="proficiency" />
+			<stat name="artist:canvas:usage" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE">
+		<description>
+			<p>PALETTE Beginning at 1st level, you wield a Palette—a chosen damage type tied to your current expression. Your Palette determines the damage type of certain Studies and Artworks. You begin with the Black Palette. You gain additional Palettes at 2nd, 7th, and 13th level. When you gain a Palette, choose one you don’t already know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_BLACK" level="1" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="2" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="7" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="13" />
+		</rules>
+	</element>
+
+	<element name="Palette Switches" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_PALETTE_SWITCHES">
+		<description>
+			<p>Beginning at 2nd level, you can switch your active Palette a limited number of times. You regain all expended palette switches when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{artist:palette:switches}}/Long Rest">
+			<description>Switch your active Palette.</description>
+		</sheet>
+		<rules>
+			<stat name="artist:palette:switches" value="4" level="2" />
+			<stat name="artist:palette:switches" value="6" level="7" />
+			<stat name="artist:palette:switches" value="8" level="13" />
+		</rules>
+	</element>
+
+	<element name="Movement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MOVEMENT">
+		<description>
+			<p>MOVEMENT At 3rd level, you commit to a Movement—an artistic philosophy that shapes how your work affects the battlefield. Choose Romanticism, Fauvism, or Impressionism. Your Movement grants features at 3rd, 6th, and 14th level, and adds additional Artworks to your repertoire options.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Movement" supports="Artist Movement" level="3" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ASI">
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. You can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Artist 4)" supports="Improvement Option,Artist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Artist 8)" supports="Improvement Option,Artist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Artist 12)" supports="Improvement Option,Artist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Artist 16)" supports="Improvement Option,Artist,16" level="16" />
+		</rules>
+	</element>
+
+	<element name="Artwork" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_ARTWORK">
+		<description>
+			<p>ARTWORK Beginning at 5th level, you can create Artworks—structured magical compositions built from color Sequences. Your Artworks progress while a Canvas is active, and complete when their Sequence is fulfilled. Some Artworks create lasting zones or effects. Additional rules and Artwork options are provided in the Artworks file.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Artwork Repertoire I" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_I">
+		<description>
+			<p>At 5th level, you learn three Artworks from Repertoire I.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire I)" supports="Artist Artwork, Repertoire I" number="3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Artwork Repertoire II" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_II">
+		<description>
+			<p>At 11th level, you learn two Artworks from Repertoire II.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire II)" supports="Artist Artwork, Repertoire II" number="2" level="11" />
+		</rules>
+	</element>
+
+	<element name="Artwork Repertoire III" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REPERTOIRE_III">
+		<description>
+			<p>At 15th level, you learn two Artworks from Repertoire III.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire III)" supports="Artist Artwork, Repertoire III" number="2" level="15" />
+		</rules>
+	</element>
+
+	<element name="Improved Studies" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_IMPROVED_STUDIES">
+		<description>
+			<p>At 9th level, you gain access to improved Studies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improved Study" supports="Improved Study, Artist" number="1" level="9" />
+		</rules>
+	</element>
+
+	<element name="Refined Expression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_REFINED_EXPRESSION">
+		<description>
+			<p>REFINED EXPRESSION Beginning at 10th level, your control over color and form sharpens. When you complete an Artwork, you may immediately switch your Palette without expending a palette switch. You can use this benefit only once per turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Mastery of Color" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MASTERY_OF_COLOR">
+		<description>
+			<p>At 17th level, you gain two additional palettes of your choice, and you gain limited free palette switches each long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Mastery of Color (Extra Palettes)" supports="Artist Palette" number="2" level="17" />
+		</rules>
+	</element>
+
+	<element name="Signature Work" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_SIGNATURE_WORK">
+		<description>
+			<p>At 18th level, choose one Artwork you know. Once per long rest, you can complete it immediately when you create its Canvas.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Epic Boon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_EPIC_BOON">
+		<description>
+			<p>At 19th level, you gain an Epic Boon, at the DM’s discretion.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Magnum Opus" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_CLASS_FEATURE_MAGNUM_OPUS">
+		<description>
+			<p>20th-level Artist feature Once per long rest, when you complete an Artwork, you may declare it your Magnum Opus. When you do so, the Canvas does not fade upon completion. Instead, the Artwork becomes stable and remains active for 1 minute, as if its duration were extended. If the Artwork normally lasts longer than 1 minute, it instead remains active for its normal duration plus 1 minute. If the Canvas would be dismissed by any effect, it persists until the Magnum Opus ends. Once the Magnum Opus ends, the Canvas fades as normal.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- ========================= -->
+	<!-- Palettes                  -->
+	<!-- ========================= -->
+
+	<element name="Black Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_BLACK">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is bludgeoning.</p></description>
+		<sheet display="false"><description>Black — Bludgeoning.</description></sheet>
+	</element>
+	<element name="White Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_WHITE">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is radiant.</p></description>
+		<sheet display="false"><description>White — Radiant.</description></sheet>
+	</element>
+	<element name="Red Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_RED">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is fire.</p></description>
+		<sheet display="false"><description>Red — Fire.</description></sheet>
+	</element>
+	<element name="Blue Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_BLUE">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is cold.</p></description>
+		<sheet display="false"><description>Blue — Cold.</description></sheet>
+	</element>
+	<element name="Yellow Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_YELLOW">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is lightning.</p></description>
+		<sheet display="false"><description>Yellow — Lightning.</description></sheet>
+	</element>
+	<element name="Green Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_GREEN">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is poison.</p></description>
+		<sheet display="false"><description>Green — Poison.</description></sheet>
+	</element>
+	<element name="Purple Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_PURPLE">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is necrotic.</p></description>
+		<sheet display="false"><description>Purple — Necrotic.</description></sheet>
+	</element>
+	<element name="Brown Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_BROWN">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is piercing.</p></description>
+		<sheet display="false"><description>Brown — Piercing.</description></sheet>
+	</element>
+	<element name="Gray Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_GRAY">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is slashing.</p></description>
+		<sheet display="false"><description>Gray — Slashing.</description></sheet>
+	</element>
+	<element name="Orange Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_ORANGE">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is acid.</p></description>
+		<sheet display="false"><description>Orange — Acid.</description></sheet>
+	</element>
+	<element name="Pink Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_PINK">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is psychic.</p></description>
+		<sheet display="false"><description>Pink — Psychic.</description></sheet>
+	</element>
+	<element name="Teal Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_PALETTE_TEAL">
+		<supports>Artist Palette</supports>
+		<description><p>Your palette’s damage type is thunder.</p></description>
+		<sheet display="false"><description>Teal — Thunder.</description></sheet>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Studies                   -->
+	<!-- ========================= -->
+	<!-- Basic Studies -->
+	<element name="Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_STROKE">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You surge forward, dragging a line of force through your movement. Before moving, choose a straight line up to a distance equal to your remaining movement. Each creature whose space the line passes through must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d4 + your Wisdom modifier damage of your Palette’s type, and you may move through its space this turn.</li>
+				<li>On a successful save, the creature takes half as much damage, and you can’t move through its space this turn.</li>
+			</ul>
+		</description>
+		<sheet action="Action"><description>You surge forward, dragging a line of force through your movement.</description></sheet>
+	</element>
+
+	<element name="Shade" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_SHADE">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You wrap yourself (or another) in a shifting veil of pigment. As a bonus action, choose yourself or a creature you can see within 30 feet. The target gains temporary hit points equal to 1d6 + your Wisdom modifier. While the target has these temporary hit points, it has advantage on Dexterity (Stealth) checks.</p>
+		</description>
+		<sheet action="Bonus Action"><description>Grant temporary hit points and stealth advantage while they last.</description></sheet>
+	</element>
+
+	<element name="Fan" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_FAN">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You disperse color in a sweeping burst. Each creature of your choice within 10 feet must make a Strength saving throw.</p>
+			<ul>
+				<li>On a failed save, the creature is pushed 10 feet away from you.</li>
+				<li>On a successful save, it isn’t pushed.</li>
+			</ul>
+		</description>
+		<sheet action="Action"><description>Push nearby creatures away with a sweeping burst.</description></sheet>
+	</element>
+
+	<element name="Smear" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_SMEAR">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You distort the edge of perception. When a creature you can see hits you with an attack, you can use your reaction to impose disadvantage on that attack roll, potentially turning the hit into a miss.</p>
+		</description>
+		<sheet action="Reaction"><description>Impose disadvantage on an attack roll that hits you.</description></sheet>
+	</element>
+
+	<element name="Scatter" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_SCATTER">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You erupt pigment into the air. Choose a point you can see within 60 feet. Each creature in a 10-foot-radius sphere must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failed save, it is blinded until the start of your next turn.</li>
+				<li>On a successful save, it isn’t blinded.</li>
+			</ul>
+		</description>
+		<sheet action="Action"><description>Attempt to blind creatures in a small area.</description></sheet>
+	</element>
+
+	<element name="Contour Guard" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_CONTOUR_GUARD">
+		<supports>Study, Artist</supports>
+		<description>
+			<p>You trace a protective boundary. Until the start of your next turn, you gain a +2 bonus to AC and have advantage on Strength and Dexterity saving throws.</p>
+		</description>
+		<sheet action="Bonus Action"><description>Gain AC bonus and advantage on Str/Dex saves briefly.</description></sheet>
+	</element>
+
+	<!-- Improved Studies -->
+	<element name="Negative Space" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_NEGATIVE_SPACE">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p>You erase yourself from focus. As a bonus action, you become invisible until the start of your next turn or until you make an attack roll, deal damage, or force a creature to make a saving throw.</p>
+		</description>
+		<sheet action="Bonus Action"><description>Brief invisibility (breaks on offense/forcing saves).</description></sheet>
+	</element>
+
+	<element name="Overpaint" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_OVERPAINT">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p>You repaint a moment mid-action. When you or a creature you can see within 60 feet makes an attack roll, ability check, or saving throw, you can use your reaction to add 1d8 to the roll.</p>
+		</description>
+		<sheet action="Reaction"><description>Add 1d8 to an attack/check/save within 60 ft.</description></sheet>
+	</element>
+
+	<element name="Erase Boundary" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_STUDY_ERASE_BOUNDARY">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p>You remove the line between spaces. As an action, you teleport to an unoccupied space you can see within 60 feet.</p>
+		</description>
+		<sheet action="Action"><description>Teleport up to 60 feet to a space you can see.</description></sheet>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Movements (Archetypes)    -->
+	<!-- ========================= -->
+
+	<element name="Romanticism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p>Movement: Romanticism Artists of the Romantic movement reject restraint. To them, art is not discipline but revelation. Their works are not constructed — they are unleashed. Every stroke carries conviction, every Canvas burns with intensity, and every completion is a catharsis. Where others refine, Romantics ignite.</p>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_SCARLET_PALETTE"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_RAPTURE"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_EMOTIONAL_CANVAS"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_HEARTFLAME"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_PASSION_UNBOUND"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_RAPTUROUS_MOMENTUM"/>
+		</description>
+		<sheet display="false"><description>Romanticism movement.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_SCARLET_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_RAPTURE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_EMOTIONAL_CANVAS" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_HEARTFLAME" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_PASSION_UNBOUND" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_RAPTUROUS_MOMENTUM" level="14" />
+		</rules>
+	</element>
+
+	<element name="Fauvism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p>Movement: Fauvism Color is not imitation — it is domination. Artists of the Fauvist movement reject harmony and realism in favor of violent contrast and emotional shock. Their works fracture perception, overwhelm the senses, and leave enemies disoriented in a world that no longer behaves as expected. Where others refine or burn, Fauves distort.</p>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_PINK_PALETTE"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_DISTORTION"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_DISTORTED_CANVAS"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_OVERWHELM"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_COLOR_SHOCK"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_OVERWHELMING_CONTRAST"/>
+		</description>
+		<sheet display="false"><description>Fauvism movement.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_PINK_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_DISTORTION" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_DISTORTED_CANVAS" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_OVERWHELM" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_COLOR_SHOCK" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_OVERWHELMING_CONTRAST" level="14" />
+		</rules>
+	</element>
+
+	<element name="Impressionism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p>Movement: Impressionism Impressionists do not strike the world. They catch it. Their art is fleeting, subtle, and luminous — built from delicate layers that shift with angle and time. Where other movements overwhelm, Impressionists refine. They soften reality, blur the boundaries between moments, and leave enemies chasing after light that has already moved.</p>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_WHITE_PALETTE"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_MEASURED_LIGHT"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_GENTLE_CANVAS"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_SHIFTING_GLIMMER"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_GATHERED_LIGHT"/>
+			<div element="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_REFINED_PERCEPTION"/>
+		</description>
+		<sheet display="false"><description>Impressionism movement.</description></sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_WHITE_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_MEASURED_LIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_GENTLE_CANVAS" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_SHIFTING_GLIMMER" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_GATHERED_LIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_REFINED_PERCEPTION" level="14" />
+		</rules>
+	</element>
+
+	<!-- Archetype Features -->
+	<element name="Scarlet Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_SCARLET_PALETTE">
+		<description><p>Scarlet Palette 3rd-level Romanticism feature You gain the Red Palette. If you already have the Red Palette, you instead gain one Palette of your choice.</p></description>
+		<sheet><description>Scarlet Palette.</description></sheet>
+		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_RED" /></rules>
+	</element>
+
+	<element name="Study: Rapture" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_RAPTURE">
+		<description><p>Study: Rapture 3rd-level Romanticism feature You stoke an enemy’s heart until it burns. As an action, choose one creature you can see within 60 feet. The target must make a Wisdom saving throw. ● On a failed save, the target takes 3d8 damage of your current Palette’s type and is frightened of you until the end of its next turn. ● On a successful save, the target takes half as much damage and isn’t frightened. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<sheet><description>Study: Rapture.</description></sheet>
+	</element>
+
+	<element name="Emotional Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_EMOTIONAL_CANVAS">
+		<description><p>Emotional Canvas 3rd-level Romanticism feature While you have an active Canvas, a creature that enters the Canvas for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type. A creature can take this damage only once per turn.</p></description>
+		<sheet><description>Emotional Canvas.</description></sheet>
+	</element>
+
+	<element name="Study: Heartflame" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_HEARTFLAME">
+		<description><p>Study: Heartflame 6th-level Romanticism feature You ignite your own spirit and hurl it outward. As an action, choose a creature you can see within 60 feet. The creature must make a Constitution saving throw. ● On a failed save, the creature takes 5d8 damage of your current Palette’s type. ● On a successful save, the creature takes half as much damage. After using this Study, you take 2d8 fire damage, which cannot be reduced or prevented in any way. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<sheet><description>Study: Heartflame.</description></sheet>
+	</element>
+
+	<element name="Creative Process: Passion Unbound" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_PASSION_UNBOUND">
+		<description><p>Creative Process: Passion Unbound 6th-level Romanticism feature When emotion fuels your art, it burns brighter. While you have an active Canvas, when you use a Study that deals damage, you deal an additional 1d6 damage of your current Palette’s type to each creature that takes damage from the Study.</p></description>
+		<sheet><description>Creative Process: Passion Unbound.</description></sheet>
+	</element>
+
+	<element name="Rapturous Momentum" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_RAPTUROUS_MOMENTUM">
+		<description><p>Rapturous Momentum 14th-level Romanticism feature Completion becomes release. When you complete an Artwork, you may immediately use one of your Studies as a bonus action. If that Study deals damage, the first creature that takes damage from it takes an additional 1d12 damage of your current Palette’s type. The Study used in this way does not progress an Artwork. You can use this feature only once per turn.</p></description>
+		<sheet><description>Rapturous Momentum.</description></sheet>
+	</element>
+
+	<element name="Pink Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_PINK_PALETTE">
+		<description><p>Pink Palette 3rd-level Fauvism feature You gain the Pink Palette. If you already have the Pink Palette, you instead gain one Palette of your choice.</p></description>
+		<sheet><description>Pink Palette.</description></sheet>
+		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_PINK" /></rules>
+	</element>
+
+	<element name="Study: Distortion" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_DISTORTION">
+		<description><p>Study: Distortion 3rd-level Fauvism feature You warp the edges of space with a violent shift in color. As an action, choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw. ● On a failed save, the creature takes 3d8 damage of your current Palette’s type, and until the end of its next turn it has disadvantage on attack rolls. ● On a successful save, the creature takes half as much damage and suffers no disadvantage. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<sheet><description>Study: Distortion.</description></sheet>
+	</element>
+
+	<element name="Distorted Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_DISTORTED_CANVAS">
+		<description><p>Distorted Canvas 3rd-level Fauvism feature While you have an active Canvas, the Canvas is difficult terrain for your enemies. In addition, the first time each turn an enemy enters the Canvas, it takes 1d6 damage of your current Palette’s type.</p></description>
+		<sheet><description>Distorted Canvas.</description></sheet>
+	</element>
+
+	<element name="Study: Overwhelm" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_OVERWHELM">
+		<description><p>Study: Overwhelm 6th-level Fauvism feature You strike the senses with raw color. As an action, choose a point you can see within 60 feet. Each creature of your choice within 15 feet must make a Constitution saving throw. ● On a failed save, a creature takes 5d8 damage of your current Palette’s type and is blinded until the end of its next turn. ● On a successful save, the creature takes half as much damage and isn’t blinded. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<sheet><description>Study: Overwhelm.</description></sheet>
+	</element>
+
+	<element name="Creative Process: Color Shock" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_COLOR_SHOCK">
+		<description><p>Creative Process: Color Shock 6th-level Fauvism feature While you have an active Canvas, once on each of your turns when you deal damage of your Palette’s type, you deal an additional 1d6 damage of the same type.</p></description>
+		<sheet><description>Creative Process: Color Shock.</description></sheet>
+	</element>
+
+	<element name="Overwhelming Contrast" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_OVERWHELMING_CONTRAST">
+		<description><p>Overwhelming Contrast 14th-level Fauvism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is Stunned until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
+		<sheet><description>Overwhelming Contrast.</description></sheet>
+	</element>
+
+	<element name="White Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_WHITE_PALETTE">
+		<description><p>White Palette 3rd-level Impressionism feature You gain the White Palette. If you already have the White Palette, you instead gain one Palette of your choice.</p></description>
+		<sheet><description>White Palette.</description></sheet>
+		<rules><grant type="Class Feature" id="ID_ELYSIA_ARTIST_PALETTE_WHITE" /></rules>
+	</element>
+
+	<element name="Study: Measured Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_MEASURED_LIGHT">
+		<description><p>Study: Measured Light 3rd-level Impressionism feature You catch light in a controlled sweep. As an action, choose one creature you can see within 60 feet. The creature must make a Constitution saving throw. ● On a failed save, it takes 3d8 damage of your current Palette’s type, and its speed is reduced by 10 feet until the end of its next turn. ● On a successful save, it takes half as much damage and its speed is not reduced. You can use this Study twice, and you regain all expended uses when you finish a short or long rest.</p></description>
+		<sheet><description>Study: Measured Light.</description></sheet>
+	</element>
+
+	<element name="Gentle Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_GENTLE_CANVAS">
+		<description><p>Gentle Canvas 3rd-level Impressionism feature While you have an active Canvas, you and your allies have half cover while inside it.</p></description>
+		<sheet><description>Gentle Canvas.</description></sheet>
+	</element>
+
+	<element name="Study: Shifting Glimmer" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_STUDY_SHIFTING_GLIMMER">
+		<description><p>Study: Shifting Glimmer 6th-level Impressionism feature As an action, choose up to three creatures you can see within 60 feet. Each target must make a Wisdom saving throw. ● On a failed save, a target takes 5d8 damage of your current Palette’s type and has disadvantage on the next attack roll it makes before the end of its next turn. ● On a successful save, it takes half as much damage and suffers no disadvantage. You can use this Study a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p></description>
+		<sheet><description>Study: Shifting Glimmer.</description></sheet>
+	</element>
+
+	<element name="Creative Process: Gathered Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_CREATIVE_PROCESS_GATHERED_LIGHT">
+		<description><p>Creative Process: Gathered Light 6th-level Impressionism feature While you have an active Canvas, once per turn when you deal damage of your Palette’s type, you can restore hit points equal to 1d6 to one creature of your choice within the Canvas (including yourself).</p></description>
+		<sheet><description>Creative Process: Gathered Light.</description></sheet>
+	</element>
+
+	<element name="Refined Perception" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARCHETYPE_FEATURE_REFINED_PERCEPTION">
+		<description><p>Refined Perception 14th-level Impressionism feature When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC. On a failed save, the creature is restrained until the end of its next turn. On a successful save, the creature is unaffected. You can use this feature only once per turn.</p></description>
+		<sheet><description>Refined Perception.</description></sheet>
+	</element>
+
+</elements>
