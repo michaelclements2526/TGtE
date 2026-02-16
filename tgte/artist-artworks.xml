@@ -4,20 +4,19 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Artist Artworks (and movement-specific additions) for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.16">
-			<file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/master/tgte/artist-artworks.xml" />
+		<update version="0.0.18">
+			<file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist-artworks.xml" />
 		</update>
 	</info>
 
-<!-- ========================= -->
-<!-- Artworks                  -->
-<!-- ========================= -->
+	<!-- ========================= -->
+	<!-- Artworks (Universal)      -->
+	<!-- ========================= -->
 
 	<element name="Heavy Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HEAVY_STROKE">
 		<supports>Artist Artwork, Repertoire I</supports>
 		<description>
-			<p>Form.</p>
-			<p>Sequence: Black → Red (Bludgeoning → Fire).</p>
+			<p><strong>Sequence:</strong> Black → Red (Bludgeoning → Fire)</p>
 			<p>When you complete this Artwork, you draw a blazing stroke across the battlefield. Choose a direction originating from the Canvas. A line 40 feet long and 10 feet wide extends from the Canvas and lasts for 3 rounds.</p>
 			<ul>
 				<li>The area becomes burning ground.</li>
@@ -26,345 +25,469 @@
 				<li>The fire does not ignite unattended objects.</li>
 			</ul>
 		</description>
-		<sheet><description>Form — Heavy Stroke. Sequence: Black → Red.</description></sheet>
+		<sheet>
+			<description>Artwork: Heavy Stroke (Sequence: Black → Red (Bludgeoning → Fire))</description>
+		</sheet>
+	</element>
+
+	<element name="Still Frame" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_STILL_FRAME">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Sequence:</strong> Blue → Black (Cold → Bludgeoning)</p>
+			<p>When you complete this Artwork, the space around the Canvas locks into rigid stillness. Creatures of your choice in a 15-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature’s speed becomes 0 until the end of its next turn.</li>
+				<li>On a success, the creature’s speed is halved until the end of its next turn.</li>
+			</ul>
+			<p>In addition, the area in the radius becomes difficult terrain for 3 rounds.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Still Frame (Sequence: Blue → Black (Cold → Bludgeoning))</description>
+		</sheet>
+	</element>
+
+	<element name="Cleaving Light" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CLEAVING_LIGHT">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Sequence:</strong> White → Black (Radiant → Bludgeoning)</p>
+			<p>When you complete this Artwork, a descending arc of judgment strikes downward. Choose a 30-foot-long, 10-foot-wide line extending from the Canvas. Creatures in the line must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d6 radiant damage and is knocked prone.</li>
+				<li>On a success, the creature takes half damage and is not knocked prone.</li>
+			</ul>
+			<p>A creature knocked prone by this effect has disadvantage on its next attack roll before the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Cleaving Light (Sequence: White → Black (Radiant → Bludgeoning))</description>
+		</sheet>
+	</element>
+
+	<element name="Eroded Edge" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_ERODED_EDGE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Sequence:</strong> Green → Black (Poison → Bludgeoning)</p>
+			<p>When you complete this Artwork, corrosive force eats away at form and balance. Creatures of your choice in a 10-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d8 poison damage and has disadvantage on Strength and Dexterity saving throws until the end of its next turn.</li>
+				<li>On a success, the creature takes half damage with no additional effect.</li>
+			</ul>
+			<p>The area remains slick and unstable for 3 rounds, counting as difficult terrain.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Eroded Edge (Sequence: Green → Black (Poison → Bludgeoning))</description>
+		</sheet>
+	</element>
+
+	<element name="Collapse the Subject" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_COLLAPSE_THE_SUBJECT">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Sequence:</strong> Black → Red → Black (Bludgeoning → Fire → Bludgeoning)</p>
+			<p>When you complete this Artwork, the Canvas detonates outward with crushing force. Each creature of your choice within a 20-foot radius must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 4d6 fire damage, is knocked prone, and is restrained by warped terrain until the end of its next turn.</li>
+				<li>On a success, the creature takes half damage and is not restrained.</li>
+			</ul>
+			<p>The area becomes difficult terrain for 3 rounds.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Collapse the Subject (Sequence: Black → Red → Black (Bludgeoning → Fire → Bludgeoning))</description>
+		</sheet>
+	</element>
+
+	<element name="Mortal Impression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_MORTAL_IMPRESSION">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Sequence:</strong> Black → Purple → Black (Bludgeoning → Necrotic → Bludgeoning)</p>
+			<p>When you complete this Artwork, a lingering sense of inevitability settles over the battlefield. Creatures of your choice in a 30-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d8 necrotic damage and is Weakened for 3 rounds (its weapon attacks deal half damage).</li>
+				<li>On a success, the creature takes half damage and is Weakened until the end of its next turn.</li>
+			</ul>
+			<p>A creature reduced to 0 hit points while Weakened by this Artwork cannot be revived until the end of the Artist’s next turn.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Mortal Impression (Sequence: Black → Purple → Black (Bludgeoning → Necrotic → Bludgeoning))</description>
+		</sheet>
+	</element>
+
+	<element name="Horizon Fracture" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HORIZON_FRACTURE">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Sequence:</strong> Yellow → Blue → Orange (Lightning → Cold → Acid)</p>
+			<p>When you complete this Artwork, a violent fracture tears outward from the Canvas. Choose a direction originating from the Canvas. A line 60 feet long and 10 feet wide erupts along the ground. Creatures in the line must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 5d6 lightning damage, is knocked prone, and has its speed reduced to 0 until the start of its next turn.</li>
+				<li>On a success, a creature takes half damage and is not knocked prone.</li>
+			</ul>
+			<p>The line becomes unstable terrain for 3 rounds. It counts as difficult terrain, and a creature that moves more than 10 feet within it on a turn must succeed on a Dexterity saving throw or fall prone.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Horizon Fracture (Sequence: Yellow → Blue → Orange (Lightning → Cold → Acid))</description>
+		</sheet>
+	</element>
+
+	<element name="Cathedral of Silence" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CATHEDRAL_OF_SILENCE">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Sequence:</strong> White → Purple → White (Radiant → Necrotic → Radiant)</p>
+			<p>When you complete this Artwork, a sphere of oppressive stillness forms around the Canvas. A 20-foot-radius sphere centered on the Canvas lasts for 3 rounds. While inside the sphere:</p>
+			<ul>
+				<li>Creatures cannot regain hit points.</li>
+				<li>Creatures have disadvantage on Constitution saving throws made to maintain concentration.</li>
+				<li>A creature that enters the sphere for the first time on a turn or starts its turn there takes 3d8 radiant damage.</li>
+			</ul>
+			<p>The sphere is heavily obscured to creatures outside of it.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Cathedral of Silence (Sequence: White → Purple → White (Radiant → Necrotic → Radiant))</description>
+		</sheet>
+	</element>
+
+	<element name="Verdant Undoing" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_VERDANT_UNDOING">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Sequence:</strong> Green → Orange → Green (Poison → Acid → Poison)</p>
+			<p>When you complete this Artwork, corrosive growth spreads outward from the Canvas. A 30-foot-radius area centered on the Canvas becomes warped terrain for 3 rounds.</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that starts its turn in the area must make a Constitution saving throw.
+					<ul>
+						<li>On a failure, the creature takes 4d6 acid damage and has disadvantage on attack rolls until the end of its turn.</li>
+						<li>On a success, the creature takes half damage and suffers no additional effect.</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Unattended nonmagical objects in the area begin to corrode but are not destroyed instantly.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Verdant Undoing (Sequence: Green → Orange → Green (Poison → Acid → Poison))</description>
+		</sheet>
+	</element>
+
+	<element name="Event Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_EVENT_HORIZON">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Sequence:</strong> Yellow → Purple → Blue → White (Lightning → Necrotic → Cold → Radiant)</p>
+			<p>When you complete this Artwork, gravity bends violently toward the Canvas. A 30-foot-radius sphere centered on the Canvas becomes a collapsing field for 3 rounds. When the field forms, each creature of your choice inside it must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 6d8 force damage and is pulled to the nearest unoccupied space within 10 feet of the Canvas.</li>
+				<li>On a success, the creature takes half damage and is not moved.</li>
+			</ul>
+			<p>While the field persists:</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that ends its turn more than 10 feet from the Canvas is pulled 10 feet toward it.</li>
+				<li>Creatures have disadvantage on Strength saving throws while inside the field.</li>
+			</ul>
+			<p>The field collapses harmlessly at the end of the duration.</p>
+		</description>
+		<sheet>
+			<description>Artwork: Event Horizon (Sequence: Yellow → Purple → Blue → White)</description>
+		</sheet>
+	</element>
+
+	<element name="World Unfinished" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_WORLD_UNFINISHED">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Sequence:</strong> Green → Orange → Purple → White (Poison → Acid → Necrotic → Radiant)</p>
+			<p>When you complete this Artwork, reality within the Canvas’ reach destabilizes. Choose a 40-foot-radius area centered on the Canvas. For 3 rounds, the area is warped. When the effect begins, creatures of your choice in the area must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 5d10 necrotic damage and gains one level of exhaustion.</li>
+				<li>On a success, the creature takes half damage and does not gain exhaustion.</li>
+			</ul>
+			<p>While the area persists:</p>
+			<ul>
+				<li>Creatures cannot regain hit points.</li>
+				<li>A creature that drops to 0 hit points within the area cannot regain hit points until it leaves the area.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Artwork: World Unfinished (Sequence: Green → Orange → Purple → White)</description>
+		</sheet>
+	</element>
+
+	<element name="The Final Composition" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_THE_FINAL_COMPOSITION">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Sequence:</strong> Red → Yellow → Blue → Green (Fire → Lightning → Cold → Poison)</p>
+			<p>When you complete this Artwork, the Canvas detonates into a storm of unstable elements. Each creature of your choice within a 60-foot radius of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 8d6 damage, divided evenly among fire, lightning, cold, and poison.</li>
+				<li>On a success, the creature takes half damage.</li>
+			</ul>
+			<p>In addition, the ground within 30 feet of the Canvas becomes unstable for 3 rounds:</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that moves more than half its speed on its turn must succeed on a Dexterity saving throw or fall prone.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Artwork: The Final Composition (Sequence: Red → Yellow → Blue → Green)</description>
+		</sheet>
 	</element>
 
 	<!-- ========================= -->
-<!-- Artist: Artworks          -->
-<!-- ========================= -->
+	<!-- Romanticism Artworks      -->
+	<!-- ========================= -->
 
-<element name="Heavy Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HEAVY_STROKE">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> Black → Red (Bludgeoning → Fire)</p>
-		<p>When you complete this Artwork, you draw a blazing stroke across the battlefield. Choose a direction originating from the Canvas. A line 40 feet long and 10 feet wide extends from the Canvas and lasts for 3 rounds. ● The area becomes burning ground. ● A creature that enters the area for the first time on a turn or starts its turn there takes 2d6 fire damage. ● The area counts as difficult terrain. ● The fire does not ignite unattended objects.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Heavy Stroke (Sequence: Black → Red (Bludgeoning → Fire))</description>
-	</sheet>
-</element>
+	<element name="Blazing Oath" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_BLAZING_OATH">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → Yellow (Fire → Lightning)</p>
+			<p>A violent line of searing light erupts from the Canvas in a direction of your choice, forming a 30-foot-long, 5-foot-wide line. Creatures in the line must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d6 fire damage and 2d6 lightning damage.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet><description>Artwork: Blazing Oath (Romanticism)</description></sheet>
+	</element>
 
-<element name="Still Frame" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_STILL_FRAME">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> Blue → Black (Cold → Bludgeoning)</p>
-		<p>When you complete this Artwork, the space around the Canvas locks into rigid stillness. Creatures of your choice in a 15-foot radius centered on the Canvas must make a Constitution saving throw. ● On a failure, a creature’s speed becomes 0 until the end of its next turn. ● On a success, the creature’s speed is halved until the end of its next turn. In addition, the area in the radius becomes difficult terrain for 3 rounds.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Still Frame (Sequence: Blue → Black (Cold → Bludgeoning))</description>
-	</sheet>
-</element>
+	<element name="Ashen Fugue" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_ASHEN_FUGUE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → Purple (Fire → Necrotic)</p>
+			<p>The Canvas releases a wave of burning grief. Creatures of your choice within 15 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d6 fire damage and 2d6 necrotic damage, and it can’t regain hit points until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and can regain hit points normally.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Ashen Fugue (Romanticism)</description></sheet>
+	</element>
 
-<element name="Cleaving Light" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CLEAVING_LIGHT">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Black (Radiant → Bludgeoning)</p>
-		<p>When you complete this Artwork, a descending arc of judgment strikes downward. Choose a 30-foot-long, 10-foot-wide line extending from the Canvas. Creatures in the line must make a Constitution saving throw. ● On a failure, a creature takes 3d6 radiant damage and is knocked prone. ● On a success, the creature takes half damage and is not knocked prone. A creature knocked prone by this effect has disadvantage on its next attack roll before the end of its next turn.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Cleaving Light (Sequence: White → Black (Radiant → Bludgeoning))</description>
-	</sheet>
-</element>
+	<element name="Inferno’s Arc" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_INFERNOS_ARC">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → Yellow → Red (Fire → Lightning → Fire)</p>
+			<p>The Canvas erupts in a roaring detonation. Creatures of your choice within a 20-foot radius of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 6d6 fire damage and 4d6 lightning damage.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>The area becomes burning ground for 3 rounds. The burning ground deals 2d6 fire damage.</p>
+		</description>
+		<sheet><description>Artwork: Inferno’s Arc (Romanticism)</description></sheet>
+	</element>
 
-<element name="Eroded Edge" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_ERODED_EDGE">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> Green → Black (Poison → Bludgeoning)</p>
-		<p>When you complete this Artwork, corrosive force eats away at form and balance. Creatures of your choice in a 10-foot radius centered on the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 2d8 poison damage and has disadvantage on Strength and Dexterity saving throws until the end of its next turn. ● On a success, the creature takes half damage with no additional effect. The area remains slick and unstable for 3 rounds, counting as difficult terrain.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Eroded Edge (Sequence: Green → Black (Poison → Bludgeoning))</description>
-	</sheet>
-</element>
+	<element name="Crimson Ruin" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CRIMSON_RUIN">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → Green → Red (Fire → Poison → Fire)</p>
+			<p>The Canvas flares into toxic flame. Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d8 fire damage and is Poisoned until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and suffers no additional effect.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Crimson Ruin (Romanticism)</description></sheet>
+	</element>
 
-<element name="Collapse the Subject" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_COLLAPSE_THE_SUBJECT">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> Black → Red → Black (Bludgeoning → Fire → Bludgeoning)</p>
-		<p>When you complete this Artwork, the Canvas detonates outward with crushing force. Each creature of your choice within a 20-foot radius must make a Dexterity saving throw. ● On a failure, a creature takes 4d6 fire damage, is knocked prone, and is restrained by warped terrain until the end of its next turn. ● On a success, the creature takes half damage and is not restrained. The area becomes difficult terrain for 3 rounds.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Collapse the Subject (Sequence: Black → Red → Black (Bludgeoning → Fire → Bludgeoning))</description>
-	</sheet>
-</element>
+	<element name="Sun Without Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SUN_WITHOUT_HORIZON">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → White → Yellow → Red (Fire → Radiant → Lightning → Fire)</p>
+			<p>A blinding corona of destructive brilliance expands outward. Creatures of your choice within 60 feet of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 10d6 total damage, divided as you choose between fire, radiant, and lightning.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet><description>Artwork: Sun Without Horizon (Romanticism)</description></sheet>
+	</element>
 
-<element name="Mortal Impression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_MORTAL_IMPRESSION">
-	<supports>Artist Artwork, Repertoire I</supports>
-	<description>
-		<p><strong>Sequence:</strong> Black → Purple → Black (Bludgeoning → Necrotic → Bludgeoning)</p>
-		<p>When you complete this Artwork, a lingering sense of inevitability settles over the battlefield. Creatures of your choice in a 30-foot radius centered on the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 3d8 necrotic damage and is Weakened for 3 rounds (its weapon attacks deal half damage). ● On a success, the creature takes half damage and is Weakened until the end of its next turn. A creature reduced to 0 hit points while Weakened by this Artwork cannot be revived until the end of the Artist’s next turn.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Mortal Impression (Sequence: Black → Purple → Black (Bludgeoning → Necrotic → Bludgeoning))</description>
-	</sheet>
-</element>
+	<element name="Heartbreak Conflagration" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HEARTBREAK_CONFLAGRATION">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_ROMANTICISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Red → Purple → Red → Yellow (Fire → Necrotic → Fire → Lightning)</p>
+			<p>The Canvas shatters into a storm of flame and grief. Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 6d8 necrotic damage and 3d8 fire damage and has disadvantage on its next saving throw before the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet><description>Artwork: Heartbreak Conflagration (Romanticism)</description></sheet>
+	</element>
 
-<element name="Horizon Fracture" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HORIZON_FRACTURE">
-	<supports>Artist Artwork, Repertoire II</supports>
-	<description>
-		<p><strong>Sequence:</strong> Yellow → Blue → Orange (Lightning → Cold → Acid)</p>
-		<p>When you complete this Artwork, a violent fracture tears outward from the Canvas. Choose a direction originating from the Canvas. A line 60 feet long and 10 feet wide erupts along the ground. Creatures in the line must make a Dexterity saving throw. ● On a failure, a creature takes 5d6 lightning damage, is knocked prone, and has its speed reduced to 0 until the start of its next turn. ● On a success, a creature takes half damage and is not knocked prone. The line becomes unstable terrain for 3 rounds. It counts as difficult terrain, and a creature that moves more than 10 feet within it on a turn must succeed on a Dexterity saving throw or fall prone.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Horizon Fracture (Sequence: Yellow → Blue → Orange (Lightning → Cold → Acid))</description>
-	</sheet>
-</element>
+	<!-- ========================= -->
+	<!-- Fauvism Artworks          -->
+	<!-- ========================= -->
 
-<element name="Cathedral of Silence" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CATHEDRAL_OF_SILENCE">
-	<supports>Artist Artwork, Repertoire II</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Purple → White (Radiant → Necrotic → Radiant)</p>
-		<p>When you complete this Artwork, a sphere of oppressive stillness forms around the Canvas. A 20-foot-radius sphere centered on the Canvas lasts for 3 rounds. While inside the sphere: ● Creatures cannot regain hit points. ● Creatures have disadvantage on Constitution saving throws made to maintain concentration. ● A creature that enters the sphere for the first time on a turn or starts its turn there takes 3d8 radiant damage. The sphere is heavily obscured to creatures outside of it.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Cathedral of Silence (Sequence: White → Purple → White (Radiant → Necrotic → Radiant))</description>
-	</sheet>
-</element>
+	<element name="Chromatic Dissonance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CHROMATIC_DISSONANCE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → Yellow (Psychic → Lightning)</p>
+			<p>Creatures of your choice within 15 feet of the Canvas must make a Wisdom saving throw. On a failed save, a creature has disadvantage on its next saving throw before the end of its next turn and has its speed reduced by 10 feet until the end of its next turn. On a success, the creature is unaffected.</p>
+		</description>
+		<sheet><description>Artwork: Chromatic Dissonance (Fauvism)</description></sheet>
+	</element>
 
-<element name="Verdant Undoing" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_VERDANT_UNDOING">
-	<supports>Artist Artwork, Repertoire II</supports>
-	<description>
-		<p><strong>Sequence:</strong> Green → Orange → Green (Poison → Acid → Poison)</p>
-		<p>When you complete this Artwork, corrosive growth spreads outward from the Canvas. A 30-foot-radius area centered on the Canvas becomes warped terrain for 3 rounds. ● The area is difficult terrain. ● A creature that starts its turn in the area must make a Constitution saving throw. ○ On a failure, the creature takes 4d6 acid damage and has disadvantage on attack rolls until the end of its turn. ○ On a success, the creature takes half damage and suffers no additional effect. Unattended nonmagical objects in the area begin to corrode but are not destroyed instantly.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Verdant Undoing (Sequence: Green → Orange → Green (Poison → Acid → Poison))</description>
-	</sheet>
-</element>
+	<element name="Violent Complement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_VIOLENT_COMPLEMENT">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → Blue (Psychic → Cold)</p>
+			<p>Creatures of your choice within 10 feet of the Canvas must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d6 psychic damage and has disadvantage on attack rolls until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Violent Complement (Fauvism)</description></sheet>
+	</element>
 
-<element name="Event Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_EVENT_HORIZON">
-	<supports>Artist Artwork, Repertoire III</supports>
-	<description>
-		<p><strong>Sequence:</strong> Yellow → Purple → Blue → White (Lightning → Necrotic → Cold → Radiant)</p>
-		<p>When you complete this Artwork, gravity bends violently toward the Canvas. A 30-foot-radius sphere centered on the Canvas becomes a collapsing field for 3 rounds. When the field forms, each creature of your choice inside it must make a Constitution saving throw. ● On a failure, a creature takes 6d8 force damage and is pulled to the nearest unoccupied space within 10 feet of the Canvas. ● On a success, the creature takes half damage and is not moved. While the field persists: ● The area is difficult terrain. ● A creature that ends its turn more than 10 feet from the Canvas is pulled 10 feet toward it. ● Creatures have disadvantage on Strength saving throws while inside the field. The field collapses harmlessly at the end of the duration.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Event Horizon (Sequence: Yellow → Purple → Blue → White (Lightning → Necrotic → Cold → Radiant))</description>
-	</sheet>
-</element>
+	<element name="Dissonant Field" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DISSONANT_FIELD">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → Yellow → Pink (Psychic → Lightning → Psychic)</p>
+			<p>Creatures of your choice within 20 feet of the Canvas must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 5d6 psychic damage, and it can’t take reactions until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Dissonant Field (Fauvism)</description></sheet>
+	</element>
 
-<element name="World Unfinished" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_WORLD_UNFINISHED">
-	<supports>Artist Artwork, Repertoire III</supports>
-	<description>
-		<p><strong>Sequence:</strong> Green → Orange → Purple → White (Poison → Acid → Necrotic → Radiant)</p>
-		<p>When you complete this Artwork, reality within the Canvas’ reach destabilizes. Choose a 40-foot-radius area centered on the Canvas. For 3 rounds, the area is warped. When the effect begins, creatures of your choice in the area must make a Constitution saving throw. ● On a failure, a creature takes 5d10 necrotic damage and gains one level of exhaustion. ● On a success, the creature takes half damage and does not gain exhaustion. While the area persists: ● Creatures cannot regain hit points. ● A creature that drops to 0 hit points within the area cannot regain hit points until it leaves the area.</p>
-	</description>
-	<sheet>
-		<description>Artwork: World Unfinished (Sequence: Green → Orange → Purple → White (Poison → Acid → Necrotic → Radiant))</description>
-	</sheet>
-</element>
+	<element name="Shattered Harmony" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SHATTERED_HARMONY">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → Green → Pink (Psychic → Poison → Psychic)</p>
+			<p>Creatures of your choice within 20 feet of the Canvas must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 4d8 psychic damage and is Confused until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Confused.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Shattered Harmony (Fauvism)</description></sheet>
+	</element>
 
-<element name="The Final Composition" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_THE_FINAL_COMPOSITION">
-	<supports>Artist Artwork, Repertoire III</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Yellow → Blue → Green (Fire → Lightning → Cold → Poison)</p>
-		<p>When you complete this Artwork, the Canvas detonates into a storm of unstable elements. Each creature of your choice within a 60-foot radius of the Canvas must make a Dexterity saving throw. ● On a failure, a creature takes 8d6 damage, divided evenly among fire, lightning, cold, and poison. ● On a success, the creature takes half damage. In addition, the ground within 30 feet of the Canvas becomes unstable for 3 rounds: ● The area is difficult terrain. ● A creature that moves more than half its speed on its turn must succeed on a Dexterity saving throw or fall prone.</p>
-	</description>
-	<sheet>
-		<description>Artwork: The Final Composition (Sequence: Red → Yellow → Blue → Green (Fire → Lightning → Cold → Poison))</description>
-	</sheet>
-</element>
+	<element name="Color Without Form" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_COLOR_WITHOUT_FORM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → Yellow → Blue → Pink (Psychic → Lightning → Cold → Psychic)</p>
+			<p>Creatures of your choice within 30 feet of the Canvas must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 8d6 psychic damage, is Blinded until the end of its next turn, and has disadvantage on its next saving throw before the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Blinded.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Color Without Form (Fauvism)</description></sheet>
+	</element>
 
-<!-- Romanticism Additional Artworks -->
-<element name="Blazing Oath" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_BLAZING_OATH">
-	<supports>Artist Artwork, Repertoire I, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Yellow (Fire → Lightning)</p>
-		<p>A violent line of searing light erupts from the Canvas in a direction of your choice, forming a 30-foot-long, 5-foot-wide line. Creatures in the line must make a Dexterity saving throw. ● On a failure, a creature takes 2d6 fire damage and 2d6 lightning damage. ● On a success, the creature takes half as much damage. This effect does not create burning ground.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Blazing Oath (Sequence: Red → Yellow (Fire → Lightning))</description>
-	</sheet>
-</element>
+	<element name="Dominion of Contrast" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DOMINION_OF_CONTRAST">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_FAUVISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> Pink → White → Yellow → Pink (Psychic → Radiant → Lightning → Psychic)</p>
+			<p>Creatures of your choice within 60 feet of the Canvas must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 10d6 total damage, divided as you choose between psychic, radiant, and lightning, and it is Stunned until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Stunned.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Dominion of Contrast (Fauvism)</description></sheet>
+	</element>
 
-<element name="Ashen Fugue" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_ASHEN_FUGUE">
-	<supports>Artist Artwork, Repertoire I, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Purple (Fire → Necrotic)</p>
-		<p>The Canvas releases a wave of burning grief. Creatures of your choice within 15 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 3d6 fire damage and 2d6 necrotic damage, and it can’t regain hit points until the end of its next turn. ● On a success, the creature takes half as much damage and can regain hit points normally.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Ashen Fugue (Sequence: Red → Purple (Fire → Necrotic))</description>
-	</sheet>
-</element>
+	<!-- ========================= -->
+	<!-- Impressionism Artworks    -->
+	<!-- ========================= -->
 
-<element name="Inferno’s Arc" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_INFERNOS_ARC">
-	<supports>Artist Artwork, Repertoire II, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Yellow → Red (Fire → Lightning → Fire)</p>
-		<p>The Canvas erupts in a roaring detonation. Creatures of your choice within a 20-foot radius of the Canvas must make a Dexterity saving throw. ● On a failure, a creature takes 6d6 fire damage and 4d6 lightning damage. ● On a success, the creature takes half as much damage. The area becomes burning ground for 3 rounds. The burning ground deals 2d6 fire damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Inferno’s Arc (Sequence: Red → Yellow → Red (Fire → Lightning → Fire))</description>
-	</sheet>
-</element>
+	<element name="Soft Radiance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SOFT_RADIANCE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Blue (Radiant → Cold)</p>
+			<p>Creatures of your choice within 15 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d6 radiant damage and has disadvantage on its next attack roll before the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Soft Radiance (Impressionism)</description></sheet>
+	</element>
 
-<element name="Crimson Ruin" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CRIMSON_RUIN">
-	<supports>Artist Artwork, Repertoire II, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Green → Red (Fire → Poison → Fire)</p>
-		<p>The Canvas flares into toxic flame. Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 3d8 fire damage and is Poisoned until the end of its next turn. ● On a success, the creature takes half as much damage and suffers no additional effect.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Crimson Ruin (Sequence: Red → Green → Red (Fire → Poison → Fire))</description>
-	</sheet>
-</element>
+	<element name="Gentle Refrain" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_GENTLE_REFRAIN">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Green (Radiant → Poison)</p>
+			<p>Creatures of your choice within 10 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d8 radiant damage and has disadvantage on ability checks until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Gentle Refrain (Impressionism)</description></sheet>
+	</element>
 
-<element name="Sun Without Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SUN_WITHOUT_HORIZON">
-	<supports>Artist Artwork, Repertoire III, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → White → Yellow → Red (Fire → Radiant → Lightning → Fire)</p>
-		<p>A blinding corona of destructive brilliance expands outward. Creatures of your choice within 60 feet of the Canvas must make a Dexterity saving throw. ● On a failure, a creature takes 10d6 total damage, divided as you choose between fire, radiant, and lightning. ● On a success, the creature takes half as much damage. This effect does not create burning ground.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Sun Without Horizon (Sequence: Red → White → Yellow → Red (Fire → Radiant → Lightning → Fire))</description>
-	</sheet>
-</element>
+	<element name="Measured Illumination" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_MEASURED_ILLUMINATION">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Blue → White (Radiant → Cold → Radiant)</p>
+			<p>Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 4d8 radiant damage and its speed is halved until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Measured Illumination (Impressionism)</description></sheet>
+	</element>
 
-<element name="Heartbreak Conflagration" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_HEARTBREAK_CONFLAGRATION">
-	<supports>Artist Artwork, Repertoire III, Romanticism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Red → Purple → Red → Yellow (Fire → Necrotic → Fire → Lightning)</p>
-		<p>The Canvas shatters into a storm of flame and grief. Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 6d8 necrotic damage and 3d8 fire damage and has disadvantage on its next saving throw before the end of its next turn. ● On a success, the creature takes half as much damage. This effect does not create burning ground.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Heartbreak Conflagration (Sequence: Red → Purple → Red → Yellow (Fire → Necrotic → Fire → Lightning))</description>
-	</sheet>
-</element>
+	<element name="Glimmering Lull" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_GLIMMERING_LULL">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Green → White (Radiant → Poison → Radiant)</p>
+			<p>Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d8 radiant damage and is Charmed until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Charmed.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Glimmering Lull (Impressionism)</description></sheet>
+	</element>
 
-<!-- Fauvism Additional Artworks -->
-<element name="Chromatic Dissonance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_CHROMATIC_DISSONANCE">
-	<supports>Artist Artwork, Repertoire I, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → Yellow (Psychic → Lightning)</p>
-		<p>Creatures of your choice within 15 feet of the Canvas must make a Wisdom saving throw. On a failed save, a creature: ● Has disadvantage on its next saving throw before the end of its next turn. ● Has its speed reduced by 10 feet until the end of its next turn. On a success, the creature is unaffected.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Chromatic Dissonance (Sequence: Pink → Yellow (Psychic → Lightning))</description>
-	</sheet>
-</element>
+	<element name="Dawn on the Water" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DAWN_ON_THE_WATER">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Blue → Green → White (Radiant → Cold → Poison → Radiant)</p>
+			<p>Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 8d6 radiant damage, its speed becomes 0 until the end of its next turn, and it can’t take reactions until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Dawn on the Water (Impressionism)</description></sheet>
+	</element>
 
-<element name="Violent Complement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_VIOLENT_COMPLEMENT">
-	<supports>Artist Artwork, Repertoire I, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → Blue (Psychic → Cold)</p>
-		<p>Creatures of your choice within 10 feet of the Canvas must make a Wisdom saving throw. ● On a failure, a creature takes 2d6 psychic damage and has disadvantage on attack rolls until the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Violent Complement (Sequence: Pink → Blue (Psychic → Cold))</description>
-	</sheet>
-</element>
-
-<element name="Dissonant Field" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DISSONANT_FIELD">
-	<supports>Artist Artwork, Repertoire II, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → Yellow → Pink (Psychic → Lightning → Psychic)</p>
-		<p>Creatures of your choice within 20 feet of the Canvas must make a Wisdom saving throw. ● On a failure, a creature takes 5d6 psychic damage, and it can’t take reactions until the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Dissonant Field (Sequence: Pink → Yellow → Pink (Psychic → Lightning → Psychic))</description>
-	</sheet>
-</element>
-
-<element name="Shattered Harmony" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SHATTERED_HARMONY">
-	<supports>Artist Artwork, Repertoire II, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → Green → Pink (Psychic → Poison → Psychic)</p>
-		<p>Creatures of your choice within 20 feet of the Canvas must make a Wisdom saving throw. ● On a failure, a creature takes 4d8 psychic damage and is Confused until the end of its next turn. ● On a success, the creature takes half as much damage and is not Confused.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Shattered Harmony (Sequence: Pink → Green → Pink (Psychic → Poison → Psychic))</description>
-	</sheet>
-</element>
-
-<element name="Color Without Form" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_COLOR_WITHOUT_FORM">
-	<supports>Artist Artwork, Repertoire III, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → Yellow → Blue → Pink (Psychic → Lightning → Cold → Psychic)</p>
-		<p>Creatures of your choice within 30 feet of the Canvas must make a Wisdom saving throw. ● On a failure, a creature takes 8d6 psychic damage, is Blinded until the end of its next turn, and has disadvantage on its next saving throw before the end of its next turn. ● On a success, the creature takes half as much damage and is not Blinded.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Color Without Form (Sequence: Pink → Yellow → Blue → Pink (Psychic → Lightning → Cold → Psychic))</description>
-	</sheet>
-</element>
-
-<element name="Dominion of Contrast" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DOMINION_OF_CONTRAST">
-	<supports>Artist Artwork, Repertoire III, Fauvism</supports>
-	<description>
-		<p><strong>Sequence:</strong> Pink → White → Yellow → Pink (Psychic → Radiant → Lightning → Psychic)</p>
-		<p>Creatures of your choice within 60 feet of the Canvas must make a Wisdom saving throw. ● On a failure, a creature takes 10d6 total damage, divided as you choose between psychic, radiant, and lightning, and it is Stunned until the end of its next turn. ● On a success, the creature takes half as much damage and is not Stunned.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Dominion of Contrast (Sequence: Pink → White → Yellow → Pink (Psychic → Radiant → Lightning → Psychic))</description>
-	</sheet>
-</element>
-
-<!-- Impressionism Additional Artworks -->
-<element name="Soft Radiance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_SOFT_RADIANCE">
-	<supports>Artist Artwork, Repertoire I, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Blue (Radiant → Cold)</p>
-		<p>Creatures of your choice within 15 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 2d6 radiant damage and has disadvantage on its next attack roll before the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Soft Radiance (Sequence: White → Blue (Radiant → Cold))</description>
-	</sheet>
-</element>
-
-<element name="Gentle Refrain" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_GENTLE_REFRAIN">
-	<supports>Artist Artwork, Repertoire I, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Green (Radiant → Poison)</p>
-		<p>Creatures of your choice within 10 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 2d8 radiant damage and has disadvantage on ability checks until the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Gentle Refrain (Sequence: White → Green (Radiant → Poison))</description>
-	</sheet>
-</element>
-
-<element name="Measured Illumination" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_MEASURED_ILLUMINATION">
-	<supports>Artist Artwork, Repertoire II, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Blue → White (Radiant → Cold → Radiant)</p>
-		<p>Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 4d8 radiant damage and its speed is halved until the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Measured Illumination (Sequence: White → Blue → White (Radiant → Cold → Radiant))</description>
-	</sheet>
-</element>
-
-<element name="Glimmering Lull" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_GLIMMERING_LULL">
-	<supports>Artist Artwork, Repertoire II, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Green → White (Radiant → Poison → Radiant)</p>
-		<p>Creatures of your choice within 20 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 3d8 radiant damage and is Charmed until the end of its next turn. ● On a success, the creature takes half as much damage and is not Charmed.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Glimmering Lull (Sequence: White → Green → White (Radiant → Poison → Radiant))</description>
-	</sheet>
-</element>
-
-<element name="Dawn on the Water" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_DAWN_ON_THE_WATER">
-	<supports>Artist Artwork, Repertoire III, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Blue → Green → White (Radiant → Cold → Poison → Radiant)</p>
-		<p>Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 8d6 radiant damage, its speed becomes 0 until the end of its next turn, and it can’t take reactions until the end of its next turn. ● On a success, the creature takes half as much damage.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Dawn on the Water (Sequence: White → Blue → Green → White (Radiant → Cold → Poison → Radiant))</description>
-	</sheet>
-</element>
-
-<element name="Light Gathered, Then Gone" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_LIGHT_GATHERED_THEN_GONE">
-	<supports>Artist Artwork, Repertoire III, Impressionism</supports>
-	<description>
-		<p><strong>Sequence:</strong> White → Yellow → Blue → White (Radiant → Lightning → Cold → Radiant)</p>
-		<p>Creatures of your choice within 60 feet of the Canvas must make a Constitution saving throw. ● On a failure, a creature takes 10d6 total damage, divided as you choose between radiant, lightning, and cold, and it is Stunned until the end of its next turn. ● On a success, the creature takes half as much damage and is not Stunned.</p>
-	</description>
-	<sheet>
-		<description>Artwork: Light Gathered, Then Gone (Sequence: White → Yellow → Blue → White (Radiant → Lightning → Cold → Radiant))</description>
-	</sheet>
-</element>
-
+	<element name="Light Gathered, Then Gone" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTIST_ARTWORK_LIGHT_GATHERED_THEN_GONE">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<requirements>ID_ELYSIA_ARTIST_MOVEMENT_IMPRESSIONISM</requirements>
+		<description>
+			<p><strong>Sequence:</strong> White → Yellow → Blue → White (Radiant → Lightning → Cold → Radiant)</p>
+			<p>Creatures of your choice within 60 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 10d6 total damage, divided as you choose between radiant, lightning, and cold, and it is Stunned until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Stunned.</li>
+			</ul>
+		</description>
+		<sheet><description>Artwork: Light Gathered, Then Gone (Impressionism)</description></sheet>
+	</element>
 
 </elements>
