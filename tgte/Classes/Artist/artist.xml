@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Homebrew content for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist.xml" />
+		</update>
+	</info>
+
+	<element name="Artist" type="Class" source="Traveler's Guide to Elysia" id="ID_ELYSIA_CLASS_ARTIST">
+		<description>
+
+			<p class="flavor">
+A human studies the flow of battle, watching sparks fade against stone and steel trace its familiar arcs. With a deliberate stroke through the air, she fixes the moment in place, and flame follows the path she has chosen.
+			</p>
+
+			<p class="flavor">
+Crouched behind cover, a half-elf measures distance and motion before releasing a wash of numbing cold, reshaping the field long enough for his allies to press the attack.
+			</p>
+
+			<p class="flavor">
+An Artist stands within the chaos, tools in hand, applying force and color with intention. Each choice is deliberate. Each action builds toward a greater work.
+			</p>
+
+			<p>
+Artists are spellcasters who treat the world as a canvas. Rather than relying on overwhelming spellcasting, they shape magic through discipline, precision, and commitment. By establishing a canvas in the world and working upon it step by step, an Artist creates effects that resolve the battle according to their vision.
+			</p>
+
+			<p>
+Though their magic is narrower than that of other casters, Artists excel at controlling space and momentum. Their greatest works demand focus and patience, while practiced techniques keep them effective even as a larger composition takes form.
+			</p>
+
+			<p>
+Whatever their origin, all Artists share the same belief: magic, like art, is strongest when guided by intent.
+			</p>
+
+			<h3>Adaptable Visionaries</h3>
+
+			<p>
+Artists are adventurers first and foremost. Their power does not come from vast reserves of magic, but from a practiced ability to respond to the moment before them.
+			</p>
+
+			<p>
+Through passion, discipline, and an eye for opportunity, they shape the world in small but meaningful ways, turning chaos into composition.
+			</p>
+
+			<h3>Drawn to Disorder</h3>
+
+			<p>
+Artists are often regarded with a mixture of curiosity and unease. Their work is difficult to explain, their methods stranger still.
+			</p>
+
+			<p>
+For an Artist, chaos is not a hazard to be avoided, but a medium to be explored.
+			</p>
+
+			<h3>Creating an Artist</h3>
+
+			<p>
+When creating an Artist, consider the experiences and passions that shaped their approach to magic.
+			</p>
+
+			<h3>Quick Build</h3>
+
+			<p>
+Make Wisdom your highest ability score, followed by Dexterity or Constitution. Choose a background such as Artisan Guild, Entertainer, Hermit, or Sage.
+			</p>
+
+			<h3>Class Features</h3>
+
+			<h5>Hit Points</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per artist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per artist level after 1st</li>
+			</ul>
+
+			<h5>Proficiencies</h5>
+			<ul class="unstyled">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> Calligrapher’s supplies or painter’s supplies</li>
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Medicine, Nature, Perception, and Religion</li>
+			</ul>
+
+			<h5>Equipment</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li><i>(a)</i> a dagger or <i>(b)</i> a quarterstaff</li>
+				<li>An infused brush, which functions as your spellcasting focus</li>
+				<li><i>(a)</i> an explorer’s pack or <i>(b)</i> a scholar’s pack</li>
+			</ul>
+
+		</description>
+
+		<sheet display="false">
+			<description>A deliberate spellcaster who builds power through composition, control, and execution.</description>
+		</sheet>
+
+		<setters>
+			<set name="short">A spellcasting creator who shapes reality through palettes, Studies, and Artworks.</set>
+			<set name="hd">d6</set>
+		</setters>
+
+		<!-- Temporary spell list -->
+		<spellcasting name="Artist" ability="Wisdom">
+			<list>Sorcerer</list>
+		</spellcasting>
+
+		<rules>
+
+			<!-- Core proficiencies -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+
+			<select type="Proficiency" name="Tool Proficiency (Artist)" supports="Artisan tools" number="1" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+			<select type="Proficiency" name="Skill Proficiency (Artist)" supports="Skill" number="2" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
+
+			<!-- Feature grants -->
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_STUDIES" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ARTISTIC_TOOLS" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_CANVAS" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE" level="1"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE_SWITCHES" level="2"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_MOVEMENT" level="3"/>
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ASI" level="4"/>
+
+			<!-- Subclass -->
+			<select type="Archetype" name="Movement" supports="Artist Movement" level="3"/>
+
+		</rules>
+
+		<multiclass id="ID_ELYSIA_MULTICLASS_ARTIST">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, simple weapons</set>
+			</setters>
+		</multiclass>
+
+	</element>
+</elements>
