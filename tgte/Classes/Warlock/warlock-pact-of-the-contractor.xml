@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Pact of the Contractor for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.20">
+			<file name="warlock-pact-of-the-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-pact-of-the-contractor.xml" />
+		</update>
+	</info>
+
+	<element name="Pact of the Contractor" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_PACT_OF_THE_CONTRACTOR">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Warlocks who swear a Pact of the Contractor enter into an active, transactional relationship with a powerful entity that requires direct involvement in the world. Unlike distant patrons who grant power and observe from afar, a Contractor needs a capable agent “on the floor” — someone who can act, adapt, and resolve obligations in real time.</p>
+			<p class="indent">To a Contractor, power is not gifted freely. It is extended conditionally, based on usefulness, reliability, and the willingness to accept binding terms. As the warlock proves themselves capable of operating under pressure, the relationship deepens into something mutually beneficial: the patron provides greater leverage, and the warlock becomes an indispensable executor of their will.</p>
+			<p class="indent">A Contractor’s magic manifests as Contracts — public obligations that demand resolution. These agreements are neither benevolent nor cruel by nature. They simply exist, and they must be dealt with.</p>
+
+			<div element="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_EXPANDED_SPELL_LIST" />
+			<div element="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_PETITION_OF_OBLIGATION" />
+			<div element="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_GOLDEN_DEAL" />
+			<div element="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_HARDENED_TERMS" />
+			<div element="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_BINDING_ARBITRATION" />
+		</description>
+		<sheet display="false">
+			<description>Otherworldly Patron: Pact of the Contractor.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_PETITION_OF_OBLIGATION" level="1" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_GOLDEN_DEAL" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_HARDENED_TERMS" level="10" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_BINDING_ARBITRATION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Contractor lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">CONTRACTOR EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>disguise self, command</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, detect thoughts</em></td></tr>
+				<tr><td>3rd</td><td><em>tiny servant, clairvoyance</em></td></tr>
+				<tr><td>4th</td><td><em>arcane eye, locate creature</em></td></tr>
+				<tr><td>5th</td><td><em>creation, dominate person</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Contractor lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_DISGUISE_SELF</extend>
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_DETECT_THOUGHTS</extend>
+			<extend>ID_XGTE_SPELL_TINY_SERVANT</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_ARCANE_EYE</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_PHB_SPELL_CREATION</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Petition of Obligation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_PETITION_OF_OBLIGATION">
+		<description>
+			<p>Starting at 1st level, you may bargain directly with your patron for immediate power, accepting binding terms in exchange.</p>
+			<p class="indent">As a bonus action, you may petition your patron. When you do so, choose one reward from the Contractor Boon list. The Dungeon Master then assigns you a random Contract from the Contractor Contract table available to your level.</p>
+			<ul>
+				<li>A Contract consists of a Clause that must be fulfilled.</li>
+				<li>Contracts are public information at the table.</li>
+				<li>You may hold only one Contract at a time.</li>
+			</ul>
+			<p>You have until the end of your next turn to fulfill the Contract’s Clause.</p>
+			<ul>
+				<li>On success, you immediately gain the chosen boon.</li>
+				<li>On failure, nothing happens unless another feature or effect applies a breach.</li>
+			</ul>
+			<p>You may use this feature once per short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>Choose one Contractor Boon and receive a random Contract from the Contractor Contract table available to your level. You have until the end of your next turn to fulfill its Clause. On success, you gain the chosen boon.</description>
+		</sheet>
+	</element>
+
+	<element name="Golden Deal" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_GOLDEN_DEAL">
+		<description>
+			<p>Starting at 6th level, you have learned how to negotiate more favorable terms — at a cost.</p>
+			<p class="indent">When you invoke Petition of Obligation, you may choose to make a Golden Deal. If you do, select one additional boon from the Contractor Boon list. This boon must be different from the first.</p>
+			<p class="indent">When you make a Golden Deal, the Contract gains a Golden Breach. If you fail to fulfill the Contract’s Clause, you suffer one of the following effects of your choice:</p>
+			<ul>
+				<li>You take psychic damage equal to twice your proficiency bonus.</li>
+				<li>Your speed becomes 0 until the end of your next turn.</li>
+				<li>You have disadvantage on attack rolls until the end of your next turn.</li>
+				<li>The next attack made against you before the end of your next turn has advantage.</li>
+			</ul>
+			<p>Once you make a Golden Deal, you can’t do so again until you finish a short or long rest.</p>
+			<p class="indent"><strong>Contract Reroll.</strong> Additionally, when a Contract is assigned to you, you may immediately reroll on the Contract table and take the new result. Once you reroll a Contract in this way, you can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false">
+			<description>When you invoke Petition of Obligation, you may choose one additional boon. If you fail the Contract, you suffer a Golden Breach. You may also reroll an assigned Contract once per short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Hardened Terms" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_HARDENED_TERMS">
+		<description>
+			<p>By 10th level, constant exposure to binding obligations has taught you how to endure their strain.</p>
+			<p class="indent">While you are under the effects of a Contract, choose one of the following benefits when the Contract begins:</p>
+			<ul>
+				<li>You have advantage on saving throws.</li>
+				<li>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+				<li>You gain a +2 bonus to Armor Class.</li>
+			</ul>
+			<p>The chosen benefit lasts until the Contract ends. You may choose a different benefit each time you gain a new Contract.</p>
+		</description>
+		<sheet display="false">
+			<description>When a Contract begins, choose one: advantage on saving throws, resistance to nonmagical bludgeoning, piercing, and slashing damage, or +2 AC. The benefit lasts until the Contract ends.</description>
+		</sheet>
+	</element>
+
+	<element name="Binding Arbitration" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_PATRON_FEATURE_CONTRACTOR_BINDING_ARBITRATION">
+		<description>
+			<p>At 14th level, you may determine who bears the cost of an obligation.</p>
+			<p class="indent">While you are under the effects of a Contract, you may use your reaction to bind that Contract to another creature you can see within 60 feet.</p>
+			<ul>
+				<li>The chosen creature becomes the new holder of the Contract.</li>
+				<li>The Contract’s remaining duration and Clause are unchanged.</li>
+				<li>If the Contract is completed, you gain the reward.</li>
+				<li>If the Contract is failed, the bound creature suffers the breach instead of you.</li>
+			</ul>
+			<p>You may use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a short or long rest.</p>
+			<p>A creature bound in this way is aware of the Contract and its consequences.</p>
+		</description>
+		<sheet action="Reaction" usage="Charisma Modifier/Short Rest">
+			<description>While under a Contract, bind it to another creature you can see within 60 feet. That creature becomes the new holder of the Contract, but you still gain the reward if it is completed.</description>
+		</sheet>
+	</element>
+</elements>
