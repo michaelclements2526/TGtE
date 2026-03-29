@@ -62,26 +62,21 @@
 						<td class="left">Features</td>
 					</tr>
 				</thead>
-				<tr><td>1st</td><td class="left">+2</td><td class="left">Performer Type, Unarmored Defense, Performance</td></tr>
-				<tr><td>2nd</td><td class="left">+2</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>3rd</td><td class="left">+2</td><td class="left">Harmonic Resonance</td></tr>
-				<tr><td>4th</td><td class="left">+2</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>5th</td><td class="left">+3</td><td class="left">Stage Performer</td></tr>
-				<tr><td>6th</td><td class="left">+3</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>7th</td><td class="left">+3</td><td class="left">Enhanced Performance</td></tr>
-				<tr><td>8th</td><td class="left">+3</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>9th</td><td class="left">+4</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>10th</td><td class="left">+4</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>11th</td><td class="left">+4</td><td class="left">Masterful Artist</td></tr>
-				<tr><td>12th</td><td class="left">+4</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>13th</td><td class="left">+5</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>14th</td><td class="left">+5</td><td class="left">Distracting Performance</td></tr>
-				<tr><td>15th</td><td class="left">+5</td><td class="left">Disarming Performance</td></tr>
-				<tr><td>16th</td><td class="left">+5</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td class="left">+6</td><td class="left">Performer Type feature</td></tr>
-				<tr><td>18th</td><td class="left">+6</td><td class="left">Practice Makes Perfect</td></tr>
-				<tr><td>19th</td><td class="left">+6</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>20th</td><td class="left">+6</td><td class="left">Performer Type feature</td></tr>
+				<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_TYPE" level="1" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_UNARMORED_DEFENSE" level="1" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_PERFORMANCE" level="1" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_HARMONIC_RESONANCE" level="3" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="4" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_STAGE_PERFORMER" level="5" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ENHANCED_PERFORMANCE" level="7" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="9" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_MASTERFUL_ARTIST" level="11" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="12" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_DISTRACTING_PERFORMANCE" level="14" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_DISARMING_PERFORMANCE" level="15" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="16" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_PRACTICE_MAKES_PERFECT" level="18" />
+<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="19" />
 			</table>
 		</description>
 
