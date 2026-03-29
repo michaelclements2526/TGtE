@@ -37,10 +37,6 @@
 		</rules>
 	</element>
 
-	<!-- ========================= -->
-	<!-- Romanticism Features      -->
-	<!-- ========================= -->
-
 	<element name="Scarlet Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE">
 		<description>
 			<p><strong>Scarlet Palette.</strong> When you choose this Movement at 3rd level, you gain the Red Palette. If you already know the Red Palette, you instead gain one Artist Palette of your choice.</p>
