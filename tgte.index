@@ -5,7 +5,7 @@
     <description>Homebrew content for the Elysia setting (races, classes, subclasses, and more).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.23">
+    <update version="0.0.24">
       <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte.index"/>
 
       <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/source-travelers-guide-to-elysia.xml"/>
