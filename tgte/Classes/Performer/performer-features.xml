@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Performer class features for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="performer-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-features.xml" />
+		</update>
+	</info>
+
+	<element name="Performer Type" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_TYPE">
+		<description>
+			<p><strong>Performer Type.</strong> As a Performer, you typically embody one of two major roles: a singer or a dancer. The two styles offer different types of performances, listed at the end of the class description. Your choice grants you additional features at 2nd, 6th, 8th, 10th, 13th, 17th, and 20th levels.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Performer Type" supports="Performer Type" level="1" />
+		</rules>
+	</element>
+
+	<element name="Unarmored Defense" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_UNARMORED_DEFENSE">
+		<description>
+			<p><strong>Unarmored Defense.</strong> Your unpredictable yet gliding motions are a defensive asset: you mystify by never staying still. While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Performance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_PERFORMANCE">
+		<description>
+			<p><strong>Performance.</strong> As a Performer, you gain an additional action depending on your type. As a Dancer, you gain the Dance action, while as a Songstress you gain the Sing action. At 1st level, the two actions do the same thing, though they improve differently depending on which route you took.</p>
+			<p>At 1st level, you gain one performance action which is additional to your other actions and does not consume them. Your performance action can be used to begin your performance, end your performance, or apply Harmony to an ally.</p>
+			<p>To apply Harmony to an ally, you must have already begun your performance. After you meet that condition, you may use your performance action to apply Harmony to a creature of your choice other than yourself who is within 20 feet of you and that can also see you.</p>
+			<p>Allies with Harmony gain the ability to take an extra bonus action on their next turn, as well as other buffs at higher levels. Harmony is lost by the end of the target creature’s turn.</p>
+			<p>However, you must maintain concentration to stay in this state. Losing concentration causes you to be incapacitated until the end of your next turn, as you are left in a daze.</p>
+		</description>
+		<sheet action="Special">
+			<description>You gain one additional performance action on each of your turns. You can use it to begin your performance, end your performance, or apply Harmony to one ally within 20 feet that can see you. Harmony grants an extra bonus action on that ally’s next turn. Maintaining a performance requires concentration; if you lose concentration, you are incapacitated until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Harmonic Resonance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_HARMONIC_RESONANCE">
+		<description>
+			<p><strong>Harmonic Resonance.</strong> At 3rd level, you carry the momentum and flow from your performance into your attacks to give them an extra edge.</p>
+			<p>A number of times equal to your Charisma modifier per rest, as long as you are not silenced, you can add extra damage to a melee weapon attack made with a weapon you are proficient with equal to your Charisma modifier.</p>
+		</description>
+		<sheet usage="Charisma Modifier/Rest">
+			<description>When you make a melee weapon attack with a weapon you are proficient with, you can add extra damage equal to your Charisma modifier, provided you are not silenced.</description>
+		</sheet>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_ASI">
+		<description>
+			<p><strong>Ability Score Improvement.</strong> When you reach 4th level, and again at 9th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You may take a feat instead. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Stage Performer" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_STAGE_PERFORMER">
+		<description>
+			<p><strong>Stage Performer.</strong> At 5th level, your long time spent performing allows you to put on a show for an audience.</p>
+			<p>You can spend half an hour performing for a non-hostile audience. Make a Performance check. On a total of 15 or higher, though the difficulty may change depending on how receptive the audience is, you double your skill bonus to Persuasion and Deception checks made to any member of the audience for the next day, minimum increase of 1.</p>
+		</description>
+		<sheet action="Special">
+			<description>Spend 30 minutes performing for a non-hostile audience. On a Performance check of 15 or higher, you double your skill bonus to Persuasion and Deception checks made to members of that audience for the next day.</description>
+		</sheet>
+	</element>
+
+	<element name="Enhanced Performance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_ENHANCED_PERFORMANCE">
+		<description>
+			<p><strong>Enhanced Performance.</strong> At 7th level, your practice with performing makes your performances stronger.</p>
+			<p>Allies with Harmony are now able to take an extra action on their turn in addition to the bonus action, though this extra action can only be used for one weapon attack. Harmony now ends at the start of your next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony now also grants an extra action that can be used only for one weapon attack, and Harmony lasts until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterful Artist" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_MASTERFUL_ARTIST">
+		<description>
+			<p><strong>Masterful Artist.</strong> At 11th level, you've perfected your ability to impress those watching you perform.</p>
+			<p>You gain proficiency in Performance. If you already have proficiency in Performance, you gain expertise instead. Any Performance or Acrobatics checks made while in the Performance state are made with advantage.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in Performance, or expertise if you already have it. Performance and Acrobatics checks made while in your Performance state are made with advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Distracting Performance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_DISTRACTING_PERFORMANCE">
+		<description>
+			<p><strong>Distracting Performance.</strong> At 14th level, you master the ability to draw attention to yourself and distract your enemies.</p>
+			<p>A number of times equal to your Charisma modifier per long rest, you can use your reaction to force a hostile creature within range of your performance to make an attack roll or saving throw with disadvantage.</p>
+			<p>Once you have done this, you reveal your location to everyone in range of your performance.</p>
+		</description>
+		<sheet action="Reaction" usage="Charisma Modifier/Long Rest">
+			<description>Force one hostile creature within range of your performance to make an attack roll or saving throw with disadvantage. You reveal your location to everyone in range of your performance.</description>
+		</sheet>
+	</element>
+
+	<element name="Disarming Performance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_DISARMING_PERFORMANCE">
+		<description>
+			<p><strong>Disarming Performance.</strong> At 15th level, you learn how to use your skills to break a spellcaster’s concentration.</p>
+			<p>A number of times equal to your Charisma modifier per long rest, you can use your reaction to force a hostile creature that is concentrating on a spell within range of your performance to make a Constitution saving throw. The DC equals your Charisma score.</p>
+			<p>On a failed save, the target is incapacitated until the end of its next turn as it is left in a daze. Once you have done this, you reveal your location to everyone in range of your performance.</p>
+		</description>
+		<sheet action="Reaction" usage="Charisma Modifier/Long Rest">
+			<description>Force one hostile concentrating creature within range of your performance to make a Constitution save with a DC equal to your Charisma score. On a failure, it is incapacitated until the end of its next turn. You reveal your location to everyone in range of your performance.</description>
+		</sheet>
+	</element>
+
+	<element name="Practice Makes Perfect" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_PRACTICE_MAKES_PERFECT">
+		<description>
+			<p><strong>Practice Makes Perfect.</strong> At 18th level, your years of practice have truly paid off.</p>
+			<p>Harmonic Resonance now increases your attack roll by an amount equal to your Charisma modifier in addition to the damage increase.</p>
+			<p>You also regain a use of Harmonic Resonance whenever you apply Harmony to a creature.</p>
+			<p>You can now regain Distracting Performance and Disarming Performance on a short rest.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmonic Resonance now also increases your attack roll by your Charisma modifier. You regain one use of Harmonic Resonance whenever you apply Harmony to a creature. Distracting Performance and Disarming Performance now recharge on a short rest.</description>
+		</sheet>
+	</element>
+</elements>
