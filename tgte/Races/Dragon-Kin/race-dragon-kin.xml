@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Dragon-Kin race for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.20">
+			<file name="race-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Dragon-Kin/race-dragon-kin.xml" />
+		</update>
+	</info>
+
+	<element name="Elysian Dragon-Kin" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_DRAGON_KIN">
+		<description>
+			<p>Dragon-Kin are humanoids who carry draconic blood not as a distant echo, but as a living inheritance. Unlike dragonborn, whose lineage manifests uniformly, Dragon-Kin display their heritage in varied and personal ways—through antler-like horns, patches of shimmering scales, and tails that move with deliberate balance.</p>
+			<p class="indent">Their draconic ancestry is ancient rather than immediate. At some point deep within their lineage, a dragon became bound to a mortal bloodline through means long lost to history. Once established, this inheritance does not fade or dilute over generations. A Dragon-Kin family remains draconic indefinitely, which is both the source of their power and the reason for their rarity.</p>
+			<p class="indent">Though uncommon, Dragon-Kin often integrate seamlessly into the cultures they inhabit, identifying more with the societies that raised them than with any unified Dragon-Kin culture. They tend to earn respect through presence rather than fear, carrying an undeniable sense of weight wherever they go. Most Dragon-Kin live between 200 and 300 years, granting them a long memory and a patient outlook shaped by centuries rather than decades.</p>
+
+			<h4>DRAGON-KIN TRAITS</h4>
+			<p>Your Dragon-Kin character has the following racial traits.</p>
+			<p><strong>Ability Score Increase.</strong> Increase two different ability scores of your choice by 1.</p>
+			<p><strong>Size.</strong> Dragon-Kin are Medium humanoids.</p>
+			<p><strong>Speed.</strong> Your base walking speed is 30 feet.</p>
+			<p><strong>Languages.</strong> You can speak, read, and write Common and Draconic.</p>
+			<p><strong>Darkvision.</strong> Accustomed to keen awareness rather than darkness alone, you have darkvision out to a range of 30 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sight.</p>
+			<p><strong>Draconic Will.</strong> Your draconic blood carries an unyielding sense of self. You have advantage on saving throws against being charmed or frightened.</p>
+			<p><strong>Cultural Adaptation.</strong> Dragon-Kin often adopt the customs of the societies they grow within. You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p>
+			<p><strong>Draconic Insight.</strong> You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.</p>
+			<p><strong>Draconic Expression.</strong> Your draconic heritage manifests in one dominant form. Choose one of the following Draconic Expressions when you create your character. Once chosen, this expression cannot be changed.</p>
+			<p><strong>Draconic Color.</strong> Your draconic ancestry is reflected in your coloration, influencing the damage type of your draconic abilities.</p>
+
+			<h5 class="caption">DRACONIC COLOR</h5>
+			<table>
+				<thead>
+					<tr><td>Color</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>Ruby</td><td>Fire</td></tr>
+				<tr><td>Sapphire</td><td>Lightning</td></tr>
+				<tr><td>Emerald</td><td>Thunder</td></tr>
+				<tr><td>Topaz</td><td>Cold</td></tr>
+				<tr><td>Crystal</td><td>Radiant</td></tr>
+				<tr><td>Obsidian</td><td>Necrotic</td></tr>
+				<tr><td>Amethyst</td><td>Force</td></tr>
+			</table>
+
+			<h4>APPEARANCE AND CULTURE</h4>
+			<p>Dragon-Kin typically possess antler-like horns rather than the rigid horns of dragonborn, along with slender tails and irregular patches of scales rather than fully scaled skin. Their appearance varies widely depending on ancestry and upbringing.</p>
+			<p class="indent">Though rare—seldom encountered more than a handful at a time across great distances—Dragon-Kin are generally respected and often seamlessly integrated into the cultures they inhabit. Their presence tends to command attention without demanding it.</p>
+		</description>
+
+		<sheet display="false">
+			<description>Humanoids who carry draconic blood as a living inheritance, manifesting it through color and expression.</description>
+		</sheet>
+
+		<setters>
+			<set name="names" type="male">Ambrose, Caelin, Kaien, Thalos, Orien, Valen, Eryndor, Drazan, Orryx, Rhavon, Soryn, Veydran, Zephir, Aurel</set>
+			<set name="names" type="female">Elfaria, Lianhua, Astra, Calyra, Draeva, Eiryn, Nyvara, Rhaela, Saphira, Velyss, Lurie, Valoria, Meilin, Xianru</set>
+			<set name="names" type="surname">Lang, Ashscale, Brightwing, Cindertalon, Dawncrest, Emberborn, Frostvein, Ironsong, Stormbrand, Voidcoil, Wyrmspire, Viremont, Morwyn, Veloren</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height">5'10"</set>
+			<set name="weight">160 lb.</set>
+		</setters>
+
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_ASI" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_DARKVISION" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_WILL" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_CULTURAL_ADAPTATION" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_INSIGHT" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_EXPRESSION" />
+			<grant type="Racial Trait" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_COLOR" />
+		</rules>
+	</element>
+
+	<element name="Darkvision (30 ft)" type="Vision" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_VISION_DARKVISION_30">
+		<description>
+			<p>You can see in dim light within 30 feet of you as if it were bright light, and in darkness as if it were dim light.</p>
+		</description>
+		<sheet>
+			<description>Darkvision 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="vision:darkvision" value="30" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Increase" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_ASI">
+		<description>
+			<p>Increase two different ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Dragon-Kin 1)" supports="Custom Ability Score Increase 1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Dragon-Kin 2)" supports="Custom Ability Score Increase 1" />
+		</rules>
+	</element>
+
+	<element name="Darkvision" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DARKVISION">
+		<description>
+			<p>Accustomed to keen awareness rather than darkness alone, you have darkvision out to a range of 30 feet.</p>
+			<p>In addition, you have advantage on Wisdom (Perception) checks that rely on sight.</p>
+		</description>
+		<sheet>
+			<description>Darkvision 30 ft. Advantage on Wisdom (Perception) checks that rely on sight.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_ELYSIA_DRAGON_KIN_VISION_DARKVISION_30" />
+		</rules>
+	</element>
+
+	<element name="Draconic Will" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_WILL">
+		<description>
+			<p>Your draconic blood carries an unyielding sense of self. You have advantage on saving throws against being charmed or frightened.</p>
+		</description>
+		<sheet>
+			<description>Advantage on saving throws against being charmed or frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Cultural Adaptation" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_CULTURAL_ADAPTATION">
+		<description>
+			<p>Dragon-Kin often adopt the customs of the societies they grow within. You gain proficiency with one tool of your choice, or you learn one additional language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Cultural Adaptation" supports="Dragon-Kin Cultural Adaptation" />
+		</rules>
+	</element>
+
+	<element name="Cultural Adaptation: Tool" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_CULTURAL_ADAPTATION_TOOL">
+		<supports>Dragon-Kin Cultural Adaptation</supports>
+		<description>
+			<p>You gain proficiency with one tool of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Dragon-Kin)" supports="Tool" />
+		</rules>
+	</element>
+
+	<element name="Cultural Adaptation: Language" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_CULTURAL_ADAPTATION_LANGUAGE">
+		<supports>Dragon-Kin Cultural Adaptation</supports>
+		<description>
+			<p>You learn one additional language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Dragon-Kin)" supports="Standard||Exotic" number="1" />
+		</rules>
+	</element>
+
+	<element name="Draconic Insight" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_INSIGHT">
+		<description>
+			<p>You gain proficiency in two of the following skills of your choice: Perception, Nature, Survival, or Insight.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Draconic Insight (1)" supports="Skill" number="1" />
+			<select type="Proficiency" name="Draconic Insight (2)" supports="Skill" number="1" />
+		</rules>
+	</element>
+
+	<element name="Draconic Expression" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_EXPRESSION">
+		<description>
+			<p>Your draconic heritage manifests in one dominant form. Choose one of the following Draconic Expressions when you create your character. Once chosen, this expression cannot be changed.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Draconic Expression" supports="Draconic Expression" />
+		</rules>
+	</element>
+
+	<element name="Great Wings" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_EXPRESSION_GREAT_WINGS">
+		<supports>Draconic Expression</supports>
+		<description>
+			<p>You possess powerful, draconic wings.</p>
+			<p>You can manifest your wings to gain a flying speed of 30 feet for a total of 10 minutes per day. These minutes can be used all at once or in shorter increments, and you choose when to activate or end this flight, no action required.</p>
+			<p>Once all minutes are expended, you regain the ability to fly when you finish a long rest.</p>
+			<p>Your wings are clearly draconic in nature and grow more pronounced as you gain levels.</p>
+		</description>
+		<sheet usage="10 Minutes/Long Rest">
+			<description>Gain a flying speed of 30 feet for up to 10 minutes per long rest, used all at once or in shorter increments.</description>
+		</sheet>
+	</element>
+
+	<element name="Draconic Magic" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_EXPRESSION_DRACONIC_MAGIC">
+		<supports>Draconic Expression</supports>
+		<description>
+			<p>Your draconic power erupts outward in a controlled burst.</p>
+			<p>As an action, you release a pulse of draconic energy in a 15-foot radius centered on yourself. Each creature of your choice in the area takes {{dragon-kin:draconic-magic:dice}} damage of a type determined by your Draconic Color.</p>
+			<p>You can use this trait twice per short rest.</p>
+			<p>The damage increases by 1d4 at 5th level, and again at 10th level and 15th level.</p>
+			<p>This effect represents raw draconic power spilling outward rather than a practiced breath weapon.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Release a 15-foot-radius pulse centered on yourself. Each creature of your choice in the area takes {{dragon-kin:draconic-magic:dice}} {{dragon-kin:damage-type}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:draconic-magic:dice-count" value="2" level="1" />
+			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="5" />
+			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="10" />
+			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="15" />
+			<stat name="dragon-kin:draconic-magic:dice" value="{{dragon-kin:draconic-magic:dice-count}}d4" />
+		</rules>
+	</element>
+
+	<element name="Great Horns" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_EXPRESSION_GREAT_HORNS">
+		<supports>Draconic Expression</supports>
+		<description>
+			<p>Your horns and scales serve as conduits for draconic resilience.</p>
+			<p>You can use a reaction to gain the benefits of the <i>absorb elements</i> spell.</p>
+			<p>You can use this trait twice, and you regain all expended uses when you finish a long rest.</p>
+			<p>As you grow in power, your horns become larger, more ornate, and more vividly colored, reflecting your lineage.</p>
+		</description>
+		<sheet action="Reaction" usage="2/Long Rest">
+			<description>Use your reaction to gain the benefits of absorb elements.</description>
+		</sheet>
+	</element>
+
+	<element name="Draconic Color" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_COLOR">
+		<description>
+			<p>Your draconic ancestry is reflected in your coloration, influencing the damage type of your draconic abilities.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Draconic Color" supports="Draconic Color" />
+		</rules>
+	</element>
+
+	<element name="Ruby" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_RUBY">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is fire.</p></description>
+		<sheet alt="Ruby">
+			<description>Draconic Color: Ruby. Damage type: Fire.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Fire" />
+		</rules>
+	</element>
+
+	<element name="Sapphire" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_SAPPHIRE">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is lightning.</p></description>
+		<sheet alt="Sapphire">
+			<description>Draconic Color: Sapphire. Damage type: Lightning.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Lightning" />
+		</rules>
+	</element>
+
+	<element name="Emerald" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_EMERALD">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is thunder.</p></description>
+		<sheet alt="Emerald">
+			<description>Draconic Color: Emerald. Damage type: Thunder.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Thunder" />
+		</rules>
+	</element>
+
+	<element name="Topaz" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_TOPAZ">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is cold.</p></description>
+		<sheet alt="Topaz">
+			<description>Draconic Color: Topaz. Damage type: Cold.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Cold" />
+		</rules>
+	</element>
+
+	<element name="Crystal" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_CRYSTAL">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is radiant.</p></description>
+		<sheet alt="Crystal">
+			<description>Draconic Color: Crystal. Damage type: Radiant.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Radiant" />
+		</rules>
+	</element>
+
+	<element name="Obsidian" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_OBSIDIAN">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is necrotic.</p></description>
+		<sheet alt="Obsidian">
+			<description>Draconic Color: Obsidian. Damage type: Necrotic.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Necrotic" />
+		</rules>
+	</element>
+
+	<element name="Amethyst" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_AMETHYST">
+		<supports>Draconic Color</supports>
+		<description><p>Your draconic damage type is force.</p></description>
+		<sheet alt="Amethyst">
+			<description>Draconic Color: Amethyst. Damage type: Force.</description>
+		</sheet>
+		<rules>
+			<stat name="dragon-kin:damage-type" value="Force" />
+		</rules>
+	</element>
+</elements>
