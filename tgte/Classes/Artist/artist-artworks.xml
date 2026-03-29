@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Artworks for the Artist class in Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-artworks.xml" />
 		</update>
 	</info>
@@ -177,41 +177,400 @@
 		</sheet>
 	</element>
 
-	<element name="Piece: Final Exhibition" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_FINAL_EXHIBITION">
+	<element name="Masterwork: Event Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_EVENT_HORIZON">
 		<supports>Artist Artwork, Repertoire III</supports>
 		<description>
-			<p><strong>Piece: Final Exhibition.</strong></p>
-			<p><strong>Sequence:</strong> White → Red → Black → Purple (Radiant → Fire → Bludgeoning → Necrotic)</p>
-			<p>When you complete this Artwork, the battlefield is seized by a catastrophic convergence of force and color.</p>
-			<p>Creatures of your choice within a 30-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<p><strong>Masterwork: Event Horizon.</strong></p>
+			<p><strong>Sequence:</strong> Yellow → Purple → Blue → White (Lightning → Necrotic → Cold → Radiant)</p>
+			<p>When you complete this Artwork, gravity bends violently toward the Canvas.</p>
+			<p>A 30-foot-radius sphere centered on the Canvas becomes a collapsing field for 3 rounds.</p>
+			<p>When the field forms, each creature of your choice inside it must make a Constitution saving throw.</p>
 			<ul>
-				<li>On a failure, a creature takes 6d8 radiant damage, 6d8 fire damage, and is stunned until the end of its next turn.</li>
-				<li>On a success, the creature takes half as much damage and is not stunned.</li>
+				<li>On a failure, a creature takes 6d8 force damage and is pulled to the nearest unoccupied space within 10 feet of the Canvas.</li>
+				<li>On a success, the creature takes half damage and is not moved.</li>
 			</ul>
-			<p>The area remains dangerous for 3 rounds. A creature that enters the area for the first time on a turn or starts its turn there takes 2d8 necrotic damage.</p>
+			<p>While the field persists:</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that ends its turn more than 10 feet from the Canvas is pulled 10 feet toward it.</li>
+				<li>Creatures have disadvantage on Strength saving throws while inside the field.</li>
+			</ul>
+			<p>The field collapses harmlessly at the end of the duration.</p>
 		</description>
 		<sheet display="false">
-			<description>Sequence: White → Red → Black → Purple. Creatures of your choice within 30 feet make a Constitution save or take 6d8 radiant and 6d8 fire damage and are stunned until the end of their next turn. On a success, they take half damage and are not stunned. For 3 rounds, creatures entering or starting their turn in the area take 2d8 necrotic damage.</description>
+			<description>Sequence: Yellow → Purple → Blue → White. Create a 30-foot-radius collapsing field for 3 rounds. Creatures inside make a Constitution save or take 6d8 force damage and are pulled toward the Canvas. The area is difficult terrain and continues pulling creatures inward.</description>
 		</sheet>
 	</element>
 
-	<element name="Piece: World Without Form" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_WORLD_WITHOUT_FORM">
+	<element name="Masterwork: World Unfinished" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_WORLD_UNFINISHED">
 		<supports>Artist Artwork, Repertoire III</supports>
 		<description>
-			<p><strong>Piece: World Without Form.</strong></p>
-			<p><strong>Sequence:</strong> Blue → Teal → Pink → White (Cold → Thunder → Psychic → Radiant)</p>
-			<p>When you complete this Artwork, the area around the Canvas dissolves into a surreal and unstable scene.</p>
-			<p>A 20-foot-radius sphere centered on the Canvas lasts for 3 rounds.</p>
+			<p><strong>Masterwork: World Unfinished.</strong></p>
+			<p><strong>Sequence:</strong> Green → Orange → Purple → White (Poison → Acid → Necrotic → Radiant)</p>
+			<p>When you complete this Artwork, reality within the Canvas’ reach destabilizes.</p>
+			<p>Choose a 40-foot-radius area centered on the Canvas. For 3 rounds, the area is warped.</p>
+			<p>When the effect begins, creatures of your choice in the area must make a Constitution saving throw.</p>
 			<ul>
-				<li>The area is difficult terrain.</li>
-				<li>Creatures inside the area have disadvantage on Wisdom saving throws.</li>
-				<li>A creature that starts its turn in the area must make a Wisdom saving throw.</li>
-				<li>On a failure, the creature takes 5d8 psychic damage and is confused until the start of its next turn.</li>
-				<li>On a success, the creature takes half as much damage and is not confused.</li>
+				<li>On a failure, a creature takes 5d10 necrotic damage and gains one level of exhaustion.</li>
+				<li>On a success, the creature takes half damage and does not gain exhaustion.</li>
+			</ul>
+			<p>While the area persists:</p>
+			<ul>
+				<li>Creatures cannot regain hit points.</li>
+				<li>A creature that drops to 0 hit points within the area cannot regain hit points until it leaves the area.</li>
 			</ul>
 		</description>
 		<sheet display="false">
-			<description>Sequence: Blue → Teal → Pink → White. Create a 20-foot-radius sphere for 3 rounds. It is difficult terrain, creatures inside have disadvantage on Wisdom saves, and creatures that start their turn there make a Wisdom save or take 5d8 psychic damage and become confused until the start of their next turn.</description>
+			<description>Sequence: Green → Orange → Purple → White. Create a 40-foot-radius warped area for 3 rounds. Creatures make a Constitution save or take 5d10 necrotic damage and gain exhaustion. Creatures in the area cannot regain hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: The Final Composition" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_THE_FINAL_COMPOSITION">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: The Final Composition.</strong></p>
+			<p><strong>Sequence:</strong> Red → Yellow → Blue → Green (Fire → Lightning → Cold → Poison)</p>
+			<p>When you complete this Artwork, the Canvas detonates into a storm of unstable elements.</p>
+			<p>Each creature of your choice within a 60-foot radius of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 8d6 damage, divided evenly among fire, lightning, cold, and poison.</li>
+				<li>On a success, the creature takes half damage.</li>
+			</ul>
+			<p>In addition, the ground within 30 feet of the Canvas becomes unstable for 3 rounds:</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that moves more than half its speed on its turn must succeed on a Dexterity saving throw or fall prone.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Red → Yellow → Blue → Green. Creatures of your choice within 60 feet make a Dexterity save or take 8d6 split elemental damage. The ground within 30 feet becomes unstable difficult terrain for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Blazing Oath" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_BLAZING_OATH" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Blazing Oath.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → Yellow (Fire → Lightning)</p>
+			<p>Completion: A violent line of searing light erupts from the Canvas in a direction of your choice, forming a 30-foot-long, 5-foot-wide line.</p>
+			<p>Creatures in the line must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d6 fire damage and 2d6 lightning damage.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → Yellow. Creatures in a 30-foot by 5-foot line make a Dexterity save or take 2d6 fire and 2d6 lightning damage. On a success, they take half damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Smoldering Embrace" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_SMOLDERING_EMBRACE" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Smoldering Embrace.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → Green (Fire → Poison)</p>
+			<p>Completion: Creatures of your choice within 15 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d8 fire damage and is Poisoned until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and suffers no additional effect.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → Green. Creatures of your choice within 15 feet make a Constitution save or take 3d8 fire damage and are Poisoned until the end of their next turn. On a success, they take half damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Inferno’s Arc" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_INFERNOS_ARC" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Inferno’s Arc.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → Yellow → Red (Fire → Lightning → Fire)</p>
+			<p>Completion: The Canvas erupts in a roaring detonation.</p>
+			<p>Creatures of your choice within a 20-foot radius of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 6d6 fire damage and 4d6 lightning damage.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>The area becomes burning ground for 3 rounds. The burning ground deals 2d6 fire damage per trigger.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → Yellow → Red. Creatures of your choice within 20 feet make a Dexterity save or take 6d6 fire and 4d6 lightning damage. On a success, they take half damage. The area becomes burning ground for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Fever Dream" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_FEVER_DREAM" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Fever Dream.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → Purple → Red (Fire → Necrotic → Fire)</p>
+			<p>Completion: A wave of delirious heat floods outward.</p>
+			<p>Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 5d8 necrotic damage and 3d8 fire damage and has disadvantage on its next saving throw before the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → Purple → Red. Creatures of your choice within 30 feet make a Constitution save or take 5d8 necrotic and 3d8 fire damage and have disadvantage on their next saving throw. On a success, they take half damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: Sun Without Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_SUN_WITHOUT_HORIZON" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: Sun Without Horizon.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → White → Yellow → Red (Fire → Radiant → Lightning → Fire)</p>
+			<p>Completion: A blinding corona of destructive brilliance expands outward.</p>
+			<p>Creatures of your choice within 60 feet of the Canvas must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 10d6 total damage, divided as you choose between fire, radiant, and lightning.</li>
+				<li>On a success, the creature takes half as much damage.</li>
+			</ul>
+			<p>The area within 30 feet of the Canvas becomes burning ground for 3 rounds, dealing 3d6 fire damage per trigger.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → White → Yellow → Red. Creatures of your choice within 60 feet make a Dexterity save or take 10d6 damage divided between fire, radiant, and lightning. On a success, they take half damage. The area within 30 feet becomes burning ground for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: Consuming Rapture" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_CONSUMING_RAPTURE" requirements="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: Consuming Rapture.</strong></p>
+			<p><strong>Prerequisite:</strong> Romanticism Movement</p>
+			<p><strong>Sequence:</strong> Red → Green → Yellow → Red (Fire → Poison → Lightning → Fire)</p>
+			<p>Completion: Flames twist into binding coils of violent color.</p>
+			<p>Creatures of your choice within a 40-foot radius of the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 8d8 fire damage and is Restrained until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not Restrained.</li>
+			</ul>
+			<p>This effect does not create burning ground.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Romanticism. Sequence: Red → Green → Yellow → Red. Creatures of your choice within 40 feet make a Constitution save or take 8d8 fire damage and are Restrained until the end of their next turn. On a success, they take half damage and are not Restrained.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Chromatic Dissonance" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_CHROMATIC_DISSONANCE" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Chromatic Dissonance.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → Yellow (Psychic → Lightning)</p>
+			<p>Completion: Creatures of your choice within 15 feet of the Canvas must make a Wisdom saving throw.</p>
+			<p>On a failed save, a creature:</p>
+			<ul>
+				<li>Has disadvantage on its next saving throw before the end of its next turn.</li>
+				<li>Has its speed reduced by 10 feet until the end of its next turn.</li>
+			</ul>
+			<p>On a success, the creature’s speed is reduced by 10 feet until the end of its next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → Yellow. Creatures of your choice within 15 feet make a Wisdom save. On a failure, they have disadvantage on their next saving throw and have speed reduced by 10 feet. On a success, their speed is reduced by 10 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Unnatural Contour" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_UNNATURAL_CONTOUR" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Unnatural Contour.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → Blue (Psychic → Cold)</p>
+			<p>Completion: The area within 20 feet of the Canvas becomes warped.</p>
+			<p>Creatures of your choice in the area must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, the creature’s speed becomes 0 until the start of its next turn.</li>
+				<li>On a success, the creature’s speed is halved until the start of its next turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → Blue. Creatures of your choice within 20 feet make a Dexterity save or have speed reduced. On a failure, speed becomes 0 until the start of the creature’s next turn. On a success, speed is halved.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Violent Perspective" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_VIOLENT_PERSPECTIVE" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Violent Perspective.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → Yellow → Orange (Psychic → Lightning → Acid)</p>
+			<p>Completion: Choose up to three creatures within 30 feet of the Canvas.</p>
+			<p>Each must make a Wisdom saving throw.</p>
+			<p>On a failed save:</p>
+			<ul>
+				<li>The creature must immediately use its reaction, if available, to move up to half its speed in a direction of your choice.</li>
+				<li>The creature has disadvantage on its next attack roll.</li>
+			</ul>
+			<p>On a success:</p>
+			<ul>
+				<li>The creature does not move but has disadvantage on its next attack roll.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → Yellow → Orange. Up to three creatures within 30 feet make a Wisdom save. On a failure, they move as directed and have disadvantage on their next attack roll. On a success, they do not move but still have disadvantage on their next attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Saturated Vision" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_SATURATED_VISION" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Saturated Vision.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → White → Green (Psychic → Radiant → Poison)</p>
+			<p>Completion: Creatures of your choice within 30 feet of the Canvas must make a Constitution saving throw.</p>
+			<p>On a failed save, a creature is:</p>
+			<ul>
+				<li>Poisoned until the end of its next turn.</li>
+				<li>Blinded until the start of its next turn.</li>
+			</ul>
+			<p>On a success, the creature is Poisoned until the start of its next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → White → Green. Creatures of your choice within 30 feet make a Constitution save. On a failure, they are Poisoned until the end of their next turn and Blinded until the start of their next turn. On a success, they are Poisoned until the start of their next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: Color Without Meaning" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_COLOR_WITHOUT_MEANING" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: Color Without Meaning.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → Yellow → Blue → Orange (Psychic → Lightning → Cold → Acid)</p>
+			<p>Completion: Creatures of your choice within 40 feet must make a Wisdom saving throw.</p>
+			<p>On a failed save, the creature:</p>
+			<ul>
+				<li>Is Restrained until the end of its next turn.</li>
+				<li>Has disadvantage on all saving throws until the end of its next turn.</li>
+			</ul>
+			<p>On a success, the creature is Restrained until the start of its next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → Yellow → Blue → Orange. Creatures of your choice within 40 feet make a Wisdom save. On a failure, they are Restrained and have disadvantage on all saving throws until the end of their next turn. On a success, they are Restrained until the start of their next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: Overloaded Perception" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_OVERLOADED_PERCEPTION" requirements="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: Overloaded Perception.</strong></p>
+			<p><strong>Prerequisite:</strong> Fauvism Movement</p>
+			<p><strong>Sequence:</strong> Pink → White → Yellow → Pink (Psychic → Radiant → Lightning → Psychic)</p>
+			<p>Completion: Choose one creature within 60 feet.</p>
+			<p>The creature must make a Wisdom saving throw.</p>
+			<p>On a failed save, the creature is:</p>
+			<ul>
+				<li>Stunned until the end of its next turn.</li>
+				<li>Has disadvantage on the next saving throw it makes before the end of its next turn.</li>
+			</ul>
+			<p>On a success, the creature is Incapacitated until the start of its next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Fauvism. Sequence: Pink → White → Yellow → Pink. One creature within 60 feet makes a Wisdom save. On a failure, it is Stunned until the end of its next turn and has disadvantage on its next saving throw. On a success, it is Incapacitated until the start of its next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Gentle Horizon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_GENTLE_HORIZON" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Gentle Horizon.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Blue (Radiant → Cold)</p>
+			<p>Completion: Allies of your choice within 15 feet of the Canvas gain advantage on the next saving throw they make before the end of their next turn.</p>
+			<p>In addition, their movement speed increases by 10 feet until the end of their next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Blue. Allies of your choice within 15 feet gain advantage on their next saving throw and +10 feet movement speed until the end of their next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Softened Edge" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_SOFTENED_EDGE" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Softened Edge.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Teal (Radiant → Thunder)</p>
+			<p>Completion: Choose up to two allies within 20 feet of the Canvas.</p>
+			<p>The next time each chosen creature is hit by an attack before the end of your next turn, reduce the damage taken by 2d8 + your Wisdom modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Teal. Choose up to two allies within 20 feet. The next time each is hit by an attack before the end of your next turn, reduce the damage by 2d8 + your Wisdom modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Light Through Mist" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_LIGHT_THROUGH_MIST" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Light Through Mist.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Blue → Green (Radiant → Cold → Poison)</p>
+			<p>Completion: Allies of your choice within 30 feet of the Canvas gain:</p>
+			<ul>
+				<li>Advantage on their next attack roll.</li>
+				<li>Resistance to the next instance of damage they take before the end of their next turn.</li>
+			</ul>
+			<p>Each benefit ends after it is used.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Blue → Green. Allies of your choice within 30 feet gain advantage on their next attack roll and resistance to the next damage they take before the end of their next turn. Each benefit ends after it is used.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Borrowed Clarity" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_BORROWED_CLARITY" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Borrowed Clarity.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Pink → Yellow (Radiant → Psychic → Lightning)</p>
+			<p>Completion: Choose up to three allies within 30 feet of the Canvas.</p>
+			<p>Until the end of their next turn:</p>
+			<ul>
+				<li>They add 1d6 to their next attack roll or saving throw.</li>
+				<li>They can move through difficult terrain without expending extra movement.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Pink → Yellow. Choose up to three allies within 30 feet. Until the end of their next turn, they add 1d6 to their next attack roll or saving throw and ignore extra movement from difficult terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: Moment of Still Light" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_MOMENT_OF_STILL_LIGHT" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: Moment of Still Light.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Blue → Teal → White (Radiant → Cold → Thunder → Radiant)</p>
+			<p>Completion: Allies of your choice within 40 feet of the Canvas immediately regain hit points equal to 3d8 + your Wisdom modifier.</p>
+			<p>In addition, they have advantage on saving throws until the start of your next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Blue → Teal → White. Allies of your choice within 40 feet immediately regain 3d8 + your Wisdom modifier hit points and have advantage on saving throws until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterwork: A Perfect Impression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_A_PERFECT_IMPRESSION" requirements="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Masterwork: A Perfect Impression.</strong></p>
+			<p><strong>Prerequisite:</strong> Impressionism Movement</p>
+			<p><strong>Sequence:</strong> White → Pink → Blue → White (Radiant → Psychic → Cold → Radiant)</p>
+			<p>Completion: Choose up to four allies within 40 feet of the Canvas.</p>
+			<p>Until the end of their next turn:</p>
+			<ul>
+				<li>The first attack they make that hits deals an additional 2d8 radiant damage.</li>
+				<li>The first time they fail a saving throw, they may reroll it.</li>
+			</ul>
+			<p>Each benefit can trigger only once per creature.</p>
+		</description>
+		<sheet display="false">
+			<description>Prerequisite: Impressionism. Sequence: White → Pink → Blue → White. Choose up to four allies within 40 feet. Until the end of their next turn, the first hit they land deals 2d8 extra radiant damage and the first saving throw they fail can be rerolled.</description>
 		</sheet>
 	</element>
 </elements>
