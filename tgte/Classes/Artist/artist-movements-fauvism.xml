@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Fauvism movement for the Artist class in Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="artist-movements-fauvism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-fauvism.xml" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_DISTORTION" />
-			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_CANVAS_ALTERATION" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_OVERWHELM" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_COLOR_SHOCK" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_OVERWHELMING_CONTRAST" />
@@ -28,28 +28,23 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_DISTORTION" level="3" />
-			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS" level="3" />
-
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_CANVAS_ALTERATION" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_OVERWHELM" level="6" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_COLOR_SHOCK" level="6" />
-
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_OVERWHELMING_CONTRAST" level="14" />
 		</rules>
 	</element>
 
-	<!-- ========================= -->
-	<!-- Fauvism Features          -->
-	<!-- ========================= -->
-
 	<element name="Pink Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE">
 		<description>
-			<p><strong>Pink Palette.</strong> When you choose this Movement at 3rd level, you gain the Pink Palette. If you already know the Pink Palette, you instead gain one Artist Palette of your choice.</p>
+			<p><strong>Pink Palette.</strong> When you choose this Movement at 3rd level, you gain access to the Pink Palette. If you already know the Pink Palette, you instead choose one Artist Palette you do not already know.</p>
+			<p>For Aurora purposes, if you already know Pink, simply select a different palette when instructed to do so.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain the Pink Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+			<description>You gain access to the Pink Palette. If you already know it, choose a different Artist Palette instead.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_PINK" />
+			<select type="Class Feature" name="Fauvism Palette" supports="Artist Palette" number="1" />
 		</rules>
 	</element>
 
@@ -68,13 +63,14 @@
 		</sheet>
 	</element>
 
-	<element name="Distorted Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS">
+	<element name="Canvas Alteration: Distorted Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_CANVAS_ALTERATION">
 		<description>
-			<p><strong>Distorted Canvas.</strong> At 3rd level, your Canvas becomes a warping field of unstable perception.</p>
+			<p><strong>Canvas Alteration: Distorted Canvas.</strong> At 3rd level, your Canvas becomes a warping field of unstable perception.</p>
 			<p>While you have an active Canvas, the Canvas is difficult terrain for your enemies. In addition, the first time each turn an enemy enters the Canvas, it takes 1d6 damage of your current Palette’s type.</p>
+			<p>This feature is a reference note for how Fauvism alters your Canvas.</p>
 		</description>
-		<sheet display="false">
-			<description>While you have an active Canvas, it is difficult terrain for your enemies, and the first time each turn an enemy enters it, that enemy takes 1d6 damage of your current Palette’s type.</description>
+		<sheet>
+			<description>Canvas Alteration — Distorted Canvas: while you have an active Canvas, it is difficult terrain for enemies, and the first time each turn an enemy enters it, that enemy takes 1d6 damage of your current Palette’s type.</description>
 		</sheet>
 	</element>
 
