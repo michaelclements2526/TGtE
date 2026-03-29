@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Artist class features for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="artist-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-features.xml" />
 		</update>
 	</info>
@@ -75,9 +75,9 @@
 			<p><strong>Palette.</strong> Beginning at 1st level, your magic is expressed through a color palette, a personal vocabulary that determines the type of damage your Artist features produce.</p>
 			<p>While you are using a palette, your qualifying Artist features deal damage of that palette’s type. You can use only one palette at a time. If you are not using another palette, you are considered to be using Black.</p>
 			<p>Palettes do not affect spells gained from other classes unless a feature explicitly states otherwise.</p>
-			<p class="indent"><strong>Palette List.</strong> Each palette corresponds to a damage type. When you gain a new palette, choose one from the list of palette options available to you.</p>
 			<p class="indent"><strong>Starting Palette.</strong> You begin with the Black Palette.</p>
 			<p class="indent"><strong>Additional Palettes.</strong> You gain an additional palette at 2nd, 7th, and 13th level. Each time you gain a palette, choose one you do not already know.</p>
+			<p class="indent"><strong>Movement Palettes.</strong> Some Movements grant access to a signature palette. If you already know that palette, the Movement feature tells you how to resolve the overlap.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -116,6 +116,12 @@
 			<p><strong>Ability Score Improvement.</strong> When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Artist 4)" supports="Improvement Option,Artist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Artist 8)" supports="Improvement Option,Artist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Artist 12)" supports="Improvement Option,Artist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Artist 16)" supports="Improvement Option,Artist,16" level="16" />
+		</rules>
 	</element>
 
 	<element name="Artwork" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_ARTWORK">
@@ -126,6 +132,7 @@
 			<p class="indent"><strong>Progressing an Artwork.</strong> Each Artwork has a defined Sequence of damage types. You progress an Artwork when you use an area-of-effect ability that overlaps the Canvas and deals the next required damage type in the sequence.</p>
 			<p class="indent"><strong>Mistakes.</strong> If the Canvas is affected by a damage type other than the next required one in the sequence, a mistake occurs. If an Artwork accumulates two mistakes, the Canvas collapses and the Artwork ends with no effect.</p>
 			<p class="indent"><strong>Completion.</strong> When you successfully apply the final damage type in an Artwork’s sequence to the Canvas, the Artwork is completed and its completion effect resolves immediately.</p>
+			<p class="indent"><strong>Movement Artworks.</strong> Some Artworks belong to specific Movements. If an Artwork has a prerequisite, its description tells you which Movement it belongs to.</p>
 			<p class="indent"><strong>Ending an Artwork.</strong> You may abandon an Artwork at any time, causing the Canvas to fade harmlessly.</p>
 		</description>
 		<sheet display="false" />
