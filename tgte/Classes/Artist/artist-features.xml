@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Artist class features for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-features.xml" />
+		</update>
+	</info>
+
+	<element name="Spellcasting" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_SPELLCASTING">
+		<description>
+			<p><strong>Spellcasting.</strong> As an Artist, you are able to materialize your sketches and works into the world through your magical tools and dedication to your craft.</p>
+			<p class="indent"><strong>Spellcasting Ability.</strong> Wisdom is your spellcasting ability for your Artist spells, reflecting focus, perception, and control over magical expression. You use your Wisdom whenever a spell refers to your spellcasting ability.</p>
+			<p class="indent"><strong>Spell Save DC.</strong> 8 + your proficiency bonus + your Wisdom modifier.</p>
+			<p class="indent"><strong>Spell Attack Modifier.</strong> Your proficiency bonus + your Wisdom modifier.</p>
+			<p class="indent"><strong>Spell Slots.</strong> The Artist table shows how many spell slots you have to cast your Artist spells of 1st level and higher. You regain all expended spell slots when you finish a long rest. Artists never gain spell slots higher than 7th level.</p>
+			<p class="indent"><strong>Spells Known.</strong> You know a limited number of Artist spells, chosen from the Artist spell list. Whenever you gain a level in this class, you may replace one Artist spell you know with another Artist spell for which you have spell slots.</p>
+			<p class="indent"><strong>Spellcasting Focus.</strong> You can use an infused brush as a spellcasting focus for your Artist spells.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Studies" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_STUDIES">
+		<description>
+			<p><strong>Studies.</strong> Beginning at 1st level, you learn three Studies, practiced techniques that allow you to affect the battlefield without committing to a full Artwork. Studies represent drills, exercises, and controlled expressions of magic refined through repetition.</p>
+			<p>A Study is an Artist feature, not a spell. Unless a Study states otherwise, it has the following characteristics:</p>
+			<ul>
+				<li>Using a Study requires an action.</li>
+				<li>A Study uses your Artist spell save DC.</li>
+				<li>A Study creates a line, cone, or small area of effect.</li>
+				<li>The damage type of a Study is determined by your current Palette.</li>
+				<li>A Study does not require a Canvas and does not progress an Artwork.</li>
+			</ul>
+			<p>You can use Studies at will.</p>
+			<p class="indent"><strong>Studies Known.</strong> You know a limited number of Studies, as shown in the Artist table. Whenever you gain a level in this class, you may replace one Study you know with another Study for which you meet the prerequisites.</p>
+			<p class="indent"><strong>Study Prerequisites.</strong> Some Studies have prerequisites, such as a minimum Artist level, a specific Movement, or a particular Palette.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Study" supports="Study, Artist" number="3" level="1" />
+			<select type="Class Feature" name="Study" supports="Study, Artist" number="1" level="6" />
+			<select type="Class Feature" name="Study" supports="Study, Artist" number="1" level="10" />
+			<select type="Class Feature" name="Study" supports="Study, Artist" number="1" level="20" />
+		</rules>
+	</element>
+
+	<element name="Artistic Tools" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_ARTISTIC_TOOLS">
+		<description>
+			<p><strong>Artistic Tools.</strong> You are proficient with calligrapher’s supplies or painter’s supplies. In addition, you can use an infused brush as your spellcasting focus for Artist spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You are proficient with calligrapher’s supplies or painter’s supplies, and you can use an infused brush as your spellcasting focus.</description>
+		</sheet>
+	</element>
+
+	<element name="Canvas" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_CANVAS">
+		<description>
+			<p><strong>Canvas.</strong> Beginning at 1st level, you learn to establish a magical Canvas in the world, a foundation upon which your Artworks take shape.</p>
+			<p class="indent"><strong>Creating a Canvas.</strong> As an action, you create a magical Canvas in an unoccupied space you can see within range. A Canvas occupies a 10-foot-by-10-foot square. A Canvas is a magical effect, not an object.</p>
+			<p class="indent"><strong>Uses.</strong> You can create a Canvas a number of times equal to your proficiency bonus + your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong>One Canvas at a Time.</strong> You can have only one Canvas active at a time. Creating a new Canvas immediately causes any existing Canvas you created to fade.</p>
+			<p class="indent"><strong>Canvas Duration.</strong> A Canvas persists while it is being actively worked upon. If a Canvas goes 3 consecutive rounds without being progressed or suffering a mistake, it fades harmlessly. Progressing a Canvas or making a mistake resets this duration.</p>
+			<p class="indent"><strong>Visibility.</strong> A Canvas is a visible magical phenomenon, manifesting as shifting color, form, or force according to your expression.</p>
+			<p class="indent"><strong>Ending a Canvas.</strong> You may abandon a Canvas at any time, causing it to fade harmlessly.</p>
+		</description>
+		<sheet action="Action" usage="Special">
+			<description>Create a magical Canvas in an unoccupied space you can see. You can create a Canvas a number of times equal to your proficiency bonus + your Wisdom modifier per long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE">
+		<description>
+			<p><strong>Palette.</strong> Beginning at 1st level, your magic is expressed through a color palette, a personal vocabulary that determines the type of damage your Artist features produce.</p>
+			<p>While you are using a palette, your qualifying Artist features deal damage of that palette’s type. You can use only one palette at a time. If you are not using another palette, you are considered to be using Black.</p>
+			<p>Palettes do not affect spells gained from other classes unless a feature explicitly states otherwise.</p>
+			<p class="indent"><strong>Palette List.</strong> Each palette corresponds to a damage type. When you gain a new palette, choose one from the list of palette options available to you.</p>
+			<p class="indent"><strong>Starting Palette.</strong> You begin with the Black Palette.</p>
+			<p class="indent"><strong>Additional Palettes.</strong> You gain an additional palette at 2nd, 7th, and 13th level. Each time you gain a palette, choose one you do not already know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_BLACK" level="1" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="2" requirements="!ID_ELYSIA_PALETTE_BLACK" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="7" requirements="!ID_ELYSIA_PALETTE_BLACK" />
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="1" level="13" requirements="!ID_ELYSIA_PALETTE_BLACK" />
+		</rules>
+	</element>
+
+	<element name="Palette Switches" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE_SWITCHES">
+		<description>
+			<p><strong>Palette Switches.</strong> Beginning at 2nd level, you can switch to another palette you know as a bonus action.</p>
+			<p>You have two palette switches for each palette you know. Switching palettes expends one palette switch. You regain all expended palette switches when you finish a long rest.</p>
+			<p>If you have no palette switches remaining, you cannot switch palettes until you regain uses through rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Special">
+			<description>Switch to another palette you know. You have two palette switches for each palette you know, regained on a long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Movement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_MOVEMENT">
+		<description>
+			<p><strong>Movement.</strong> At 3rd level, you have experienced enough of the world to commit to a particular art movement, adopting a philosophy that shapes how you create and interpret your work.</p>
+			<p>Your chosen Movement represents the lens through which you approach your art. It influences how you interact with your Artworks, Studies, and Palettes, subtly altering your priorities and methods without replacing the core structure of the class.</p>
+			<p>You gain features from your chosen Movement at 3rd level, and again at 6th and 14th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Movement" supports="Artist Movement" level="3" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_ASI">
+		<description>
+			<p><strong>Ability Score Improvement.</strong> When you reach 4th level, and again at 8th, 12th, and 16th level, you can increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Artwork" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_ARTWORK">
+		<description>
+			<p><strong>Artwork.</strong> Beginning at 5th level, you learn to create Artworks, ritualized magical compositions that take shape over time through deliberate application of force and color.</p>
+			<p>You can attempt only Artworks you know.</p>
+			<p class="indent"><strong>Creating an Artwork.</strong> Each Artwork represents a focused act of creation rather than a single spell. It is constructed by establishing a Canvas and working upon it in sequence until the piece is completed or abandoned.</p>
+			<p class="indent"><strong>Progressing an Artwork.</strong> Each Artwork has a defined Sequence of damage types. You progress an Artwork when you use an area-of-effect ability that overlaps the Canvas and deals the next required damage type in the sequence.</p>
+			<p class="indent"><strong>Mistakes.</strong> If the Canvas is affected by a damage type other than the next required one in the sequence, a mistake occurs. If an Artwork accumulates two mistakes, the Canvas collapses and the Artwork ends with no effect.</p>
+			<p class="indent"><strong>Completion.</strong> When you successfully apply the final damage type in an Artwork’s sequence to the Canvas, the Artwork is completed and its completion effect resolves immediately.</p>
+			<p class="indent"><strong>Ending an Artwork.</strong> You may abandon an Artwork at any time, causing the Canvas to fade harmlessly.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Artwork Repertoire I" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_I">
+		<description>
+			<p><strong>Artwork Repertoire I.</strong> Beginning at 5th level, you develop an artwork repertoire, a limited collection of Artworks you are capable of creating.</p>
+			<p>You know three Artworks of your choice from Repertoire I. Whenever you gain a level in this class that grants an Artwork Repertoire feature, you may replace one Artwork in your repertoire with another Artwork for which you meet the prerequisites.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire I)" supports="Artist Artwork, Repertoire I" number="3" level="5" />
+		</rules>
+	</element>
+
+	<element name="Improved Studies" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_IMPROVED_STUDIES">
+		<description>
+			<p><strong>Improved Studies.</strong> Beginning at 9th level, your practice deepens beyond foundational exercises, granting you access to Improved Studies, advanced techniques that expand your control, offense, or survivability.</p>
+			<p>Choose one Improved Study from the options available to you. An Improved Study follows all the normal rules for Studies unless stated otherwise.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improved Study" supports="Improved Study, Artist" number="1" level="9" />
+		</rules>
+	</element>
+
+	<element name="Refined Expression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_REFINED_EXPRESSION">
+		<description>
+			<p><strong>Refined Expression.</strong> Starting at 10th level, your control over magical expression becomes more deliberate and efficient.</p>
+			<p>When you use a Study or an Artist feature that creates a line, cone, or area of effect, you may choose one of the following benefits:</p>
+			<ul>
+				<li>You can exclude a number of creatures within the area equal to your Wisdom modifier (minimum of one).</li>
+				<li>You can slightly reposition the area, shifting it up to 5 feet in any direction before resolving its effects.</li>
+			</ul>
+			<p>You can use only one benefit per effect.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Artwork Repertoire II" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_II">
+		<description>
+			<p><strong>Artwork Repertoire II.</strong> Beginning at 11th level, your artistic ambitions expand, allowing you to attempt more complex and demanding works.</p>
+			<p>You add two Artworks of your choice from Repertoire II to your repertoire. Whenever you gain a level in this class that grants an Artwork Repertoire feature, you may replace one Artwork in your repertoire with another Artwork for which you meet the prerequisites.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire II)" supports="Artist Artwork, Repertoire II" number="2" level="11" />
+		</rules>
+	</element>
+
+	<element name="Artwork Repertoire III" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_III">
+		<description>
+			<p><strong>Artwork Repertoire III.</strong> Beginning at 15th level, you learn two Artworks of your choice from Repertoire III.</p>
+			<p>Whenever you gain a level in this class that grants an Artwork Repertoire feature, you may replace one Artwork in your repertoire with another Artwork for which you meet the prerequisites.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Artwork (Repertoire III)" supports="Artist Artwork, Repertoire III" number="2" level="15" />
+		</rules>
+	</element>
+
+	<element name="Mastery of Color" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_MASTERY_OF_COLOR">
+		<description>
+			<p><strong>Mastery of Color.</strong> Beginning at 17th level, your command of palette and transition reaches its peak.</p>
+			<p>You gain two additional palettes of your choice. In addition, once on each of your turns, when you switch palettes, you may do so without expending a palette switch.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Palette" supports="Artist Palette" number="2" level="17" />
+		</rules>
+	</element>
+
+	<element name="Signature Work" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_SIGNATURE_WORK">
+		<description>
+			<p><strong>Signature Work.</strong> At 18th level, choose one Artwork you know. Once per long rest, when you create a Canvas for that Artwork, you may immediately complete it without needing to progress through its sequence.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Once per long rest, when you create a Canvas for one Artwork you know, you may complete it immediately.</description>
+		</sheet>
+	</element>
+
+	<element name="Epic Boon" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_EPIC_BOON">
+		<description>
+			<p><strong>Epic Boon.</strong> At 19th level, you gain an Epic Boon.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Magnum Opus" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_ARTIST_MAGNUM_OPUS">
+		<description>
+			<p><strong>Magnum Opus.</strong> At 20th level, once per long rest, when you complete an Artwork, you may declare it your Magnum Opus.</p>
+			<p>When you do so, the Canvas does not fade upon completion. Instead, the Artwork becomes stable and remains active for 1 minute, as if its duration were extended. If the Artwork normally lasts longer than 1 minute, it instead remains active for its normal duration plus 1 minute. If the Canvas would be dismissed by any effect, it persists until the Magnum Opus ends. Once the Magnum Opus ends, the Canvas fades as normal.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you complete an Artwork, you may declare it your Magnum Opus, causing it to remain active for 1 minute.</description>
+		</sheet>
+	</element>
+</elements>
