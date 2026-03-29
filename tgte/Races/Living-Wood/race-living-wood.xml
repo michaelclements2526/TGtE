@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Living Wood race for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.21">
+			<file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Living-Wood/race-living-wood.xml" />
+		</update>
+	</info>
+
+	<element name="Living Wood" type="Race" source="Traveler's Guide to Elysia" id="ID_ELYSIA_RACE_LIVING_WOOD">
+		<description>
+			<p>Living Wood are sentient plantfolk deliberately created by druidic circles to serve as companions, assistants, and guardians of the natural world. Through ancient rites blending druidic magic with living timber, these beings are grown rather than born—shaped with emotions, cognition, and moral reasoning comparable to humanoids. This design is intentional. Living Wood are not tools, but caretakers meant to act with judgment in both peace and crisis.</p>
+			<p class="indent">They are neither constructs nor mindless plants. Living Wood are alive, aware, and capable of choice—crafted to endure where others pass on.</p>
+
+			<h4>PURPOSE AND TEMPERAMENT</h4>
+			<p>Most Living Wood adhere to Lawful Neutral or Lawful Good philosophies, reflecting the values of the druidic circles that created them. Their sense of law is rooted not in written codes, but in consistency, responsibility, and preservation. They value balance over dominance and continuity over ambition.</p>
+			<p class="indent">Though often calm and patient, Living Wood are not emotionless. They experience attachment, pride, frustration, and grief, tempered by an understanding that nature unfolds across long spans of time. Some struggle when separated from their original purpose, while others adapt, finding new duties beyond the groves that shaped them.</p>
+
+			<h4>CREATION AND DISTINCTION</h4>
+			<p>All Living Wood are created through ritual, but not all are created equal.</p>
+			<p class="indent"><strong>New Wood</strong> are formed from younger or more modest trees. They are typically Medium in size, more mobile, and more adaptable to life beyond druidic groves. New Wood are often entrusted with patrol, travel, and assisting druids directly.</p>
+			<p class="indent"><strong>Old Wood</strong> are created using ancient, massive trees—those that have stood for centuries or longer. These Living Wood emerge Large in stature from the moment of their creation, bearing the weight, density, and presence of their source. Old Wood are commonly tasked with guarding sacred sites, ancient boundaries, or places of deep natural significance.</p>
+			<p class="indent">This distinction reflects the materials and intent of their creation, not rank or superiority.</p>
+
+			<h4>LIVING WOOD TRAITS</h4>
+			<p>Your Living Wood character has the following racial traits.</p>
+			<p><strong>Ability Score Increase.</strong> Increase one ability score of your choice by 2.</p>
+			<p><strong>Creature Type.</strong> You are a Plant.</p>
+			<p><strong>Size.</strong> You are Medium or Large, your choice. For narrative and mechanical purposes, Medium Living Wood are referred to as New Wood, and Large Living Wood are referred to as Old Wood.</p>
+			<p><strong>Speed.</strong> Your walking speed is 30 feet if you are Medium. Your walking speed is 20 feet if you are Large.</p>
+			<p><strong>Age.</strong> Living Wood typically live between 100 and 150 years.</p>
+			<p><strong>Languages.</strong> You can speak, read, and write Common and Druidic.</p>
+			<p><strong>Skill Proficiency.</strong> You gain proficiency in either Survival, Animal Handling, Nature, or History.</p>
+			<p><strong>Wooden Frame.</strong> While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.</p>
+			<p><strong>Rooted Awareness.</strong> While you are in contact with the ground, you have tremorsense out to a range of 30 feet.</p>
+			<p><strong>Barkbound Resilience.</strong> You have resistance to nonmagical bludgeoning damage.</p>
+			<p><strong>Grasping Limbs.</strong> When you successfully grapple a creature smaller than you, you can choose to restrain it instead. The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.</p>
+
+			<h4>REACH AND PRESENCE</h4>
+			<p>As a natural consequence of their size and structure, Old Wood possess greater physical reach. This is not the result of training or aggression, but of scale. Old Wood do not move quickly, but they occupy space with the inevitability of trees—difficult to ignore and harder to displace. When an Old Wood moves, it is because something significant demands their attention.</p>
+		</description>
+
+		<sheet display="false">
+			<description>Sentient plantfolk created by druidic circles to endure, protect, and choose for themselves.</description>
+		</sheet>
+
+		<setters>
+			<set name="names" type="male">Ashroot, Stonebark, Greenwake, Ironwood, Mossbound, Deepgrain, Thornreach, Oakfall, Reedmarch, Cinderbough, Birchward, Hollowstem, Sapveil, Brambleknit</set>
+			<set name="names" type="female">Ashroot, Stonebark, Greenwake, Ironwood, Mossbound, Deepgrain, Thornreach, Oakfall, Reedmarch, Cinderbough, Birchward, Hollowstem, Sapveil, Brambleknit</set>
+			<set name="names" type="surname">of the Grove, of the Boundary, of the Old Ring, of the Green Oath, of Root and Stone, of the Quiet Vale</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height">5'6"</set>
+			<set name="weight">220 lb.</set>
+		</setters>
+
+		<rules>
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_ASI" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_CREATURE_TYPE" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_BODY" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_SKILL" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_WOODEN_FRAME" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_ROOTED_AWARENESS" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_BARKBOUND_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_ELYSIA_LIVING_WOOD_GRASPING_LIMBS" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Increase" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_ASI">
+		<description>
+			<p>Increase one ability score of your choice by 2.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Living Wood)" supports="Custom Ability Score Increase 2" />
+		</rules>
+	</element>
+
+	<element name="Creature Type" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_CREATURE_TYPE">
+		<description>
+			<p>You are a Plant.</p>
+		</description>
+		<sheet>
+			<description>Creature Type: Plant.</description>
+		</sheet>
+	</element>
+
+	<element name="New Wood / Old Wood" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_BODY">
+		<description>
+			<p>You are Medium or Large, your choice. For narrative and mechanical purposes, Medium Living Wood are referred to as New Wood, and Large Living Wood are referred to as Old Wood.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Living Wood Body" supports="Living Wood Body" />
+		</rules>
+	</element>
+
+	<element name="New Wood" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_NEW_WOOD">
+		<supports>Living Wood Body</supports>
+		<description>
+			<p>You are New Wood. Your size is Medium and your walking speed is 30 feet.</p>
+		</description>
+		<sheet alt="New Wood">
+			<description>Size: Medium. Speed: 30 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Old Wood" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_OLD_WOOD">
+		<supports>Living Wood Body</supports>
+		<description>
+			<p>You are Old Wood. Your size is Large and your walking speed is 20 feet.</p>
+		</description>
+		<sheet alt="Old Wood">
+			<description>Size: Large. Speed: 20 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<stat name="innate speed" value="20" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Skill Proficiency" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_SKILL">
+		<description>
+			<p>You gain proficiency in either Survival, Animal Handling, Nature, or History.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Living Wood Skill Proficiency" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+
+	<element name="Tremorsense (30 ft)" type="Vision" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_VISION_TREMORSENSE_30">
+		<description>
+			<p>You have tremorsense out to a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Tremorsense 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="vision:tremorsense" value="30" />
+		</rules>
+	</element>
+
+	<element name="Wooden Frame" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_WOODEN_FRAME">
+		<description>
+			<p>While you are not wearing armor, your Armor Class equals 10 + your Constitution modifier. You can still benefit from a shield.</p>
+		</description>
+		<sheet>
+			<description>While not wearing armor, your AC equals 10 + your Constitution modifier. You can still benefit from a shield.</description>
+		</sheet>
+	</element>
+
+	<element name="Rooted Awareness" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_ROOTED_AWARENESS">
+		<description>
+			<p>While you are in contact with the ground, you have tremorsense out to a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>While in contact with the ground, you have tremorsense 30 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_ELYSIA_LIVING_WOOD_VISION_TREMORSENSE_30" />
+		</rules>
+	</element>
+
+	<element name="Barkbound Resilience" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_BARKBOUND_RESILIENCE">
+		<description>
+			<p>You have resistance to nonmagical bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Resistance to nonmagical bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Grasping Limbs" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_LIVING_WOOD_GRASPING_LIMBS">
+		<description>
+			<p>When you successfully grapple a creature smaller than you, you can choose to restrain it instead.</p>
+			<p>The restrained creature can use its action to attempt to escape, following the normal rules for ending a grapple.</p>
+		</description>
+		<sheet>
+			<description>When you successfully grapple a creature smaller than you, you can restrain it instead. The restrained creature can attempt to escape using the normal grapple rules.</description>
+		</sheet>
+	</element>
+</elements>
