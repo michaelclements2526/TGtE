@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Circle of the Chimera mutations for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.20">
+			<file name="druid-circle-of-the-chimera-mutations.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera-mutations.xml" />
+		</update>
+	</info>
+
+	<element name="Rat Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_RAT">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Rat.</strong></p>
+			<p><strong>Passive.</strong> You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 60 feet.</p>
+			<p><strong>Active.</strong> Once per turn, when you hit a creature with a weapon attack or spell attack while at least one ally is within 5 feet of you, you deal an additional 1d4 force damage to the target.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Gain darkvision out to 60 feet, or increase your existing darkvision by 60 feet. Active: Once per turn, when you hit with a weapon attack or spell attack while an ally is within 5 feet of you, deal an additional 1d4 force damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Ox Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_OX">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Ox.</strong></p>
+			<p><strong>Passive.</strong> You have advantage on Constitution saving throws.</p>
+			<p><strong>Active.</strong> If you take the Dash action and move at least 20 feet in a straight line, you can move through the space of one creature of your size or smaller. That creature must succeed on a Strength saving throw against your spell save DC or be pushed 5 feet.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Advantage on Constitution saving throws. Active: If you Dash and move at least 20 feet in a straight line, you can move through the space of one creature of your size or smaller; it must succeed on a Strength save against your spell save DC or be pushed 5 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Tiger Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_TIGER">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Tiger.</strong></p>
+			<p><strong>Passive.</strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p><strong>Active.</strong> You grow claws, which are natural weapons that deal 1d8 slashing damage on a hit and use your Strength or Wisdom modifier, your choice.</p>
+			<p>Once per turn, when you move at least 10 feet straight toward a creature before hitting it with a claw attack, you deal an additional 1d6 slashing damage.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Advantage on Perception checks that rely on smell. Active: You gain claws that deal 1d8 slashing damage and use Strength or Wisdom. Once per turn, after moving at least 10 feet straight toward a creature before hitting with a claw attack, deal an additional 1d6 slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Rabbit Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_RABBIT">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Rabbit.</strong></p>
+			<p><strong>Passive.</strong> Your movement speed increases by 15 feet.</p>
+			<p><strong>Active.</strong> You can take the Dash or Disengage action as a bonus action.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Your movement speed increases by 15 feet. Active: You can take Dash or Disengage as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Dragon Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_DRAGON">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Dragon.</strong></p>
+			<p><strong>Passive.</strong> Choose one damage type when you gain this mutation: fire, lightning, cold, acid, or poison. You have resistance to the chosen damage type.</p>
+			<p><strong>Active.</strong> Your Armor Class increases by 1 while this mutation is active.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Choose fire, lightning, cold, acid, or poison when you gain this mutation; you have resistance to that damage type. Active: Your AC increases by 1 while this mutation is active.</description>
+		</sheet>
+	</element>
+
+	<element name="Snake Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_SNAKE">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Snake.</strong></p>
+			<p><strong>Passive.</strong> Your melee reach increases by 5 feet, and you have resistance to poison damage.</p>
+			<p><strong>Active.</strong> Once per turn, when you hit a creature with an unarmed strike, you can force it to make a Constitution saving throw against your spell save DC. On a failure, the creature is poisoned until the end of your next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Your melee reach increases by 5 feet and you have resistance to poison damage. Active: Once per turn, when you hit a creature with an unarmed strike, it must make a Constitution save against your spell save DC or be poisoned until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Horse Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_HORSE">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Horse.</strong></p>
+			<p><strong>Passive.</strong> Your movement speed increases by 10 feet.</p>
+			<p><strong>Active.</strong> An allied creature of your size or smaller can mount you. While mounted, that creature moves using your movement speed, and you control the mount as normal.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Your movement speed increases by 10 feet. Active: An allied creature of your size or smaller can mount you and moves using your movement speed while you control the mount as normal.</description>
+		</sheet>
+	</element>
+
+	<element name="Goat Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_GOAT">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Goat.</strong></p>
+			<p><strong>Passive.</strong> You gain a climbing speed equal to your walking speed.</p>
+			<p><strong>Active.</strong> When you successfully shove a creature, you can choose to push it 10 feet instead of 5 feet, or knock it prone.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Gain a climbing speed equal to your walking speed. Active: When you successfully shove a creature, you can push it 10 feet instead of 5 feet, or knock it prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Monkey Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_MONKEY">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Monkey.</strong></p>
+			<p><strong>Passive.</strong> You have advantage on Intelligence checks and Intelligence saving throws.</p>
+			<p><strong>Active.</strong> As a bonus action, choose one creature you can see within 30 feet of you. The creature must succeed on a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or become infuriated until the end of its next turn.</p>
+			<p>While infuriated, the creature has advantage on attack rolls against you and disadvantage on saving throws. If the creature can make an attack against you on its turn, it must attempt to do so.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Advantage on Intelligence checks and Intelligence saving throws. Active: As a bonus action, choose one creature within 30 feet. It must make a Wisdom save or become infuriated until the end of its next turn, gaining advantage on attacks against you, disadvantage on saving throws, and attempting to attack you if able.</description>
+		</sheet>
+	</element>
+
+	<element name="Rooster Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_ROOSTER">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Rooster.</strong></p>
+			<p><strong>Passive.</strong> You have advantage on initiative rolls.</p>
+			<p><strong>Active.</strong> You can’t be surprised while you are conscious. Additionally, when you roll initiative, you can choose one ally within 10 feet of you to gain a bonus to their initiative equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: You have advantage on initiative rolls. Active: You can’t be surprised while conscious, and when you roll initiative you can choose one ally within 10 feet to gain a bonus to initiative equal to your proficiency bonus.</description>
+		</sheet>
+	</element>
+
+	<element name="Dog Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_DOG">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Dog.</strong></p>
+			<p><strong>Passive.</strong> You can take the Help action to assist a creature within 10 feet of you.</p>
+			<p><strong>Active.</strong> Once while this mutation is active, when a creature you can see within 10 feet of you makes an ability check or saving throw, you can grant that creature advantage on the roll.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: You can take the Help action to assist a creature within 10 feet of you. Active: Once while this mutation is active, when a creature you can see within 10 feet makes an ability check or saving throw, you can grant it advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Pig Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CHIMERIC_MUTATION_PIG">
+		<supports>Chimeric Mutation</supports>
+		<description>
+			<p><strong>Pig.</strong></p>
+			<p><strong>Passive.</strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p><strong>Active.</strong> When you gain this mutation, you receive a pool of damage reduction dice equal to your Wisdom modifier, minimum of one die. Each die is a d8.</p>
+			<p>When you take damage, you can use your reaction to expend one of these dice, reducing the damage by the amount rolled.</p>
+			<p>You lose any remaining dice when this mutation ends.</p>
+		</description>
+		<sheet display="false">
+			<description>Passive: Advantage on Perception checks that rely on smell. Active: Gain a pool of d8 damage reduction dice equal to your Wisdom modifier, minimum one. When you take damage, you can use your reaction to expend one die and reduce the damage by the amount rolled. Remaining dice are lost when the mutation ends.</description>
+		</sheet>
+	</element>
+</elements>
