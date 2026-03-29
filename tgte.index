@@ -2,35 +2,79 @@
 <index>
   <info>
     <name>Traveler's Guide to Elysia</name>
-    <description>Homebrew content for the Elysia setting (races, items, feats, etc.).</description>
+    <description>Homebrew content for the Elysia setting (races, classes, subclasses, and more).</description>
     <author>Michael Clements</author>
 
-    <update version="0.0.19">
+    <update version="0.0.21">
       <file name="tgte.index" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte.index"/>
 
       <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/source-travelers-guide-to-elysia.xml"/>
 
       <!-- Races -->
-      <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-dragon-kin.xml"/>
-      <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-lunarian.xml"/>
-      <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-living-wood.xml"/>
-      <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
+      <file name="race-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Dragon-Kin/race-dragon-kin.xml"/>
+      <file name="race-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Lunarian/race-lunarian.xml"/>
+      <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Living-Wood/race-living-wood.xml"/>
+      <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Emperor-Hamster/race-emperor-hamster.xml"/>
 
-      <!-- Classes -->
-      <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist.xml"/>
-      <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist-artworks.xml"/>
+      <!-- Artist -->
+      <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist.xml"/>
+      <file name="artist-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-features.xml"/>
+      <file name="artist-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-studies.xml"/>
+      <file name="artist-improved-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-improved-studies.xml"/>
+      <file name="artist-palettes.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-palettes.xml"/>
+      <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-artworks.xml"/>
+      <file name="artist-movements-romanticism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-romanticism.xml"/>
+      <file name="artist-movements-fauvism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-fauvism.xml"/>
+      <file name="artist-movements-impressionism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-impressionism.xml"/>
+
+      <!-- Performer -->
+      <file name="performer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer.xml"/>
+      <file name="performer-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-features.xml"/>
+      <file name="performer-types-dancer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-dancer.xml"/>
+      <file name="performer-types-songstress.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-songstress.xml"/>
+
+      <!-- Warlock -->
+      <file name="warlock-pact-of-the-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-pact-of-the-contractor.xml"/>
+      <file name="warlock-invocations-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-invocations-contractor.xml"/>
+
+      <!-- Druid -->
+      <file name="druid-circle-of-the-chimera.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera.xml"/>
+      <file name="druid-circle-of-the-chimera-mutations.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera-mutations.xml"/>
     </update>
   </info>
 
   <files>
     <file name="source-travelers-guide-to-elysia.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/source-travelers-guide-to-elysia.xml"/>
 
-    <file name="race-elysian-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-dragon-kin.xml"/>
-    <file name="race-elysian-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-elysian-lunarian.xml"/>
-    <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-living-wood.xml"/>
-    <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/race-emperor-hamster.xml"/>
+    <!-- Races -->
+    <file name="race-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Dragon-Kin/race-dragon-kin.xml"/>
+    <file name="race-lunarian.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Lunarian/race-lunarian.xml"/>
+    <file name="race-living-wood.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Living-Wood/race-living-wood.xml"/>
+    <file name="race-emperor-hamster.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Emperor-Hamster/race-emperor-hamster.xml"/>
 
-    <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist.xml"/>
-    <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/artist-artworks.xml"/>
+    <!-- Artist -->
+    <file name="artist.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist.xml"/>
+    <file name="artist-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-features.xml"/>
+    <file name="artist-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-studies.xml"/>
+    <file name="artist-improved-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-improved-studies.xml"/>
+    <file name="artist-palettes.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-palettes.xml"/>
+    <file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-artworks.xml"/>
+    <file name="artist-movements-romanticism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-romanticism.xml"/>
+    <file name="artist-movements-fauvism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-fauvism.xml"/>
+    <file name="artist-movements-impressionism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-impressionism.xml"/>
+
+    <!-- Performer -->
+    <file name="performer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer.xml"/>
+    <file name="performer-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-features.xml"/>
+    <file name="performer-types-dancer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-dancer.xml"/>
+    <file name="performer-types-songstress.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-songstress.xml"/>
+
+    <!-- Warlock -->
+    <file name="warlock-pact-of-the-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-pact-of-the-contractor.xml"/>
+    <file name="warlock-invocations-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-invocations-contractor.xml"/>
+
+    <!-- Druid -->
+    <file name="druid-circle-of-the-chimera.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera.xml"/>
+    <file name="druid-circle-of-the-chimera-mutations.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera-mutations.xml"/>
   </files>
 </index>
