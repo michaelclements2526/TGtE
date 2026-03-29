@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Impressionism movement for the Artist class in Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="artist-movements-impressionism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-impressionism.xml" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_MEASURED_LIGHT" />
-			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_CANVAS_ALTERATION" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_SHIFTING_GLIMMER" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GATHERED_LIGHT" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_REFINED_PERCEPTION" />
@@ -28,24 +28,23 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_MEASURED_LIGHT" level="3" />
-			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS" level="3" />
-
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_CANVAS_ALTERATION" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_SHIFTING_GLIMMER" level="6" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GATHERED_LIGHT" level="6" />
-
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_REFINED_PERCEPTION" level="14" />
 		</rules>
 	</element>
 
 	<element name="White Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE">
 		<description>
-			<p><strong>White Palette.</strong> When you choose this Movement at 3rd level, you gain the White Palette. If you already know the White Palette, you instead gain one Artist Palette of your choice.</p>
+			<p><strong>White Palette.</strong> When you choose this Movement at 3rd level, you gain access to the White Palette. If you already know the White Palette, you instead choose one Artist Palette you do not already know.</p>
+			<p>For Aurora purposes, if you already know White, simply select a different palette when instructed to do so.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain the White Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+			<description>You gain access to the White Palette. If you already know it, choose a different Artist Palette instead.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_WHITE" />
+			<select type="Class Feature" name="Impressionism Palette" supports="Artist Palette" number="1" />
 		</rules>
 	</element>
 
@@ -64,13 +63,14 @@
 		</sheet>
 	</element>
 
-	<element name="Gentle Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS">
+	<element name="Canvas Alteration: Gentle Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_CANVAS_ALTERATION">
 		<description>
-			<p><strong>Gentle Canvas.</strong> At 3rd level, your Canvas becomes a refuge of soft light and shifting form.</p>
+			<p><strong>Canvas Alteration: Gentle Canvas.</strong> At 3rd level, your Canvas becomes a refuge of soft light and shifting form.</p>
 			<p>While you have an active Canvas, you and your allies have half cover while inside it.</p>
+			<p>This feature is a reference note for how Impressionism alters your Canvas.</p>
 		</description>
-		<sheet display="false">
-			<description>While you have an active Canvas, you and your allies have half cover while inside it.</description>
+		<sheet>
+			<description>Canvas Alteration — Gentle Canvas: while you have an active Canvas, you and your allies have half cover while inside it.</description>
 		</sheet>
 	</element>
 
