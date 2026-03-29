@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Songstress performer type for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="performer-types-songstress.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-songstress.xml" />
+		</update>
+	</info>
+
+	<element name="Songstress" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_SONGSTRESS">
+		<supports>Performer Type</supports>
+		<description>
+			<p><strong>Songstress.</strong> Songstresses possess the ultimate poise, refined by the songs they sing constantly. No songstress has ever failed to impress the people. They meet with their beauty, skill, and charm.</p>
+
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_ADDITIONAL_PROFICIENCIES" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SINGERS_EAR" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_HEALING_DESCANT" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_INSPIRING_SONG" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_VOICE_OF_PEACE" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SOOTHING_SONG" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_PERFECT_PITCH" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_MASTERFUL_VOICE" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DISCORDANT_NOTES" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DIVA" />
+		</description>
+		<sheet display="false">
+			<description>Performer Type: Songstress.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_ADDITIONAL_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SINGERS_EAR" level="1" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_HEALING_DESCANT" level="2" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_INSPIRING_SONG" level="4" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_VOICE_OF_PEACE" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SOOTHING_SONG" level="8" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_PERFECT_PITCH" level="10" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_MASTERFUL_VOICE" level="13" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DISCORDANT_NOTES" level="17" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DIVA" level="20" />
+		</rules>
+	</element>
+
+	<element name="Additional Proficiencies" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_ADDITIONAL_PROFICIENCIES">
+		<description>
+			<p><strong>Additional Proficiencies.</strong> When you choose this performer type at 1st level, you gain proficiency with glaives, halberds, lances, and pikes.</p>
+			<p>Additionally, you gain proficiency in Persuasion. If you are already proficient in this skill, you gain expertise.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with glaives, halberds, lances, and pikes. You also gain proficiency in Persuasion, or expertise if you already have it.</description>
+		</sheet>
+	</element>
+
+	<element name="Singers Ear" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SINGERS_EAR">
+		<description>
+			<p><strong>Singers Ear.</strong> When you choose this performer type at 1st level, you gain advantage on saving throws against being charmed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on saving throws against being charmed.</description>
+		</sheet>
+	</element>
+
+	<element name="Healing Descant" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_HEALING_DESCANT">
+		<description>
+			<p><strong>Healing Descant.</strong> At 2nd level, a number of times equal to your Charisma modifier per short rest, you can use an action to sing a healing song.</p>
+			<p>All friendly creatures within 60 feet of you that can hear you regain 2d6 hit points. This healing increases at higher levels: 2d8 at 8th level, 2d10 at 13th level, and 4d10 at 17th level.</p>
+			<p>You can also use this ability more often at higher levels: +1 use at 8th level, +2 uses at 13th level, and +3 uses at 17th level.</p>
+		</description>
+		<sheet action="Action" usage="Charisma Modifier/Short Rest">
+			<description>Friendly creatures within 60 feet that can hear you regain 2d6 hit points. The healing improves at higher levels.</description>
+		</sheet>
+	</element>
+
+	<element name="Inspiring Song" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_INSPIRING_SONG">
+		<description>
+			<p><strong>Inspiring Song.</strong> At 4th level, you can sing songs that give other creatures extra bravery in battle.</p>
+			<p>Harmony grants allies the ability to land critical hits on rolls of 19-20.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony causes allies to score critical hits on rolls of 19-20.</description>
+		</sheet>
+	</element>
+
+	<element name="Voice of Peace" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_VOICE_OF_PEACE">
+		<description>
+			<p><strong>Voice of Peace.</strong> At 6th level, your songs make creatures want to stop fighting.</p>
+			<p>As a bonus action, any enemies in range of your performance make all attacks with disadvantage. You can end this effect with a bonus action.</p>
+			<p>While you are singing this song, you have disadvantage on all Stealth checks. This only affects creatures that can hear you.</p>
+			<p>The range of your performance increases to 60 feet, and the target ally only has to be able to hear you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Enemies in range of your performance that can hear you make attacks with disadvantage until you end the effect as a bonus action. While singing this song, you have disadvantage on Stealth checks. Your performance range becomes 60 feet, and target allies only need to hear you.</description>
+		</sheet>
+	</element>
+
+	<element name="Soothing Song" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_SOOTHING_SONG">
+		<description>
+			<p><strong>Soothing Song.</strong> At 8th level, your voice can penetrate the minds of any creature that can hear you.</p>
+			<p>As an action, you sing a beguiling song. All enemies within 60 feet of you that can hear you must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier).</p>
+			<p>On a failed save, a creature is incapacitated for 1 minute. Affected creatures make saving throws at the end of each of their turns. On a successful save, the creature is immune to the effects of this song for 24 hours.</p>
+			<p>This does not affect creatures that are immune to being charmed.</p>
+		</description>
+		<sheet action="Action">
+			<description>Enemies within 60 feet that can hear you make a Wisdom save or become incapacitated for up to 1 minute, repeating the save at the end of each of their turns. On a successful save, a creature is immune for 24 hours. This does not affect creatures immune to being charmed.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Pitch" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_PERFECT_PITCH">
+		<description>
+			<p><strong>Perfect Pitch.</strong> At 10th level, your voice encourages others to heal.</p>
+			<p>Any creature within range of your performance regains additional hit points equal to your Charisma modifier whenever it receives healing.</p>
+		</description>
+		<sheet display="false">
+			<description>Creatures within range of your performance regain additional hit points equal to your Charisma modifier whenever they receive healing.</description>
+		</sheet>
+	</element>
+
+	<element name="Masterful Voice" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_MASTERFUL_VOICE">
+		<description>
+			<p><strong>Masterful Voice.</strong> At 13th level, you master your voice.</p>
+			<p>Your Inspiring Song now causes a critical hit on a roll of 18-20. Your Perfect Pitch now restores additional hit points equal to double your Charisma modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>Inspiring Song now causes critical hits on rolls of 18-20. Perfect Pitch now restores additional hit points equal to double your Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Discordant Notes" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DISCORDANT_NOTES">
+		<description>
+			<p><strong>Discordant Notes.</strong> At 17th level, you know how to use your voice to inflict pain on your enemies.</p>
+			<p>Twice per long rest, as an action, you can sing at one creature within 60 feet of you that can hear you. The creature must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier).</p>
+			<ul>
+				<li>On a failed save, the creature takes 6d8 psychic damage and is stunned until the end of your next turn.</li>
+				<li>On a successful save, the creature takes half as much damage and is not stunned.</li>
+			</ul>
+			<p>This does not affect creatures immune to being charmed.</p>
+		</description>
+		<sheet action="Action" usage="2/Long Rest">
+			<description>One creature within 60 feet that can hear you makes a Wisdom save or takes 6d8 psychic damage and is stunned until the end of your next turn. On a success, it takes half damage and is not stunned. This does not affect creatures immune to being charmed.</description>
+		</sheet>
+	</element>
+
+	<element name="Diva" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_SONGSTRESS_DIVA">
+		<description>
+			<p><strong>Diva.</strong> At 20th level, you achieve mastery as a songstress. No one else compares to your skills.</p>
+			<p>You gain an additional performance action, you have advantage on any Charisma checks made with your voice, and the range of your performance increases to 120 feet.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain an additional performance action, have advantage on Charisma checks made with your voice, and your performance range increases to 120 feet.</description>
+		</sheet>
+	</element>
+</elements>
