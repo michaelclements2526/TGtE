@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Circle of the Chimera for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.20">
+			<file name="druid-circle-of-the-chimera.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Druid/druid-circle-of-the-chimera.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Chimera" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_CHIMERA">
+		<supports>Druid Circle</supports>
+		<description>
+			<p><strong>Circle of the Chimera.</strong> Druids of the Circle of the Chimera embody nature’s capacity to adapt, hybridize, and survive at any cost. Rather than fully assuming the form of a single beast, these druids partially reshape their bodies, expressing traits drawn from multiple creatures and elemental forces.</p>
+
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_WILD_MUTATION" />
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_NATURAL_ADAPTATION" />
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_DUAL_MUTATION" />
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ELEMENTAL_EXPRESSION" />
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ADAPTIVE_ENDURANCE" />
+			<div element="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_APEX_CHIMERA" />
+		</description>
+		<sheet display="false">
+			<description>Druid Circle: Circle of the Chimera.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_WILD_MUTATION" level="2" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_NATURAL_ADAPTATION" level="2" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_DUAL_MUTATION" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ELEMENTAL_EXPRESSION" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ADAPTIVE_ENDURANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_APEX_CHIMERA" level="14" />
+		</rules>
+	</element>
+
+	<element name="Wild Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_WILD_MUTATION">
+		<description>
+			<p><strong>Wild Mutation.</strong> Starting at 2nd level, you can expend a use of your Wild Shape as a bonus action to undergo a Wild Mutation. When you do so, you gain one Chimeric Mutation of your choice from the Chimeric Mutation list.</p>
+			<p>A Wild Mutation lasts for the same duration as your Wild Shape and ends early if you choose to end it, no action required. While under the effects of a Wild Mutation, you retain the ability to cast spells.</p>
+			<p>At 2nd level, you can have only one Chimeric Mutation active at a time.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Expend one use of Wild Shape to undergo a Wild Mutation. It lasts for the same duration as Wild Shape, ends early if you choose, and lets you retain the ability to cast spells. At 2nd level, you can have only one Chimeric Mutation active at a time.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Chimeric Mutation" supports="Chimeric Mutation" level="2" />
+		</rules>
+	</element>
+
+	<element name="Natural Adaptation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_NATURAL_ADAPTATION">
+		<description>
+			<p><strong>Natural Adaptation.</strong> When you are subjected to a Dexterity or Constitution saving throw while you are under the effects of Wild Mutation or Wild Shape, you can use your reaction to gain advantage on that saving throw.</p>
+			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="Proficiency Bonus/Long Rest">
+			<description>When you are subjected to a Dexterity or Constitution saving throw while under the effects of Wild Mutation or Wild Shape, gain advantage on that saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Dual Mutation" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_DUAL_MUTATION">
+		<description>
+			<p><strong>Dual Mutation.</strong> Starting at 6th level, you can have up to two Chimeric Mutations active at the same time while under the effects of Wild Mutation.</p>
+		</description>
+		<sheet display="false">
+			<description>While under the effects of Wild Mutation, you can have up to two Chimeric Mutations active at the same time.</description>
+		</sheet>
+	</element>
+
+	<element name="Elemental Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ELEMENTAL_EXPRESSION">
+		<description>
+			<p><strong>Elemental Expression.</strong> At 6th level, you choose one elemental expression: Fire, Earth, Metal, Water, or Wood. Once chosen, this element cannot be changed until you gain a level in this class.</p>
+			<p>You gain the following benefit based on your chosen element:</p>
+			<ul>
+				<li><strong>Fire.</strong> Once per turn, when you hit a creature with a melee attack, you deal an additional 1d6 fire damage.</li>
+				<li><strong>Earth.</strong> You gain tremorsense out to a range of 30 feet.</li>
+				<li><strong>Metal.</strong> While wearing light armor or no armor, your Armor Class increases by 2.</li>
+				<li><strong>Water.</strong> When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a short rest.</li>
+				<li><strong>Wood.</strong> When you cast a spell of 1st level or higher while you have at least one Chimeric Mutation active, you can gain temporary hit points equal to your Wisdom modifier or move up to 10 feet without provoking opportunity attacks. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Elemental Expression" supports="Elemental Expression" level="6" />
+		</rules>
+	</element>
+
+	<element name="Adaptive Endurance" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_ADAPTIVE_ENDURANCE">
+		<description>
+			<p><strong>Adaptive Endurance.</strong> Your body has learned to sustain unstable forms for extended periods.</p>
+			<ul>
+				<li>The duration of your Wild Mutation is doubled.</li>
+				<li>When you roll initiative and have no remaining uses of Wild Shape, you regain one use of Wild Shape.</li>
+				<li>When you use Natural Adaptation, you can expend two uses of that feature to instead gain resistance to the triggering damage type until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Your Wild Mutation duration is doubled. When you roll initiative with no uses of Wild Shape remaining, you regain one use. When you use Natural Adaptation, you can expend two uses to instead gain resistance to the triggering damage type until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Apex Chimera" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_FEATURE_CHIMERA_APEX_CHIMERA">
+		<description>
+			<p><strong>Apex Chimera.</strong> When you finish a long rest, choose one Chimeric Mutation. That mutation becomes your Apex Mutation and remains active for the entire day. This mutation does not count against your mutation limit and cannot be changed until you finish another long rest.</p>
+			<p>Additionally, while under the effects of Wild Mutation, you can have up to three Chimeric Mutations active at the same time, including your Apex Mutation.</p>
+			<p>Once per turn, when you take damage or fail a saving throw while under the effects of Wild Mutation, you can use your reaction to replace one non-Apex mutation you currently have with another Chimeric Mutation of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>After a long rest, choose one Chimeric Mutation as your Apex Mutation for the day. It does not count against your mutation limit. While under the effects of Wild Mutation, you can have up to three Chimeric Mutations active at the same time, including your Apex Mutation. Once per turn, when you take damage or fail a saving throw while under Wild Mutation, you can replace one non-Apex mutation with another as a reaction.</description>
+		</sheet>
+	</element>
+
+	<element name="Fire Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_EXPRESSION_FIRE">
+		<supports>Elemental Expression</supports>
+		<description>
+			<p><strong>Fire.</strong> Once per turn, when you hit a creature with a melee attack, you deal an additional 1d6 fire damage.</p>
+		</description>
+		<sheet display="false">
+			<description>Once per turn, when you hit a creature with a melee attack, you deal an additional 1d6 fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Earth Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_EXPRESSION_EARTH">
+		<supports>Elemental Expression</supports>
+		<description>
+			<p><strong>Earth.</strong> You gain tremorsense out to a range of 30 feet.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain tremorsense out to 30 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Metal Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_EXPRESSION_METAL">
+		<supports>Elemental Expression</supports>
+		<description>
+			<p><strong>Metal.</strong> While wearing light armor or no armor, your Armor Class increases by 2.</p>
+		</description>
+		<sheet display="false">
+			<description>While wearing light armor or no armor, your Armor Class increases by 2.</description>
+		</sheet>
+	</element>
+
+	<element name="Water Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_EXPRESSION_WATER">
+		<supports>Elemental Expression</supports>
+		<description>
+			<p><strong>Water.</strong> When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on that roll.</p>
+			<p>You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a short rest.</p>
+		</description>
+		<sheet action="Reaction" usage="Proficiency Bonus/Short Rest">
+			<description>When a creature you can see makes an attack roll against you, impose disadvantage on that roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Wood Expression" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRUID_CIRCLE_EXPRESSION_WOOD">
+		<supports>Elemental Expression</supports>
+		<description>
+			<p><strong>Wood.</strong> When you cast a spell of 1st level or higher while you have at least one Chimeric Mutation active, you can choose one of the following effects:</p>
+			<ul>
+				<li>Gain temporary hit points equal to your Wisdom modifier.</li>
+				<li>Move up to 10 feet without provoking opportunity attacks.</li>
+			</ul>
+			<p>You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false">
+			<description>When you cast a spell of 1st level or higher while you have at least one Chimeric Mutation active, you can gain temporary hit points equal to your Wisdom modifier or move up to 10 feet without provoking opportunity attacks. Uses equal proficiency bonus per long rest.</description>
+		</sheet>
+	</element>
+</elements>
