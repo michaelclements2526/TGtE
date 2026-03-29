@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Dancer performer type for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="performer-types-dancer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-types-dancer.xml" />
+		</update>
+	</info>
+
+	<element name="Dancer" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_DANCER">
+		<supports>Performer Type</supports>
+		<description>
+			<p><strong>Dancer.</strong> While some choose to try to force life to fit their desire, dancers instead let life lead them, flowing gracefully from one thing to the next. Dancers embrace the fluidity of life while maintaining martial fitness.</p>
+
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_ADDITIONAL_PROFICIENCIES" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_EMBER" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCERS_STEPS" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GALE" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_AQUA" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_TERRA" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_FIRESTORM" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GEYSER" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_AVATAR_OF_RHYTHM" />
+			<div element="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_PRIMA" />
+		</description>
+		<sheet display="false">
+			<description>Performer Type: Dancer.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_ADDITIONAL_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_EMBER" level="1" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCERS_STEPS" level="2" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GALE" level="4" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_AQUA" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_TERRA" level="8" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_FIRESTORM" level="10" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GEYSER" level="13" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_AVATAR_OF_RHYTHM" level="17" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_PRIMA" level="20" />
+		</rules>
+	</element>
+
+	<element name="Additional Proficiencies" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_ADDITIONAL_PROFICIENCIES">
+		<description>
+			<p><strong>Additional Proficiencies.</strong> When you choose this performer type at 1st level, you gain proficiency with greatswords, longswords, rapiers, scimitars, whips, and shortswords.</p>
+			<p>Additionally, you gain proficiency in Acrobatics. If you are already proficient in this skill, you gain expertise.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with greatswords, longswords, rapiers, scimitars, whips, and shortswords. You also gain proficiency in Acrobatics, or expertise if you already have it.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Ember" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_EMBER">
+		<description>
+			<p><strong>Dance of Ember.</strong> When you choose this performer type at 1st level, you incorporate the temper of fire into your performance, your dances ignite sparks of passion in allies.</p>
+			<p>Harmony increases allies’ attack and damage rolls by an amount equal to your Charisma modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony increases allies’ attack and damage rolls by your Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Dancer’s Steps" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCERS_STEPS">
+		<description>
+			<p><strong>Dancer’s Steps.</strong> At 2nd level your movement increases by 10 feet. Difficult terrain no longer slows you while in your performance state. You are able to use the Dash and Disengage actions as bonus actions.</p>
+		</description>
+		<sheet display="false">
+			<description>Your movement increases by 10 feet. Difficult terrain no longer slows you while in your performance state. You can use Dash and Disengage as bonus actions.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Gale" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GALE">
+		<description>
+			<p><strong>Dance of Gale.</strong> At 4th level, you incorporate the grace of wind into your performance, your dances grant your allies the frenetic energy of the winds.</p>
+			<p>Harmony increases allies’ walking speed by 10 feet. Additionally, allies can also use the Disengage action as a bonus action.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony increases allies’ walking speed by 10 feet. Allies can also use Disengage as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Aqua" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_AQUA">
+		<description>
+			<p><strong>Dance of Aqua.</strong> At 6th level, you incorporate the gentleness of water into your performance, your dances grant your allies the focus and calmness of water.</p>
+			<p>Harmony increases allies’ saving throw bonuses by an amount equal to your Charisma modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony increases allies’ saving throw bonuses by your Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Terra" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_TERRA">
+		<description>
+			<p><strong>Dance of Terra.</strong> At 8th level, you incorporate the stubbornness of earth into your performance, your dances grant your allies the stoic sturdiness of the earth.</p>
+			<p>Harmony increases allies’ AC by +1.</p>
+		</description>
+		<sheet display="false">
+			<description>Harmony increases allies’ AC by +1.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Firestorm" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_FIRESTORM">
+		<description>
+			<p><strong>Dance of Firestorm.</strong> At 10th level, you achieve mastery over your Ember and Gale dances and bring them as one.</p>
+			<p>Dance of Ember now increases attack and damage rolls by an additional +1, while Dance of Gale now increases walking speed by 20 feet.</p>
+			<p>Additionally, allies can also use the Dash action as a bonus action.</p>
+		</description>
+		<sheet display="false">
+			<description>Dance of Ember now grants an additional +1 to attack and damage rolls. Dance of Gale now increases walking speed by 20 feet. Allies can also use Dash as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Dance of Geyser" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_DANCE_OF_GEYSER">
+		<description>
+			<p><strong>Dance of Geyser.</strong> At 13th level, you achieve mastery over your Aqua and Terra dances and bring them as one.</p>
+			<p>Dance of Aqua now increases saving throws by an additional +1. Allies also have advantage on saving throws against magical effects, while Dance of Terra now increases an ally’s AC by +2.</p>
+		</description>
+		<sheet display="false">
+			<description>Dance of Aqua now grants an additional +1 to saving throws, and allies have advantage on saving throws against magical effects. Dance of Terra now increases AC by +2.</description>
+		</sheet>
+	</element>
+
+	<element name="Avatar of Rhythm" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_AVATAR_OF_RHYTHM">
+		<description>
+			<p><strong>Avatar of Rhythm.</strong> At 17th level, your dances have become perfect works of art in and of themselves.</p>
+			<p>Dance of Firestorm now increases attack and damage rolls by an additional +2, and increases walking speed by 30 feet.</p>
+			<p>Dance of Geyser now increases saving throws by an additional +2, and now increases an ally’s AC by an amount equal to your Charisma modifier.</p>
+		</description>
+		<sheet display="false">
+			<description>Dance of Firestorm now grants an additional +2 to attack and damage rolls and increases walking speed by 30 feet. Dance of Geyser now grants an additional +2 to saving throws and increases AC by your Charisma modifier.</description>
+		</sheet>
+	</element>
+
+	<element name="Prima" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PERFORMER_TYPE_FEATURE_DANCER_PRIMA">
+		<description>
+			<p><strong>Prima.</strong> At 20th level you achieve mastery as a dancer. No one else compares to your skills.</p>
+			<p>You gain an additional performance action, your walking speed is doubled, and you can make two weapon attacks per Attack action.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain an additional performance action, your walking speed is doubled, and you can make two weapon attacks per Attack action.</description>
+		</sheet>
+	</element>
+</elements>
