@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Artist palettes for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-palettes.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-palettes.xml" />
+		</update>
+	</info>
+
+	<element name="Black Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_BLACK">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Black Palette.</strong> Your palette’s damage type is bludgeoning.</p>
+		</description>
+		<sheet display="false">
+			<description>Black — Bludgeoning.</description>
+		</sheet>
+	</element>
+
+	<element name="White Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_WHITE">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>White Palette.</strong> Your palette’s damage type is radiant.</p>
+		</description>
+		<sheet display="false">
+			<description>White — Radiant.</description>
+		</sheet>
+	</element>
+
+	<element name="Red Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_RED">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Red Palette.</strong> Your palette’s damage type is fire.</p>
+		</description>
+		<sheet display="false">
+			<description>Red — Fire.</description>
+		</sheet>
+	</element>
+
+	<element name="Blue Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_BLUE">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Blue Palette.</strong> Your palette’s damage type is cold.</p>
+		</description>
+		<sheet display="false">
+			<description>Blue — Cold.</description>
+		</sheet>
+	</element>
+
+	<element name="Yellow Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_YELLOW">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Yellow Palette.</strong> Your palette’s damage type is lightning.</p>
+		</description>
+		<sheet display="false">
+			<description>Yellow — Lightning.</description>
+		</sheet>
+	</element>
+
+	<element name="Green Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_GREEN">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Green Palette.</strong> Your palette’s damage type is poison.</p>
+		</description>
+		<sheet display="false">
+			<description>Green — Poison.</description>
+		</sheet>
+	</element>
+
+	<element name="Purple Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_PURPLE">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Purple Palette.</strong> Your palette’s damage type is necrotic.</p>
+		</description>
+		<sheet display="false">
+			<description>Purple — Necrotic.</description>
+		</sheet>
+	</element>
+
+	<element name="Brown Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_BROWN">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Brown Palette.</strong> Your palette’s damage type is piercing.</p>
+		</description>
+		<sheet display="false">
+			<description>Brown — Piercing.</description>
+		</sheet>
+	</element>
+
+	<element name="Gray Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_GRAY">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Gray Palette.</strong> Your palette’s damage type is slashing.</p>
+		</description>
+		<sheet display="false">
+			<description>Gray — Slashing.</description>
+		</sheet>
+	</element>
+
+	<element name="Orange Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_ORANGE">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Orange Palette.</strong> Your palette’s damage type is acid.</p>
+		</description>
+		<sheet display="false">
+			<description>Orange — Acid.</description>
+		</sheet>
+	</element>
+
+	<element name="Pink Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_PINK">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Pink Palette.</strong> Your palette’s damage type is psychic.</p>
+		</description>
+		<sheet display="false">
+			<description>Pink — Psychic.</description>
+		</sheet>
+	</element>
+
+	<element name="Teal Palette" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_PALETTE_TEAL">
+		<supports>Artist Palette</supports>
+		<compendium display="false" />
+		<description>
+			<p><strong>Teal Palette.</strong> Your palette’s damage type is thunder.</p>
+		</description>
+		<sheet display="false">
+			<description>Teal — Thunder.</description>
+		</sheet>
+	</element>
+</elements>
