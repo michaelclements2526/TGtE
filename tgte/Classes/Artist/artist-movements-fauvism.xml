@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Fauvism movement for the Artist class in Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-movements-fauvism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-fauvism.xml" />
+		</update>
+	</info>
+
+	<element name="Fauvism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_ARTIST_FAUVISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p><strong>Movement: Fauvism.</strong> Color is not imitation—it is domination. Artists of the Fauvist movement reject harmony and realism in favor of violent contrast and emotional shock. Their works fracture perception, overwhelm the senses, and leave enemies disoriented in a world that no longer behaves as expected. Where others refine or burn, Fauves distort.</p>
+			<p>Your Movement grants you features at 3rd level, and again at 6th and 14th level.</p>
+
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_DISTORTION" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_OVERWHELM" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_COLOR_SHOCK" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_OVERWHELMING_CONTRAST" />
+		</description>
+		<sheet display="false">
+			<description>Movement: Fauvism.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_DISTORTION" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS" level="3" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_OVERWHELM" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_COLOR_SHOCK" level="6" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_OVERWHELMING_CONTRAST" level="14" />
+		</rules>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Fauvism Features          -->
+	<!-- ========================= -->
+
+	<element name="Pink Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_PINK_PALETTE">
+		<description>
+			<p><strong>Pink Palette.</strong> When you choose this Movement at 3rd level, you gain the Pink Palette. If you already know the Pink Palette, you instead gain one Artist Palette of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain the Pink Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_PINK" />
+		</rules>
+	</element>
+
+	<element name="Study: Distortion" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_DISTORTION">
+		<description>
+			<p><strong>Study: Distortion.</strong> At 3rd level, you warp the edges of space with a violent shift in color.</p>
+			<p>As an action, choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failed save, the creature takes 3d8 damage of your current Palette’s type, and until the end of its next turn it has disadvantage on attack rolls.</li>
+				<li>On a successful save, the creature takes half as much damage and suffers no disadvantage.</li>
+			</ul>
+			<p>You can use this feature twice, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Choose one creature within 60 feet. It makes a Wisdom save or takes 3d8 damage of your current Palette’s type and has disadvantage on attack rolls until the end of its next turn. On a success, it takes half damage and suffers no disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Distorted Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_DISTORTED_CANVAS">
+		<description>
+			<p><strong>Distorted Canvas.</strong> At 3rd level, your Canvas becomes a warping field of unstable perception.</p>
+			<p>While you have an active Canvas, the Canvas is difficult terrain for your enemies. In addition, the first time each turn an enemy enters the Canvas, it takes 1d6 damage of your current Palette’s type.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, it is difficult terrain for your enemies, and the first time each turn an enemy enters it, that enemy takes 1d6 damage of your current Palette’s type.</description>
+		</sheet>
+	</element>
+
+	<element name="Study: Overwhelm" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_STUDY_OVERWHELM">
+		<description>
+			<p><strong>Study: Overwhelm.</strong> At 6th level, you strike the senses with raw color.</p>
+			<p>As an action, choose a point you can see within 60 feet. Each creature of your choice within 15 feet of that point must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 5d8 damage of your current Palette’s type and is blinded until the end of its next turn.</li>
+				<li>On a successful save, the creature takes half as much damage and isn’t blinded.</li>
+			</ul>
+			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Proficiency Bonus/Long Rest">
+			<description>Choose a point within 60 feet. Creatures of your choice within 15 feet of it make a Constitution save or take 5d8 damage of your current Palette’s type and are blinded until the end of their next turn. On a success, they take half damage and aren’t blinded.</description>
+		</sheet>
+	</element>
+
+	<element name="Creative Process: Color Shock" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_COLOR_SHOCK">
+		<description>
+			<p><strong>Creative Process: Color Shock.</strong> At 6th level, your violent contrasts sharpen every act of expression.</p>
+			<p>While you have an active Canvas, once on each of your turns when you deal damage of your current Palette’s type, you deal an additional 1d6 damage of the same type.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, once on each of your turns when you deal damage of your current Palette’s type, you deal an additional 1d6 damage of the same type.</description>
+		</sheet>
+	</element>
+
+	<element name="Overwhelming Contrast" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_FAUVISM_OVERWHELMING_CONTRAST">
+		<description>
+			<p><strong>Overwhelming Contrast.</strong> At 14th level, the completion of your work leaves minds reeling.</p>
+			<p>When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC.</p>
+			<ul>
+				<li>On a failed save, the creature is stunned until the end of its next turn.</li>
+				<li>On a successful save, the creature is unaffected.</li>
+			</ul>
+			<p>You can use this feature only once per turn.</p>
+		</description>
+		<sheet display="false">
+			<description>When you complete an Artwork, you may force one creature within 60 feet to make a Wisdom save or be stunned until the end of its next turn. This can occur once per turn.</description>
+		</sheet>
+	</element>
+</elements>
