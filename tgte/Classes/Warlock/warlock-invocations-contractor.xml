@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Contractor eldritch invocations for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.20">
+			<file name="warlock-invocations-contractor.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Warlock/warlock-invocations-contractor.xml" />
+		</update>
+	</info>
+
+	<element name="Fine Print" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_INVOCATION_FINE_PRINT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Contractor feature</prerequisite>
+		<requirements>ID_ELYSIA_WARLOCK_PATRON_PACT_OF_THE_CONTRACTOR</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Contractor feature</em></p>
+			<p>Once per Contract, you may extend the time you have to fulfill its Clause by 1 round.</p>
+			<p>If the Contract is not fulfilled, you and one creature of your choice within 5 feet of you both suffer the Contract’s breach effect.</p>
+		</description>
+		<sheet display="false">
+			<description>Once per Contract, you may extend the time you have to fulfill its Clause by 1 round. If the Contract is not fulfilled, you and one creature of your choice within 5 feet of you both suffer the Contract’s breach effect.</description>
+		</sheet>
+	</element>
+
+	<element name="One-Sided Deal" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_WARLOCK_INVOCATION_ONE_SIDED_DEAL">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Contractor feature</prerequisite>
+		<requirements>ID_ELYSIA_WARLOCK_PATRON_PACT_OF_THE_CONTRACTOR</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Contractor feature</em></p>
+			<p>When a creature makes a saving throw against an effect you caused, you may use your reaction to impose a penalty equal to half your Charisma modifier (rounded down) on the roll.</p>
+			<p>You may use this feature twice per short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="2/Short Rest">
+			<description>When a creature makes a saving throw against an effect you caused, impose a penalty equal to half your Charisma modifier (rounded down) on the roll.</description>
+		</sheet>
+	</element>
+</elements>
