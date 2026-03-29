@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Performer class features for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="performer-features.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer-features.xml" />
 		</update>
 	</info>
@@ -14,9 +14,6 @@
 			<p><strong>Performer Type.</strong> As a Performer, you typically embody one of two major roles: a singer or a dancer. The two styles offer different types of performances, listed at the end of the class description. Your choice grants you additional features at 2nd, 6th, 8th, 10th, 13th, 17th, and 20th levels.</p>
 		</description>
 		<sheet display="false" />
-		<rules>
-			<select type="Archetype" name="Performer Type" supports="Performer Type" level="1" />
-		</rules>
 	</element>
 
 	<element name="Unarmored Defense" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_UNARMORED_DEFENSE">
@@ -56,6 +53,13 @@
 			<p><strong>Ability Score Improvement.</strong> When you reach 4th level, and again at 9th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. You may take a feat instead. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Performer 4)" supports="Improvement Option,Performer,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Performer 9)" supports="Improvement Option,Performer,9" level="9" />
+			<select type="Class Feature" name="Improvement Option (Performer 12)" supports="Improvement Option,Performer,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Performer 16)" supports="Improvement Option,Performer,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Performer 19)" supports="Improvement Option,Performer,19" level="19" />
+		</rules>
 	</element>
 
 	<element name="Stage Performer" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_FEATURE_PERFORMER_STAGE_PERFORMER">
