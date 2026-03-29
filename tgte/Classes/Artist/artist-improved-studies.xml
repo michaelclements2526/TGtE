@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Improved Studies for the Artist class in Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-improved-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-improved-studies.xml" />
+		</update>
+	</info>
+
+	<element name="Negative Space" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_IMPROVED_STUDY_ARTIST_NEGATIVE_SPACE">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p><strong>Negative Space.</strong> You momentarily erase yourself from the surrounding composition.</p>
+			<p>Until the start of your next turn, you gain a +2 bonus to AC, and you can move up to half your speed without provoking opportunity attacks.</p>
+			<p>In addition, each creature of your choice within 5 feet of you must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d4 + your Wisdom modifier damage of your current Palette’s type.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>Until the start of your next turn, you gain +2 AC and can move up to half your speed without provoking opportunity attacks. Creatures of your choice within 5 feet of you make a Dexterity save or take 1d4 + your Wisdom modifier damage of your current Palette’s type.</description>
+		</sheet>
+	</element>
+
+	<element name="Overpaint" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_IMPROVED_STUDY_ARTIST_OVERPAINT">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p><strong>Overpaint.</strong> You overwhelm the battlefield with aggressive, layered expression.</p>
+			<p>Choose a point you can see within 30 feet. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 2d6 + your Wisdom modifier damage of your current Palette’s type.</li>
+				<li>On a successful save, a creature takes half as much damage.</li>
+			</ul>
+			<p>If at least one creature fails its saving throw, you may immediately switch palettes without expending a palette switch.</p>
+		</description>
+		<sheet action="Action">
+			<description>Choose a point within 30 feet. Creatures in a 10-foot-radius sphere make a Dexterity save or take 2d6 + your Wisdom modifier damage of your current Palette’s type, or half as much on a success. If at least one creature fails, you may switch palettes without expending a palette switch.</description>
+		</sheet>
+	</element>
+
+	<element name="Erase Boundary" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_IMPROVED_STUDY_ARTIST_ERASE_BOUNDARY">
+		<supports>Improved Study, Artist</supports>
+		<description>
+			<p><strong>Erase Boundary.</strong> You distort the composition of space itself.</p>
+			<p>Choose a 10-foot cube within 30 feet. Until the start of your next turn, the area becomes difficult terrain, and creatures inside the area can’t take reactions.</p>
+			<p>A creature that enters the area for the first time on a turn or starts its turn there must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, it takes 1d4 damage of your current Palette’s type.</li>
+				<li>On a successful save, it takes no damage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>Choose a 10-foot cube within 30 feet. Until the start of your next turn, it becomes difficult terrain and creatures inside it can’t take reactions. A creature that enters the area for the first time on a turn or starts its turn there makes a Dexterity save or takes 1d4 damage of your current Palette’s type.</description>
+		</sheet>
+	</element>
+</elements>
