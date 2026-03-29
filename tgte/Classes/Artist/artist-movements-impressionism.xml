@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Impressionism movement for the Artist class in Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-movements-impressionism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-impressionism.xml" />
+		</update>
+	</info>
+
+	<element name="Impressionism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_ARTIST_IMPRESSIONISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p><strong>Movement: Impressionism.</strong> Impressionists do not strike the world. They catch it. Their art is fleeting, subtle, and luminous—built from delicate layers that shift with angle and time. Where other movements overwhelm, Impressionists refine. They soften reality, blur the boundaries between moments, and leave enemies chasing after light that has already moved.</p>
+			<p>Your Movement grants you features at 3rd level, and again at 6th and 14th level.</p>
+
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_MEASURED_LIGHT" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_SHIFTING_GLIMMER" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GATHERED_LIGHT" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_REFINED_PERCEPTION" />
+		</description>
+		<sheet display="false">
+			<description>Movement: Impressionism.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_MEASURED_LIGHT" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS" level="3" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_SHIFTING_GLIMMER" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GATHERED_LIGHT" level="6" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_REFINED_PERCEPTION" level="14" />
+		</rules>
+	</element>
+
+	<element name="White Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_WHITE_PALETTE">
+		<description>
+			<p><strong>White Palette.</strong> When you choose this Movement at 3rd level, you gain the White Palette. If you already know the White Palette, you instead gain one Artist Palette of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain the White Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_WHITE" />
+		</rules>
+	</element>
+
+	<element name="Study: Measured Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_MEASURED_LIGHT">
+		<description>
+			<p><strong>Study: Measured Light.</strong> At 3rd level, you catch light in a controlled sweep.</p>
+			<p>As an action, choose one creature you can see within 60 feet. The creature must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failed save, it takes 3d8 damage of your current Palette’s type, and its speed is reduced by 10 feet until the end of its next turn.</li>
+				<li>On a successful save, it takes half as much damage and its speed is not reduced.</li>
+			</ul>
+			<p>You can use this feature twice, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Choose one creature within 60 feet. It makes a Constitution save or takes 3d8 damage of your current Palette’s type and its speed is reduced by 10 feet until the end of its next turn. On a success, it takes half damage and its speed is not reduced.</description>
+		</sheet>
+	</element>
+
+	<element name="Gentle Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GENTLE_CANVAS">
+		<description>
+			<p><strong>Gentle Canvas.</strong> At 3rd level, your Canvas becomes a refuge of soft light and shifting form.</p>
+			<p>While you have an active Canvas, you and your allies have half cover while inside it.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, you and your allies have half cover while inside it.</description>
+		</sheet>
+	</element>
+
+	<element name="Study: Shifting Glimmer" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_STUDY_SHIFTING_GLIMMER">
+		<description>
+			<p><strong>Study: Shifting Glimmer.</strong> At 6th level, you fracture attention with moving light.</p>
+			<p>As an action, choose up to three creatures you can see within 60 feet. Each target must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failed save, a target takes 5d8 damage of your current Palette’s type and has disadvantage on the next attack roll it makes before the end of its next turn.</li>
+				<li>On a successful save, it takes half as much damage and suffers no disadvantage.</li>
+			</ul>
+			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Proficiency Bonus/Long Rest">
+			<description>Choose up to three creatures within 60 feet. Each target makes a Wisdom save or takes 5d8 damage of your current Palette’s type and has disadvantage on the next attack roll it makes before the end of its next turn. On a success, it takes half damage and suffers no disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Creative Process: Gathered Light" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_GATHERED_LIGHT">
+		<description>
+			<p><strong>Creative Process: Gathered Light.</strong> At 6th level, your work gathers light and turns it toward restoration.</p>
+			<p>While you have an active Canvas, once per turn when you deal damage of your current Palette’s type, you can restore hit points equal to 1d6 to one creature of your choice within the Canvas, including yourself.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, once per turn when you deal damage of your current Palette’s type, you can restore 1d6 hit points to one creature of your choice within the Canvas, including yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Refined Perception" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_IMPRESSIONISM_REFINED_PERCEPTION">
+		<description>
+			<p><strong>Refined Perception.</strong> At 14th level, finishing your work leaves foes trapped in a half-seen moment.</p>
+			<p>When you complete an Artwork, you may choose one creature you can see within 60 feet. The creature must make a Wisdom saving throw against your Artist spell save DC.</p>
+			<ul>
+				<li>On a failed save, the creature is restrained until the end of its next turn.</li>
+				<li>On a successful save, the creature is unaffected.</li>
+			</ul>
+			<p>You can use this feature only once per turn.</p>
+		</description>
+		<sheet display="false">
+			<description>When you complete an Artwork, you may force one creature within 60 feet to make a Wisdom save or be restrained until the end of its next turn. This can occur once per turn.</description>
+		</sheet>
+	</element>
+</elements>
