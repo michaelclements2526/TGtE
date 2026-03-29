@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Performer class for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.21">
+		<update version="0.0.22">
 			<file name="performer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer.xml" />
 		</update>
 	</info>
