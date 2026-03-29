@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Romanticism movement for the Artist class in Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="artist-movements-romanticism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-romanticism.xml" />
 		</update>
 	</info>
@@ -17,7 +17,7 @@
 
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_RAPTURE" />
-			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_CANVAS_ALTERATION" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_HEARTFLAME" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_PASSION_UNBOUND" />
 			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_RAPTUROUS_MOMENTUM" />
@@ -28,24 +28,23 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_RAPTURE" level="3" />
-			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS" level="3" />
-
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_CANVAS_ALTERATION" level="3" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_HEARTFLAME" level="6" />
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_PASSION_UNBOUND" level="6" />
-
 			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_RAPTUROUS_MOMENTUM" level="14" />
 		</rules>
 	</element>
 
 	<element name="Scarlet Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE">
 		<description>
-			<p><strong>Scarlet Palette.</strong> When you choose this Movement at 3rd level, you gain the Red Palette. If you already know the Red Palette, you instead gain one Artist Palette of your choice.</p>
+			<p><strong>Scarlet Palette.</strong> When you choose this Movement at 3rd level, you gain access to the Red Palette. If you already know the Red Palette, you instead choose one Artist Palette you do not already know.</p>
+			<p>For Aurora purposes, if you already know Red, simply select a different palette when instructed to do so.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain the Red Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+			<description>You gain access to the Red Palette. If you already know it, choose a different Artist Palette instead.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_RED" />
+			<select type="Class Feature" name="Romanticism Palette" supports="Artist Palette" number="1" />
 		</rules>
 	</element>
 
@@ -64,13 +63,14 @@
 		</sheet>
 	</element>
 
-	<element name="Emotional Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS">
+	<element name="Canvas Alteration: Emotional Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_CANVAS_ALTERATION">
 		<description>
-			<p><strong>Emotional Canvas.</strong> At 3rd level, your Canvas burns with emotional force.</p>
+			<p><strong>Canvas Alteration: Emotional Canvas.</strong> At 3rd level, your Canvas burns with emotional force.</p>
 			<p>While you have an active Canvas, a creature that enters the Canvas for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type. A creature can take this damage only once per turn.</p>
+			<p>This feature is a reference note for how Romanticism alters your Canvas.</p>
 		</description>
-		<sheet display="false">
-			<description>While you have an active Canvas, a creature that enters it for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type, once per turn.</description>
+		<sheet>
+			<description>Canvas Alteration — Emotional Canvas: while you have an active Canvas, a creature that enters it for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type, once per turn.</description>
 		</sheet>
 	</element>
 
