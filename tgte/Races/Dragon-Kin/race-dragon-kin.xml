@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Dragon-Kin race for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.20">
+		<update version="0.0.21">
 			<file name="race-dragon-kin.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Races/Dragon-Kin/race-dragon-kin.xml" />
 		</update>
 	</info>
@@ -48,7 +48,7 @@
 		</description>
 
 		<sheet display="false">
-			<description>Humanoids who carry draconic blood as a living inheritance, manifesting it through color and expression.</description>
+			<description>Humanoids who carry draconic blood as a living inheritance, expressing it through color and form.</description>
 		</sheet>
 
 		<setters>
@@ -160,8 +160,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Draconic Insight (1)" supports="Skill" number="1" />
-			<select type="Proficiency" name="Draconic Insight (2)" supports="Skill" number="1" />
+			<select type="Proficiency" name="Draconic Insight (1)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Proficiency" name="Draconic Insight (2)" supports="ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT" />
 		</rules>
 	</element>
 
@@ -192,21 +192,14 @@
 		<supports>Draconic Expression</supports>
 		<description>
 			<p>Your draconic power erupts outward in a controlled burst.</p>
-			<p>As an action, you release a pulse of draconic energy in a 15-foot radius centered on yourself. Each creature of your choice in the area takes {{dragon-kin:draconic-magic:dice}} damage of a type determined by your Draconic Color.</p>
+			<p>As an action, you release a pulse of draconic energy in a 15-foot radius centered on yourself. Each creature of your choice in the area takes 2d4 damage of a type determined by your Draconic Color.</p>
 			<p>You can use this trait twice per short rest.</p>
 			<p>The damage increases by 1d4 at 5th level, and again at 10th level and 15th level.</p>
 			<p>This effect represents raw draconic power spilling outward rather than a practiced breath weapon.</p>
 		</description>
 		<sheet action="Action" usage="2/Short Rest">
-			<description>Release a 15-foot-radius pulse centered on yourself. Each creature of your choice in the area takes {{dragon-kin:draconic-magic:dice}} {{dragon-kin:damage-type}} damage.</description>
+			<description>Release a 15-foot-radius pulse centered on yourself. Each creature of your choice in the area takes draconic damage based on your level and Draconic Color: 2d4 at 1st level, 3d4 at 5th level, 4d4 at 10th level, and 5d4 at 15th level.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:draconic-magic:dice-count" value="2" level="1" />
-			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="5" />
-			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="10" />
-			<stat name="dragon-kin:draconic-magic:dice-count" value="1" level="15" />
-			<stat name="dragon-kin:draconic-magic:dice" value="{{dragon-kin:draconic-magic:dice-count}}d4" />
-		</rules>
 	</element>
 
 	<element name="Great Horns" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_EXPRESSION_GREAT_HORNS">
@@ -215,11 +208,20 @@
 			<p>Your horns and scales serve as conduits for draconic resilience.</p>
 			<p>You can use a reaction to gain the benefits of the <i>absorb elements</i> spell.</p>
 			<p>You can use this trait twice, and you regain all expended uses when you finish a long rest.</p>
+			<p>In addition, you have resistance to the damage type determined by your Draconic Color.</p>
 			<p>As you grow in power, your horns become larger, more ornate, and more vividly colored, reflecting your lineage.</p>
 		</description>
 		<sheet action="Reaction" usage="2/Long Rest">
-			<description>Use your reaction to gain the benefits of absorb elements.</description>
+			<description>Use your reaction to gain the benefits of absorb elements. You also have resistance to the damage type determined by your Draconic Color.</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_RUBY" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_SAPPHIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_EMERALD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_TOPAZ" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_CRYSTAL" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="ID_ELYSIA_DRAGON_KIN_COLOR_OBSIDIAN" />
+		</rules>
 	</element>
 
 	<element name="Draconic Color" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_DRACONIC_COLOR">
@@ -238,9 +240,6 @@
 		<sheet alt="Ruby">
 			<description>Draconic Color: Ruby. Damage type: Fire.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Fire" />
-		</rules>
 	</element>
 
 	<element name="Sapphire" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_SAPPHIRE">
@@ -249,9 +248,6 @@
 		<sheet alt="Sapphire">
 			<description>Draconic Color: Sapphire. Damage type: Lightning.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Lightning" />
-		</rules>
 	</element>
 
 	<element name="Emerald" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_EMERALD">
@@ -260,9 +256,6 @@
 		<sheet alt="Emerald">
 			<description>Draconic Color: Emerald. Damage type: Thunder.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Thunder" />
-		</rules>
 	</element>
 
 	<element name="Topaz" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_TOPAZ">
@@ -271,9 +264,6 @@
 		<sheet alt="Topaz">
 			<description>Draconic Color: Topaz. Damage type: Cold.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Cold" />
-		</rules>
 	</element>
 
 	<element name="Crystal" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_CRYSTAL">
@@ -282,9 +272,6 @@
 		<sheet alt="Crystal">
 			<description>Draconic Color: Crystal. Damage type: Radiant.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Radiant" />
-		</rules>
 	</element>
 
 	<element name="Obsidian" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_OBSIDIAN">
@@ -293,9 +280,6 @@
 		<sheet alt="Obsidian">
 			<description>Draconic Color: Obsidian. Damage type: Necrotic.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Necrotic" />
-		</rules>
 	</element>
 
 	<element name="Amethyst" type="Racial Trait" source="Traveler's Guide to Elysia" id="ID_ELYSIA_DRAGON_KIN_COLOR_AMETHYST">
@@ -304,8 +288,5 @@
 		<sheet alt="Amethyst">
 			<description>Draconic Color: Amethyst. Damage type: Force.</description>
 		</sheet>
-		<rules>
-			<stat name="dragon-kin:damage-type" value="Force" />
-		</rules>
 	</element>
 </elements>
