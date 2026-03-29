@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Artworks for the Artist class in Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-artworks.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-artworks.xml" />
+		</update>
+	</info>
+
+	<element name="Form: Heavy Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_HEAVY_STROKE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Heavy Stroke.</strong></p>
+			<p><strong>Sequence:</strong> Black → Red (Bludgeoning → Fire)</p>
+			<p>When you complete this Artwork, you draw a blazing stroke across the battlefield.</p>
+			<p>Choose a direction originating from the Canvas. A line 40 feet long and 10 feet wide extends from the Canvas and lasts for 3 rounds.</p>
+			<ul>
+				<li>The area becomes burning ground.</li>
+				<li>A creature that enters the area for the first time on a turn or starts its turn there takes 2d6 fire damage.</li>
+				<li>The area counts as difficult terrain.</li>
+				<li>The fire does not ignite unattended objects.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Black → Red. Create a 40-foot by 10-foot line for 3 rounds. Creatures entering or starting their turn there take 2d6 fire damage, and the area is difficult terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Still Frame" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_STILL_FRAME">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Still Frame.</strong></p>
+			<p><strong>Sequence:</strong> Blue → Black (Cold → Bludgeoning)</p>
+			<p>When you complete this Artwork, the space around the Canvas locks into rigid stillness.</p>
+			<p>Creatures of your choice in a 15-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature’s speed becomes 0 until the end of its next turn.</li>
+				<li>On a success, the creature’s speed is halved until the end of its next turn.</li>
+			</ul>
+			<p>In addition, the area in the radius becomes difficult terrain for 3 rounds.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Blue → Black. Creatures of your choice in a 15-foot radius make a Constitution save. On a failure, speed becomes 0; on a success, speed is halved until the end of the creature’s next turn. The area is difficult terrain for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Cleaving Light" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_CLEAVING_LIGHT">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Cleaving Light.</strong></p>
+			<p><strong>Sequence:</strong> White → Black (Radiant → Bludgeoning)</p>
+			<p>When you complete this Artwork, a descending arc of judgment strikes downward.</p>
+			<p>Choose a 30-foot-long, 10-foot-wide line extending from the Canvas. Creatures in the line must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d6 radiant damage and is knocked prone.</li>
+				<li>On a success, the creature takes half damage and is not knocked prone.</li>
+			</ul>
+			<p>A creature knocked prone by this effect has disadvantage on its next attack roll before the end of its next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: White → Black. Creatures in a 30-foot by 10-foot line make a Constitution save or take 3d6 radiant damage and fall prone. On a success, they take half damage and do not fall prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Form: Eroded Edge" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_ERODED_EDGE">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Form: Eroded Edge.</strong></p>
+			<p><strong>Sequence:</strong> Green → Black (Poison → Bludgeoning)</p>
+			<p>When you complete this Artwork, corrosive force eats away at form and balance.</p>
+			<p>Creatures of your choice in a 10-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 2d8 poison damage and has disadvantage on Strength and Dexterity saving throws until the end of its next turn.</li>
+				<li>On a success, the creature takes half damage with no additional effect.</li>
+			</ul>
+			<p>The area remains slick and unstable for 3 rounds, counting as difficult terrain.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Green → Black. Creatures of your choice in a 10-foot radius make a Constitution save or take 2d8 poison damage and have disadvantage on Strength and Dexterity saving throws until the end of their next turn. The area is difficult terrain for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Collapse the Subject" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_COLLAPSE_THE_SUBJECT">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Piece: Collapse the Subject.</strong></p>
+			<p><strong>Sequence:</strong> Black → Red → Black (Bludgeoning → Fire → Bludgeoning)</p>
+			<p>When you complete this Artwork, the Canvas detonates outward with crushing force.</p>
+			<p>Each creature of your choice within a 20-foot radius must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 4d6 fire damage, is knocked prone, and is restrained by warped terrain until the end of its next turn.</li>
+				<li>On a success, the creature takes half damage and is not restrained.</li>
+			</ul>
+			<p>The area becomes difficult terrain for 3 rounds.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Black → Red → Black. Creatures of your choice within 20 feet make a Dexterity save or take 4d6 fire damage, fall prone, and are restrained until the end of their next turn. On a success, they take half damage and are not restrained. The area is difficult terrain for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Mortal Impression" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_MORTAL_IMPRESSION">
+		<supports>Artist Artwork, Repertoire I</supports>
+		<description>
+			<p><strong>Piece: Mortal Impression.</strong></p>
+			<p><strong>Sequence:</strong> Black → Purple → Black (Bludgeoning → Necrotic → Bludgeoning)</p>
+			<p>When you complete this Artwork, a lingering sense of inevitability settles over the battlefield.</p>
+			<p>Creatures of your choice in a 30-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 3d8 necrotic damage and is Weakened for 3 rounds.</li>
+				<li>On a success, the creature takes half damage and is Weakened until the end of its next turn.</li>
+			</ul>
+			<p>A creature reduced to 0 hit points while Weakened by this Artwork cannot be revived until the end of your next turn.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Black → Purple → Black. Creatures of your choice in a 30-foot radius make a Constitution save or take 3d8 necrotic damage and become Weakened. On a success, they take half damage and are Weakened until the end of their next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Horizon Fracture" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_HORIZON_FRACTURE">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Horizon Fracture.</strong></p>
+			<p><strong>Sequence:</strong> Yellow → Blue → Orange (Lightning → Cold → Acid)</p>
+			<p>When you complete this Artwork, a violent fracture tears outward from the Canvas.</p>
+			<p>Choose a direction originating from the Canvas. A line 60 feet long and 10 feet wide erupts along the ground.</p>
+			<p>Creatures in the line must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 5d6 lightning damage, is knocked prone, and has its speed reduced to 0 until the start of its next turn.</li>
+				<li>On a success, the creature takes half damage and is not knocked prone.</li>
+			</ul>
+			<p>The line becomes unstable terrain for 3 rounds. It counts as difficult terrain, and a creature that moves more than 10 feet within it on a turn must succeed on a Dexterity saving throw or fall prone.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Yellow → Blue → Orange. Creatures in a 60-foot by 10-foot line make a Dexterity save or take 5d6 lightning damage, fall prone, and have speed reduced to 0 until the start of their next turn. The line becomes unstable difficult terrain for 3 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Cathedral of Silence" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_CATHEDRAL_OF_SILENCE">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Cathedral of Silence.</strong></p>
+			<p><strong>Sequence:</strong> White → Purple → White (Radiant → Necrotic → Radiant)</p>
+			<p>When you complete this Artwork, a sphere of oppressive stillness forms around the Canvas.</p>
+			<p>A 20-foot-radius sphere centered on the Canvas lasts for 3 rounds.</p>
+			<p>While inside the sphere:</p>
+			<ul>
+				<li>Creatures cannot regain hit points.</li>
+				<li>Creatures have disadvantage on Constitution saving throws made to maintain concentration.</li>
+				<li>A creature that enters the sphere for the first time on a turn or starts its turn there takes 3d8 radiant damage.</li>
+			</ul>
+			<p>The sphere is heavily obscured to creatures outside of it.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: White → Purple → White. Create a 20-foot-radius sphere for 3 rounds. Creatures inside cannot regain hit points, have disadvantage on concentration saves, and take 3d8 radiant damage when entering for the first time on a turn or starting their turn there.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Verdant Undoing" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_VERDANT_UNDOING">
+		<supports>Artist Artwork, Repertoire II</supports>
+		<description>
+			<p><strong>Piece: Verdant Undoing.</strong></p>
+			<p><strong>Sequence:</strong> Green → Orange → Green (Poison → Acid → Poison)</p>
+			<p>When you complete this Artwork, corrosive growth spreads outward from the Canvas.</p>
+			<p>A 30-foot-radius area centered on the Canvas becomes warped terrain for 3 rounds.</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>A creature that starts its turn in the area must make a Constitution saving throw.</li>
+				<li>On a failure, the creature takes 4d6 acid damage and has disadvantage on attack rolls until the end of its turn.</li>
+				<li>On a success, the creature takes half damage and suffers no additional effect.</li>
+			</ul>
+			<p>Unattended nonmagical objects in the area begin to corrode but are not destroyed instantly.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Green → Orange → Green. Create a 30-foot-radius area for 3 rounds. The area is difficult terrain. Creatures that start their turn there make a Constitution save or take 4d6 acid damage and have disadvantage on attack rolls until the end of their turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: Final Exhibition" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_FINAL_EXHIBITION">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Piece: Final Exhibition.</strong></p>
+			<p><strong>Sequence:</strong> White → Red → Black → Purple (Radiant → Fire → Bludgeoning → Necrotic)</p>
+			<p>When you complete this Artwork, the battlefield is seized by a catastrophic convergence of force and color.</p>
+			<p>Creatures of your choice within a 30-foot radius centered on the Canvas must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failure, a creature takes 6d8 radiant damage, 6d8 fire damage, and is stunned until the end of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not stunned.</li>
+			</ul>
+			<p>The area remains dangerous for 3 rounds. A creature that enters the area for the first time on a turn or starts its turn there takes 2d8 necrotic damage.</p>
+		</description>
+		<sheet display="false">
+			<description>Sequence: White → Red → Black → Purple. Creatures of your choice within 30 feet make a Constitution save or take 6d8 radiant and 6d8 fire damage and are stunned until the end of their next turn. On a success, they take half damage and are not stunned. For 3 rounds, creatures entering or starting their turn in the area take 2d8 necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Piece: World Without Form" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_ARTWORK_ARTIST_WORLD_WITHOUT_FORM">
+		<supports>Artist Artwork, Repertoire III</supports>
+		<description>
+			<p><strong>Piece: World Without Form.</strong></p>
+			<p><strong>Sequence:</strong> Blue → Teal → Pink → White (Cold → Thunder → Psychic → Radiant)</p>
+			<p>When you complete this Artwork, the area around the Canvas dissolves into a surreal and unstable scene.</p>
+			<p>A 20-foot-radius sphere centered on the Canvas lasts for 3 rounds.</p>
+			<ul>
+				<li>The area is difficult terrain.</li>
+				<li>Creatures inside the area have disadvantage on Wisdom saving throws.</li>
+				<li>A creature that starts its turn in the area must make a Wisdom saving throw.</li>
+				<li>On a failure, the creature takes 5d8 psychic damage and is confused until the start of its next turn.</li>
+				<li>On a success, the creature takes half as much damage and is not confused.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+			<description>Sequence: Blue → Teal → Pink → White. Create a 20-foot-radius sphere for 3 rounds. It is difficult terrain, creatures inside have disadvantage on Wisdom saves, and creatures that start their turn there make a Wisdom save or take 5d8 psychic damage and become confused until the start of their next turn.</description>
+		</sheet>
+	</element>
+</elements>
