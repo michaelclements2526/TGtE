@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Artist studies for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-studies.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-studies.xml" />
+		</update>
+	</info>
+
+	<element name="Stroke" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_STROKE">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Stroke.</strong> You surge forward, dragging a line of force through your movement.</p>
+			<p>Before moving, choose a straight line up to a distance equal to your remaining movement. Each creature whose space the line passes through must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d4 + your Wisdom modifier damage of your current Palette’s type and is pushed 5 feet directly away from the line.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+			<p>This movement does not provoke opportunity attacks from creatures affected by this Study.</p>
+		</description>
+		<sheet action="Action">
+			<description>Move in a straight line. Creatures whose spaces the line passes through make a Dexterity save or take 1d4 + Wisdom modifier damage of your current Palette’s type and are pushed 5 feet away from the line. This movement does not provoke opportunity attacks from affected creatures.</description>
+		</sheet>
+	</element>
+
+	<element name="Shade" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_SHADE">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Shade.</strong> You mark a point you can see within 30 feet, causing a burst of pigment to bloom outward.</p>
+			<p>Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d4 + your Wisdom modifier damage of your current Palette’s type.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+			<p>The sphere disperses immediately after the effect resolves.</p>
+		</description>
+		<sheet action="Action">
+			<description>Choose a point within 30 feet. Creatures in a 10-foot-radius sphere make a Dexterity save or take 1d4 + Wisdom modifier damage of your current Palette’s type.</description>
+		</sheet>
+	</element>
+
+	<element name="Fan" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_FAN">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Fan.</strong> You release a sweeping arc of color in a controlled burst.</p>
+			<p>Each creature in a 15-foot cone must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d6 + your Wisdom modifier damage of your current Palette’s type and has its speed reduced by 10 feet until the start of your next turn.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>Creatures in a 15-foot cone make a Dexterity save or take 1d6 + Wisdom modifier damage of your current Palette’s type and have their speed reduced by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Smear" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_SMEAR">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Smear.</strong> You drag unstable pigment across the ground in a disruptive sweep.</p>
+			<p>Choose a 30-foot line that is 5 feet wide. Each creature in the line must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d4 + your Wisdom modifier damage of your current Palette’s type, and the ground in the line becomes difficult terrain until the start of your next turn.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>Choose a 30-foot line that is 5 feet wide. Creatures in the line make a Dexterity save or take 1d4 + Wisdom modifier damage of your current Palette’s type. The ground in the line becomes difficult terrain until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Scatter" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_SCATTER">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Scatter.</strong> You snap pigment outward in a tight, unstable burst.</p>
+			<p>Each creature of your choice within 5 feet of you must make a Dexterity saving throw.</p>
+			<ul>
+				<li>On a failed save, a creature takes 1d6 + your Wisdom modifier damage of your current Palette’s type and is pushed 5 feet away from you.</li>
+				<li>On a successful save, the creature takes no damage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>Creatures of your choice within 5 feet of you make a Dexterity save or take 1d6 + Wisdom modifier damage of your current Palette’s type and are pushed 5 feet away from you.</description>
+		</sheet>
+	</element>
+
+	<element name="Contour Guard" type="Class Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_STUDY_ARTIST_CONTOUR_GUARD">
+		<supports>Study, Artist</supports>
+		<description>
+			<p><strong>Contour Guard.</strong> You reinforce your outline with controlled expression.</p>
+			<p>Until the start of your next turn, you gain temporary hit points equal to your proficiency bonus + your Wisdom modifier.</p>
+			<p>In addition, the first time a creature hits you with an attack before the effect ends, that creature takes 1d4 damage of your current Palette’s type.</p>
+			<p>Once this damage is dealt, the effect ends early.</p>
+		</description>
+		<sheet action="Action">
+			<description>Gain temporary hit points equal to your proficiency bonus + your Wisdom modifier until the start of your next turn. The first creature that hits you before then takes 1d4 damage of your current Palette’s type, and the effect ends.</description>
+		</sheet>
+	</element>
+</elements>
