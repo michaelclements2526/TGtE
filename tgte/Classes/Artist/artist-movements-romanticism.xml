@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Romanticism movement for the Artist class in Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="artist-movements-romanticism.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Artist/artist-movements-romanticism.xml" />
+		</update>
+	</info>
+
+	<element name="Romanticism" type="Archetype" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_ARTIST_ROMANTICISM">
+		<supports>Artist Movement</supports>
+		<description>
+			<p><strong>Movement: Romanticism.</strong> Artists of the Romantic movement reject restraint. To them, art is not discipline but revelation. Their works are not constructed—they are unleashed. Every stroke carries conviction, every Canvas burns with intensity, and every completion is a catharsis. Where others refine, Romantics ignite.</p>
+			<p>Your Movement grants you features at 3rd level, and again at 6th and 14th level.</p>
+
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_RAPTURE" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_HEARTFLAME" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_PASSION_UNBOUND" />
+			<div element="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_RAPTUROUS_MOMENTUM" />
+		</description>
+		<sheet display="false">
+			<description>Movement: Romanticism.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_RAPTURE" level="3" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS" level="3" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_HEARTFLAME" level="6" />
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_PASSION_UNBOUND" level="6" />
+
+			<grant type="Archetype Feature" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_RAPTUROUS_MOMENTUM" level="14" />
+		</rules>
+	</element>
+
+	<!-- ========================= -->
+	<!-- Romanticism Features      -->
+	<!-- ========================= -->
+
+	<element name="Scarlet Palette" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_SCARLET_PALETTE">
+		<description>
+			<p><strong>Scarlet Palette.</strong> When you choose this Movement at 3rd level, you gain the Red Palette. If you already know the Red Palette, you instead gain one Artist Palette of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain the Red Palette. If you already know it, you instead gain one Artist Palette of your choice.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_ELYSIA_PALETTE_RED" />
+		</rules>
+	</element>
+
+	<element name="Study: Rapture" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_RAPTURE">
+		<description>
+			<p><strong>Study: Rapture.</strong> At 3rd level, you learn to stoke an enemy’s heart until it burns.</p>
+			<p>As an action, choose one creature you can see within 60 feet. The target must make a Wisdom saving throw.</p>
+			<ul>
+				<li>On a failed save, the target takes 3d8 damage of your current Palette’s type and is frightened of you until the end of its next turn.</li>
+				<li>On a successful save, the target takes half as much damage and isn’t frightened.</li>
+			</ul>
+			<p>You can use this feature twice, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description>Choose one creature within 60 feet. It makes a Wisdom save or takes 3d8 damage of your current Palette’s type and is frightened of you until the end of its next turn. On a success, it takes half damage and isn’t frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Emotional Canvas" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_EMOTIONAL_CANVAS">
+		<description>
+			<p><strong>Emotional Canvas.</strong> At 3rd level, your Canvas burns with emotional force.</p>
+			<p>While you have an active Canvas, a creature that enters the Canvas for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type. A creature can take this damage only once per turn.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, a creature that enters it for the first time on a turn or ends its turn there takes 1d6 damage of your current Palette’s type, once per turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Study: Heartflame" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_STUDY_HEARTFLAME">
+		<description>
+			<p><strong>Study: Heartflame.</strong> At 6th level, you ignite your own spirit and hurl it outward.</p>
+			<p>As an action, choose one creature you can see within 60 feet. The creature must make a Constitution saving throw.</p>
+			<ul>
+				<li>On a failed save, the creature takes 5d8 damage of your current Palette’s type.</li>
+				<li>On a successful save, the creature takes half as much damage.</li>
+			</ul>
+			<p>After using this feature, you take 2d8 fire damage, which cannot be reduced or prevented in any way.</p>
+			<p>You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="Proficiency Bonus/Long Rest">
+			<description>Choose one creature within 60 feet. It makes a Constitution save or takes 5d8 damage of your current Palette’s type. On a success, it takes half damage. Afterward, you take 2d8 fire damage that cannot be reduced or prevented.</description>
+		</sheet>
+	</element>
+
+	<element name="Creative Process: Passion Unbound" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_PASSION_UNBOUND">
+		<description>
+			<p><strong>Creative Process: Passion Unbound.</strong> At 6th level, your emotional intensity empowers your Studies.</p>
+			<p>While you have an active Canvas, when you use a Study that deals damage, you deal an additional 1d6 damage of your current Palette’s type to each creature that takes damage from the Study.</p>
+		</description>
+		<sheet display="false">
+			<description>While you have an active Canvas, your damage-dealing Studies deal an additional 1d6 damage of your current Palette’s type to each creature damaged by the Study.</description>
+		</sheet>
+	</element>
+
+	<element name="Rapturous Momentum" type="Archetype Feature" source="Traveler's Guide to Elysia" id="ID_ELYSIA_MOVEMENT_FEATURE_ARTIST_ROMANTICISM_RAPTUROUS_MOMENTUM">
+		<description>
+			<p><strong>Rapturous Momentum.</strong> At 14th level, finishing a work drives you into immediate action.</p>
+			<p>When you complete an Artwork, you may immediately use one of your Studies as a bonus action. If that Study deals damage, the first creature that takes damage from it takes an additional 1d12 damage of your current Palette’s type.</p>
+			<p>The Study used in this way does not progress an Artwork. You can use this feature only once per turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you complete an Artwork, you may immediately use one of your Studies as a bonus action. The first creature damaged by that Study takes an additional 1d12 damage of your current Palette’s type. This can occur once per turn.</description>
+		</sheet>
+	</element>
+</elements>
