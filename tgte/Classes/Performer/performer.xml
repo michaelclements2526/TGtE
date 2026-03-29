@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Traveler's Guide to Elysia</name>
+		<description>Performer class for Aurora Builder.</description>
+		<author>Michael</author>
+		<update version="0.0.19">
+			<file name="performer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer.xml" />
+		</update>
+	</info>
+
+	<element name="Performer" type="Class" source="Traveler's Guide to Elysia" id="ID_ELYSIA_CLASS_PERFORMER">
+		<description>
+			<p class="flavor">A human in heavy plate armor bleeds through his armor after a long fight. As he is about to fall, his companion begins to sing a refreshing tune; the magic within the words sealing the wounds he sustained.</p>
+			<p class="flavor">An elf dances through her allies, her lively moves propelling her companions actions, letting them strike faster and with more vigor.</p>
+			<p class="flavor">A half-elf picks up a polearm and slips through her enemies slicing and dancing to a tune only she can hear, dodging all attacks aimed at her.</p>
+			<p class="flavor">All performers use their innate talents to support their allies, though they can still hold their own in a fight.</p>
+
+			<h3>Exotic Enchantment</h3>
+			<p>Performers are usually split into two groups, songstress' (or singers) and dancers, both of whom use their bodies to bewitch enemies and aid allies. They live to support their allies, but are rare and hard to find. When a person decides to become a performer, they eschew their own lives, putting others before them.</p>
+			<p>Performers should never be thought that they can't defend themselves. Their magic affects them as well, propelling blades to places that bare hands could never bring them. True performers glide through life in an unending mist of cheer, always being loving and helpful.</p>
+
+			<h3>Creating a Performer</h3>
+			<p>Before making a performer, think about what causes you to connect with others. Were you raised to be a good, kind person, or were you abandoned and never want people to feel that way? Are you an established part of a city, or do you roam the world, helping all you find?</p>
+
+			<h3>Quick Build</h3>
+			<p>When you make a performer, consider these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, take the Entertainer background.</p>
+
+			<h3>Class Features</h3>
+			<p>As a Performer, you gain the following class features.</p>
+
+			<h5>Hit Points</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per performer level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per performer level after 1st</li>
+			</ul>
+
+			<h5>Proficiencies</h5>
+			<ul class="unstyled">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> One tool or musical instrument of your choice</li>
+				<li><strong>Saving Throws:</strong> Charisma, Dexterity</li>
+				<li><strong>Skills:</strong> Performance and any two from Athletics, Acrobatics, History, Religion, Insight, and Persuasion</li>
+			</ul>
+
+			<h5>Equipment</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>Any simple weapon</li>
+				<li><i>(a)</i> an entertainer’s pack or <i>(b)</i> a diplomat’s pack</li>
+				<li>A book of lore, a tool, and a costume</li>
+			</ul>
+
+			<h5 class="caption">The Performer’s Levels</h5>
+			<table class="class-features">
+				<thead>
+					<tr>
+						<td class="col-5">Level</td>
+						<td class="left">Proficiency Bonus</td>
+						<td class="left">Features</td>
+					</tr>
+				</thead>
+				<tr><td>1st</td><td class="left">+2</td><td class="left">Performer Type, Unarmored Defense, Performance</td></tr>
+				<tr><td>2nd</td><td class="left">+2</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>3rd</td><td class="left">+2</td><td class="left">Harmonic Resonance</td></tr>
+				<tr><td>4th</td><td class="left">+2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td class="left">+3</td><td class="left">Stage Performer</td></tr>
+				<tr><td>6th</td><td class="left">+3</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>7th</td><td class="left">+3</td><td class="left">Enhanced Performance</td></tr>
+				<tr><td>8th</td><td class="left">+3</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>9th</td><td class="left">+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>10th</td><td class="left">+4</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>11th</td><td class="left">+4</td><td class="left">Masterful Artist</td></tr>
+				<tr><td>12th</td><td class="left">+4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td class="left">+5</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>14th</td><td class="left">+5</td><td class="left">Distracting Performance</td></tr>
+				<tr><td>15th</td><td class="left">+5</td><td class="left">Disarming Performance</td></tr>
+				<tr><td>16th</td><td class="left">+5</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td class="left">+6</td><td class="left">Performer Type feature</td></tr>
+				<tr><td>18th</td><td class="left">+6</td><td class="left">Practice Makes Perfect</td></tr>
+				<tr><td>19th</td><td class="left">+6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td class="left">+6</td><td class="left">Performer Type feature</td></tr>
+			</table>
+		</description>
+
+		<sheet display="false">
+			<description>A supportive martial class that empowers allies through song or dance.</description>
+		</sheet>
+
+		<setters>
+			<set name="short">A supportive martial class that empowers allies through song or dance.</set>
+			<set name="hd">d6</set>
+		</setters>
+
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+
+			<select type="Proficiency" name="Tool or Instrument Proficiency (Performer)" supports="Tool Proficiency, Musical Instrument" number="1" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+			<select type="Proficiency" name="Skill Proficiency (Performer)" supports="Skill" number="2" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_TYPE" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_PERFORMANCE" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_HARMONIC_RESONANCE" level="3" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ASI" level="4" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_STAGE_PERFORMER" level="5" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_ENHANCED_PERFORMANCE" level="7" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_MASTERFUL_ARTIST" level="11" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_DISTRACTING_PERFORMANCE" level="14" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_DISARMING_PERFORMANCE" level="15" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_PRACTICE_MAKES_PERFECT" level="18" />
+
+			<select type="Archetype" name="Performer Type" supports="Performer Type" level="1" />
+		</rules>
+
+		<multiclass id="ID_ELYSIA_MULTICLASS_PERFORMER">
+			<prerequisite>Charisma 13</prerequisite>
+			<requirements>[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Simple weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+</elements>
