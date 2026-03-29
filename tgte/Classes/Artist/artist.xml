@@ -11,70 +11,42 @@
 
 	<element name="Artist" type="Class" source="Traveler's Guide to Elysia" id="ID_ELYSIA_CLASS_ARTIST">
 		<description>
+			<p class="flavor">A human studies the flow of battle, watching sparks fade against stone and steel trace its familiar arcs. With a deliberate stroke through the air, she fixes the moment in place, and flame follows the path she has chosen.</p>
+			<p class="flavor">Crouched behind cover, a half-elf measures distance and motion before releasing a wash of numbing cold, reshaping the field long enough for his allies to press the attack.</p>
+			<p class="flavor">An Artist stands within the chaos, tools in hand, applying force and color with intention. Each choice is deliberate. Each action builds toward a greater work.</p>
 
-			<p class="flavor">
-A human studies the flow of battle, watching sparks fade against stone and steel trace its familiar arcs. With a deliberate stroke through the air, she fixes the moment in place, and flame follows the path she has chosen.
-			</p>
-
-			<p class="flavor">
-Crouched behind cover, a half-elf measures distance and motion before releasing a wash of numbing cold, reshaping the field long enough for his allies to press the attack.
-			</p>
-
-			<p class="flavor">
-An Artist stands within the chaos, tools in hand, applying force and color with intention. Each choice is deliberate. Each action builds toward a greater work.
-			</p>
-
-			<p>
-Artists are spellcasters who treat the world as a canvas. Rather than relying on overwhelming spellcasting, they shape magic through discipline, precision, and commitment. By establishing a canvas in the world and working upon it step by step, an Artist creates effects that resolve the battle according to their vision.
-			</p>
-
-			<p>
-Though their magic is narrower than that of other casters, Artists excel at controlling space and momentum. Their greatest works demand focus and patience, while practiced techniques keep them effective even as a larger composition takes form.
-			</p>
-
-			<p>
-Whatever their origin, all Artists share the same belief: magic, like art, is strongest when guided by intent.
-			</p>
+			<p>Artists are spellcasters who treat the world as a canvas. Rather than relying on overwhelming spellcasting, they shape magic through discipline, precision, and commitment. By establishing a canvas in the world and working upon it step by step, an Artist creates effects that resolve the battle according to their vision.</p>
+			<p>Though their magic is narrower than that of other casters, Artists excel at controlling space and momentum. Their greatest works demand focus and patience, while practiced techniques keep them effective even as a larger composition takes form.</p>
+			<p>Whatever their origin, all Artists share the same belief: magic, like art, is strongest when guided by intent.</p>
 
 			<h3>Adaptable Visionaries</h3>
-
-			<p>
-Artists are adventurers first and foremost. Their power does not come from vast reserves of magic, but from a practiced ability to respond to the moment before them.
-			</p>
-
-			<p>
-Through passion, discipline, and an eye for opportunity, they shape the world in small but meaningful ways, turning chaos into composition.
-			</p>
+			<p>Artists are adventurers first and foremost. Their power does not come from vast reserves of magic, but from a practiced ability to respond to the moment before them. Through passion, discipline, and an eye for opportunity, they shape the world in small but meaningful ways, turning chaos into composition.</p>
+			<p>An Artist learns to read motion, terrain, and intent, applying force only where it matters. Whether reinforcing an ally’s advance, controlling a dangerous space, or building toward a decisive moment, they adapt their expression to the demands of the situation. Even when their magic is limited, their presence alters the flow of battle.</p>
+			<p>Though their works often require time and commitment, Artists are rarely idle. Through constant practice and experimentation, they remain effective in nearly any environment, finding ways to impose form even with limited tools. Where others rely on overwhelming strength or preparation, an Artist relies on awareness, restraint, and vision.</p>
 
 			<h3>Drawn to Disorder</h3>
-
-			<p>
-Artists are often regarded with a mixture of curiosity and unease. Their work is difficult to explain, their methods stranger still.
-			</p>
-
-			<p>
-For an Artist, chaos is not a hazard to be avoided, but a medium to be explored.
-			</p>
+			<p>Artists are often regarded with a mixture of curiosity and unease. Their work is difficult to explain, their methods stranger still, and their willingness to place themselves in danger can appear reckless to outsiders. Many people see Artists as unstable—individuals who chase sensation and conflict rather than comfort or certainty.</p>
+			<p>In truth, an Artist could live a quieter life. Many are capable of earning coin through simple commissions, demonstrations, or small-scale work in settled lands. Yet few remain satisfied. The unpredictable nature of adventuring—its violence, motion, and constant change—provides a depth of experience that cannot be replicated in safety. For an Artist, chaos is not a hazard to be avoided, but a medium to be explored.</p>
+			<p>As adventurers, Artists are rarely driven by greed or duty alone. Some travel in search of inspiration, others to test the limits of their expression, and a few to leave behind works that will never be forgotten. Whatever their reason, Artists tend to thrive where the world is unstable, finding clarity and purpose in moments when everything else threatens to come apart.</p>
 
 			<h3>Creating an Artist</h3>
-
-			<p>
-When creating an Artist, consider the experiences and passions that shaped their approach to magic.
-			</p>
+			<p>When creating an Artist, consider the experiences and passions that shaped their approach to magic. What sights, moments, or emotions do they seek to capture through their work? Was there a single event that inspired them to pursue art above all else, or did their calling emerge gradually through experimentation and obsession?</p>
+			<p>Think about how your Artist learned their craft. Were they mentored by another Artist, trained in an informal collective, or entirely self-taught through trial, failure, and persistence? Many Artists follow no formal tradition, developing their expression through instinct and personal philosophy rather than structured study.</p>
+			<p>Artists are often driven by goals that lack clear resolution. They may chase inspiration, perfection, recognition, or understanding—pursuits that cannot be neatly completed. This uncertainty draws them toward the unpredictable life of an adventurer, where danger and chaos provide constant opportunity for growth.</p>
+			<p>Though their methods may appear unconventional, an Artist is far from dead weight in an adventuring party. Their adaptability, discipline, and ability to shape the flow of conflict make them valuable allies, especially when situations demand creativity rather than brute force.</p>
 
 			<h3>Quick Build</h3>
-
-			<p>
-Make Wisdom your highest ability score, followed by Dexterity or Constitution. Choose a background such as Artisan Guild, Entertainer, Hermit, or Sage.
-			</p>
+			<p>You can create an Artist quickly by following these suggestions. First, make Wisdom your highest ability score, as it governs your perception, discipline, and control over your work. Your next highest score should be Dexterity if you favor mobility and positioning, or Constitution if you expect to maintain focus under pressure.</p>
+			<p>Second, choose the Artisan Guild, Entertainer, Hermit, or Sage background. Each reflects a different path into artistic practice, from formal training to solitary experimentation or public performance.</p>
 
 			<h3>Class Features</h3>
+			<p>As an Artist, you gain the following class features.</p>
 
 			<h5>Hit Points</h5>
 			<ul class="unstyled">
-				<li><strong>Hit Dice:</strong> 1d6 per artist level</li>
+				<li><strong>Hit Dice:</strong> 1d6 per Artist level</li>
 				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
-				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per artist level after 1st</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per Artist level after 1st</li>
 			</ul>
 
 			<h5>Proficiencies</h5>
@@ -94,10 +66,48 @@ Make Wisdom your highest ability score, followed by Dexterity or Constitution. C
 				<li><i>(a)</i> an explorer’s pack or <i>(b)</i> a scholar’s pack</li>
 			</ul>
 
+			<h5 class="caption">The Artist</h5>
+			<table class="class-features">
+				<thead>
+					<tr>
+						<td class="col-5">Level</td>
+						<td class="left">Proficiency Bonus</td>
+						<td class="left">Features</td>
+						<td class="left">Cantrips Known</td>
+						<td>1st</td>
+						<td>2nd</td>
+						<td>3rd</td>
+						<td>4th</td>
+						<td>5th</td>
+						<td>6th</td>
+						<td>7th</td>
+					</tr>
+				</thead>
+				<tr><td>1st</td><td class="left">+2</td><td class="left">Spellcasting, Studies, Artistic Tools, Canvas, Palette (Black)</td><td class="left">2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>2nd</td><td class="left">+2</td><td class="left">Palette, Palette Switches</td><td class="left">2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>3rd</td><td class="left">+2</td><td class="left">Movement</td><td class="left">3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>4th</td><td class="left">+2</td><td class="left">Ability Score Improvement</td><td class="left">3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>5th</td><td class="left">+3</td><td class="left">Artwork Repertoire I</td><td class="left">3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>6th</td><td class="left">+3</td><td class="left">Movement Feature</td><td class="left">4</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>7th</td><td class="left">+3</td><td class="left">Palette</td><td class="left">4</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>8th</td><td class="left">+3</td><td class="left">Ability Score Improvement</td><td class="left">4</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>9th</td><td class="left">+4</td><td class="left">Improved Studies</td><td class="left">4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">+4</td><td class="left">Refined Expression</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">+4</td><td class="left">Artwork Repertoire II</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">+4</td><td class="left">Ability Score Improvement</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">+5</td><td class="left">Palette</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+				<tr><td>14th</td><td class="left">+5</td><td class="left">Movement Feature</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>15th</td><td class="left">+5</td><td class="left">Artwork Repertoire III</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>16th</td><td class="left">+5</td><td class="left">Ability Score Improvement</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>17th</td><td class="left">+6</td><td class="left">Mastery of Color</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">+6</td><td class="left">Signature Work</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">+6</td><td class="left">Epic Boon</td><td class="left">5</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">+6</td><td class="left">Magnum Opus</td><td class="left">6</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>1</td></tr>
+			</table>
 		</description>
 
 		<sheet display="false">
-			<description>A deliberate spellcaster who builds power through composition, control, and execution.</description>
+			<description>A spellcasting creator who shapes reality through palettes, Studies, and Artworks.</description>
 		</sheet>
 
 		<setters>
@@ -105,14 +115,13 @@ Make Wisdom your highest ability score, followed by Dexterity or Constitution. C
 			<set name="hd">d6</set>
 		</setters>
 
-		<!-- Temporary spell list -->
+		<!-- Temporary placeholder spell list. Replace with Artist spell list later. -->
 		<spellcasting name="Artist" ability="Wisdom">
 			<list>Sorcerer</list>
 		</spellcasting>
 
 		<rules>
-
-			<!-- Core proficiencies -->
+			<!-- Starting proficiencies -->
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
@@ -121,19 +130,71 @@ Make Wisdom your highest ability score, followed by Dexterity or Constitution. C
 			<select type="Proficiency" name="Tool Proficiency (Artist)" supports="Artisan tools" number="1" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
 			<select type="Proficiency" name="Skill Proficiency (Artist)" supports="Skill" number="2" requirements="!ID_ELYSIA_MULTICLASS_ARTIST" />
 
-			<!-- Feature grants -->
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_SPELLCASTING" level="1"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_STUDIES" level="1"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ARTISTIC_TOOLS" level="1"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_CANVAS" level="1"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE" level="1"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE_SWITCHES" level="2"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_MOVEMENT" level="3"/>
-			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ASI" level="4"/>
+			<!-- Core class feature grants -->
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_SPELLCASTING" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_STUDIES" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ARTISTIC_TOOLS" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_CANVAS" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE" level="1" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_PALETTE_SWITCHES" level="2" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_MOVEMENT" level="3" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ASI" level="4" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_ARTWORK" level="5" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_I" level="5" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_IMPROVED_STUDIES" level="9" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_REFINED_EXPRESSION" level="10" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_II" level="11" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_REPERTOIRE_III" level="15" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_MASTERY_OF_COLOR" level="17" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_SIGNATURE_WORK" level="18" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_ARTIST_MAGNUM_OPUS" level="20" />
 
-			<!-- Subclass -->
-			<select type="Archetype" name="Movement" supports="Artist Movement" level="3"/>
+			<!-- Spell slot progression -->
+			<stat name="artist:spellcasting:slots:1" value="2" level="1" />
+			<stat name="artist:spellcasting:slots:1" value="3" level="2" />
 
+			<stat name="artist:spellcasting:slots:2" value="1" level="3" />
+			<stat name="artist:spellcasting:slots:2" value="2" level="4" />
+			<stat name="artist:spellcasting:slots:2" value="3" level="7" />
+
+			<stat name="artist:spellcasting:slots:3" value="1" level="5" />
+			<stat name="artist:spellcasting:slots:3" value="2" level="6" />
+			<stat name="artist:spellcasting:slots:3" value="3" level="9" />
+
+			<stat name="artist:spellcasting:slots:4" value="1" level="7" />
+			<stat name="artist:spellcasting:slots:4" value="2" level="10" />
+
+			<stat name="artist:spellcasting:slots:5" value="1" level="9" />
+			<stat name="artist:spellcasting:slots:5" value="2" level="11" />
+
+			<stat name="artist:spellcasting:slots:6" value="1" level="12" />
+			<stat name="artist:spellcasting:slots:6" value="2" level="14" />
+
+			<stat name="artist:spellcasting:slots:7" value="1" level="13" />
+
+			<!-- Cantrips known -->
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Cantrips (Artist)" supports="$(spellcasting:list), 0" level="20" number="1" spellcasting="Artist" />
+
+			<!-- Spells known -->
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), 1" level="1" number="2" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Artist" />
+			<select type="Spell" name="Spells Known (Artist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Artist" />
 		</rules>
 
 		<multiclass id="ID_ELYSIA_MULTICLASS_ARTIST">
@@ -142,7 +203,11 @@ Make Wisdom your highest ability score, followed by Dexterity or Constitution. C
 			<setters>
 				<set name="multiclass proficiencies">Light armor, simple weapons</set>
 			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			</rules>
 		</multiclass>
-
 	</element>
 </elements>
