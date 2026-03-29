@@ -4,7 +4,7 @@
 		<name>Traveler's Guide to Elysia</name>
 		<description>Performer class for Aurora Builder.</description>
 		<author>Michael</author>
-		<update version="0.0.19">
+		<update version="0.0.21">
 			<file name="performer.xml" url="https://raw.githubusercontent.com/michaelclements2526/TGtE/refs/heads/master/tgte/Classes/Performer/performer.xml" />
 		</update>
 	</info>
@@ -101,7 +101,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
 
 			<select type="Proficiency" name="Tool or Instrument Proficiency (Performer)" supports="Tool Proficiency, Musical Instrument" number="1" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
-			<select type="Proficiency" name="Skill Proficiency (Performer)" supports="Skill" number="2" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
+			<select type="Proficiency" name="Skill Proficiency (Performer)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION" number="2" requirements="!ID_ELYSIA_MULTICLASS_PERFORMER" />
 
 			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_TYPE" level="1" />
 			<grant type="Class Feature" id="ID_ELYSIA_FEATURE_PERFORMER_UNARMORED_DEFENSE" level="1" />
